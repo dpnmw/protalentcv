@@ -1,0 +1,171 @@
+/* ProTalent CV Landing Page Theme Variables */
+/* Prefixed with --cvp- to avoid collisions with shadcn/Tailwind theme */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+:root {
+  --cvp-b50: #eff6ff;
+  --cvp-b100: #dbeafe;
+  --cvp-b200: #bfdbfe;
+  --cvp-b300: #93c5fd;
+  --cvp-b400: #60a5fa;
+  --cvp-b500: #3b82f6;
+  --cvp-b600: #2563eb;
+  --cvp-b700: #1d4ed8;
+  --cvp-b800: #1e40af;
+  --cvp-b900: #1e3a5f;
+  --cvp-b950: #0f2240;
+
+  /* Light theme (default) */
+  --cvp-bg: #f8f9fc;
+  --cvp-bg-card: #ffffff;
+  --cvp-bg-sub: #f0f4ff;
+  --cvp-surface: #e8effe;
+  --cvp-ink: #0f2240;
+  --cvp-ink-mid: #2d4270;
+  --cvp-ink-muted: #6478a0;
+  --cvp-border: rgba(37, 99, 235, 0.1);
+  --cvp-border-mid: rgba(37, 99, 235, 0.18);
+  --cvp-accent: #2563eb;
+  --cvp-accent-h: #1d4ed8;
+  --cvp-btn-fg: #ffffff;
+  --cvp-nav-bg: rgba(248, 249, 252, 0.9);
+  --cvp-tag-bg: #eff6ff;
+  --cvp-tag-fg: #1d4ed8;
+  --cvp-tag-border: #bfdbfe;
+  --cvp-step-bg: #dbeafe;
+  --cvp-step-fg: #1d4ed8;
+  --cvp-card-shadow: 0 2px 4px rgba(15, 34, 64, 0.05), 0 12px 40px rgba(15, 34, 64, 0.09);
+  --cvp-chip-shadow: 0 2px 8px rgba(15, 34, 64, 0.08), 0 8px 24px rgba(15, 34, 64, 0.07);
+  --cvp-footer-bg: #0f2240;
+  --cvp-footer-fg: rgba(255, 255, 255, 0.45);
+  --cvp-footer-head: #fff;
+  --cvp-glow: rgba(59, 130, 246, 0.07);
+
+  --font-serif: "DM Serif Display", serif;
+  --font-body: "Be Vietnam Pro", sans-serif;
+}
+
+.dark {
+  --cvp-bg: #0b1120;
+  --cvp-bg-card: #111827;
+  --cvp-bg-sub: #141e35;
+  --cvp-surface: #1a2744;
+  --cvp-ink: #e8effe;
+  --cvp-ink-mid: #a8bbda;
+  --cvp-ink-muted: #6b82a8;
+  --cvp-border: rgba(96, 165, 250, 0.1);
+  --cvp-border-mid: rgba(96, 165, 250, 0.2);
+  --cvp-accent: #60a5fa;
+  --cvp-accent-h: #93c5fd;
+  --cvp-btn-fg: #0f2240;
+  --cvp-nav-bg: rgba(11, 17, 32, 0.9);
+  --cvp-tag-bg: rgba(37, 99, 235, 0.15);
+  --cvp-tag-fg: #93c5fd;
+  --cvp-tag-border: rgba(96, 165, 250, 0.25);
+  --cvp-step-bg: rgba(37, 99, 235, 0.18);
+  --cvp-step-fg: #93c5fd;
+  --cvp-card-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 12px 40px rgba(0, 0, 0, 0.4);
+  --cvp-chip-shadow: 0 2px 8px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.4);
+  --cvp-footer-bg: #060d1a;
+  --cvp-footer-fg: rgba(255, 255, 255, 0.35);
+  --cvp-footer-head: rgba(255, 255, 255, 0.85);
+  --cvp-glow: rgba(59, 130, 246, 0.1);
+}
+
+/* Landing page keyframes */
+@keyframes cvp-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.25;
+  }
+}
+
+@keyframes cvp-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes cvp-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Preloader */
+@keyframes cvp-preloader-fill {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes cvp-preloader-fade {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.cvp-preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--cvp-bg, #f8f9fc);
+  animation: cvp-preloader-fade 0.4s ease-out 2.2s forwards;
+  pointer-events: all;
+}
+
+.dark .cvp-preloader {
+  background: var(--cvp-bg, #0b1120);
+}
+
+.cvp-preloader-bar {
+  width: 180px;
+  height: 3px;
+  border-radius: 3px;
+  background: var(--cvp-border-mid, rgba(37, 99, 235, 0.18));
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.cvp-preloader-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  background: var(--cvp-accent, #2563eb);
+  animation: cvp-preloader-fill 2s ease-out forwards;
+}
+
+.cvp-preloader-percent {
+  margin-top: 12px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--cvp-ink-muted, #6478a0);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Nav link active state */
+.cvp-nav-link[data-active="true"] {
+  color: var(--cvp-accent) !important;
+}

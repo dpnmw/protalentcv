@@ -1,0 +1,26 @@
+import { createFileRoute, Outlet } from "@tanstack/react-router";
+
+import { NavBar } from "./-sections/nav-bar";
+import { Preloader } from "./-sections/preloader";
+
+export const Route = createFileRoute("/_home")({
+  component: RouteComponent,
+});
+
+function RouteComponent() {
+  return (
+    <>
+      <Preloader />
+
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:inset-s-4 focus:top-4 focus:z-100 focus:rounded-md focus:bg-background focus:px-4 focus:py-2 focus:text-foreground focus:shadow-lg focus:ring-2 focus:ring-ring"
+      >
+        Skip to main content
+      </a>
+
+      <NavBar />
+      <Outlet />
+    </>
+  );
+}

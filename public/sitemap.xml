@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://cvpro.dpnmw.com/</loc>
+  </url>
+  <url>
+    <loc>https://cvpro.dpnmw.com/auth</loc>
+  </url>
+  <url>
+    <loc>https://cvpro.dpnmw.com/auth/login</loc>
+  </url>
+  <url>
+    <loc>https://cvpro.dpnmw.com/auth/register</loc>
+  </url>
+  <url>
+    <loc>https://cvpro.dpnmw.com/dashboard</loc>
+  </url>
+  <url>
+    <loc>https://cvpro.dpnmw.com/dashboard/resumes</loc>
+  </url>
+</urlset>

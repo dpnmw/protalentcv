@@ -1,0 +1,2903 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2025-11-04 23:14+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: mr\n"
+"Project-Id-Version: reactive-resume\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-03-19 09:08\n"
+"Last-Translator: \n"
+"Language-Team: Marathi\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: reactive-resume\n"
+"X-Crowdin-Project-ID: 503410\n"
+"X-Crowdin-Language: mr\n"
+"X-Crowdin-File: /main/locales/en-US.po\n"
+"X-Crowdin-File-ID: 518\n"
+
+#. js-lingui-explicit-id
+#: src/routes/dashboard/resumes/index.tsx
+msgid "Last Updated"
+msgstr "शेवटचा अपडेट केलेला वेळ"
+
+#. js-lingui-explicit-id
+#: src/routes/dashboard/resumes/index.tsx
+msgid "Created"
+msgstr "तयार केले"
+
+#. js-lingui-explicit-id
+#: src/routes/dashboard/resumes/index.tsx
+msgid "Name"
+msgstr "नाव"
+
+#. placeholder {0}: section.items.length
+#: src/routes/builder/$resumeId/-sidebar/left/sections/custom.tsx
+msgid "{0, plural, one {# item} other {# items}}"
+msgstr "{0, plural, one {# वस्तू} other {# वस्तू}}"
+
+#. placeholder {0}: item.roles.length
+#: src/routes/builder/$resumeId/-sidebar/left/sections/experience.tsx
+msgid "{0, plural, one {# role} other {# roles}}"
+msgstr "{0, plural, one {# भूमिका} other {# भूमिका}}"
+
+#. placeholder {0}: quota.used
+#. placeholder {1}: quota.limit
+#: src/routes/dashboard/job-search/index.tsx
+msgid "{0} / {1} requests used"
+msgstr "{0} / {1} वापरलेल्या विनंत्या"
+
+#. placeholder {0}: Math.floor(diffDays / 30)
+#: src/routes/dashboard/job-search/-components/job-utils.ts
+msgid "{0} months ago"
+msgstr "{0} काही महिन्यांपूर्वी"
+
+#. placeholder {0}: Math.floor(diffDays / 7)
+#: src/routes/dashboard/job-search/-components/job-utils.ts
+msgid "{0} weeks ago"
+msgstr "{0} काही आठवडे पूर्वी"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/custom.tsx
+#: src/routes/builder/$resumeId/-sidebar/left/shared/section-menu.tsx
+msgid "{column, plural, one {# Column} other {# Columns}}"
+msgstr "{column, plural, one {# स्तंभ} other {# स्तंभ}}"
+
+#: src/routes/dashboard/job-search/-components/job-utils.ts
+msgid "{diffDays} days ago"
+msgstr "{diffDays} काही दिवसांपूर्वी"
+
+#: src/routes/dashboard/settings/job-search.tsx
+msgid "{used} of {limit} requests used ({remaining} remaining)"
+msgstr "{used} {limit} वापरलेल्या विनंत्या ({remaining} उरलेल्या)"
+
+#: src/dialogs/api-key/create.tsx
+msgid "1 month"
+msgstr "1 महिना"
+
+#: src/dialogs/api-key/create.tsx
+msgid "1 year"
+msgstr "1 वर्ष"
+
+#: src/dialogs/api-key/create.tsx
+msgid "3 months"
+msgstr "3 महिने"
+
+#: src/dialogs/api-key/create.tsx
+msgid "6 months"
+msgstr "6 महिने"
+
+#: src/routes/dashboard/settings/profile.tsx
+msgid "A confirmation link has been sent to your current email address. Please check your inbox to confirm the change."
+msgstr "तुमच्या सध्याच्या ईमेल पत्त्यावर पुष्टीकरण लिंक पाठवली आहे. बदलाची पुष्टी करण्यासाठी कृपया तुमचे इनबॉक्स तपासा."
+
+#: src/routes/builder/$resumeId/-components/dock.tsx
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+msgid "A link to your resume has been copied to clipboard."
+msgstr "तुमच्या रेझ्युमेची लिंक क्लिपबोर्डवर कॉपी केली आहे."
+
+#: src/routes/dashboard/settings/profile.tsx
+msgid "A new verification link has been sent to your email address. Please check your inbox to verify your account."
+msgstr "तुमच्या ईमेल पत्त्यावर नवीन पडताळणी लिंक पाठवली आहे. तुमचे खाते पडताळण्यासाठी कृपया इनबॉक्स तपासा."
+
+#: src/dialogs/resume/index.tsx
+#: src/dialogs/resume/index.tsx
+msgid "A resume with this slug already exists."
+msgstr "या slug सह रेझ्युमे आधीच अस्तित्वात आहे."
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/page.tsx
+msgid "A4"
+msgstr "A4"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/information.tsx
+msgid "About ProTalent CV"
+msgstr ""
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/custom-fields.tsx
+msgid "Add a custom field"
+msgstr "सानुकूल फील्ड जोडा"
+
+#: src/components/input/url-input.tsx
+msgid "Add a label to the URL"
+msgstr "URL ला लेबल जोडा"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/awards.tsx
+msgid "Add a new award"
+msgstr "नवीन पुरस्कार जोडा"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/certifications.tsx
+msgid "Add a new certification"
+msgstr "नवीन प्रमाणपत्र जोडा"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/custom.tsx
+msgid "Add a new custom section"
+msgstr "नवीन सानुकूल विभाग जोडा"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/education.tsx
+msgid "Add a new education"
+msgstr "नवीन शैक्षणिक माहिती जोडा"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/experience.tsx
+msgid "Add a new experience"
+msgstr "नवीन अनुभव जोडा"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/interests.tsx
+msgid "Add a new interest"
+msgstr "नवीन आवड जोडा"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/custom.tsx
+#: src/routes/builder/$resumeId/-sidebar/left/shared/section-menu.tsx
+msgid "Add a new item"
+msgstr "नवीन वस्तू जोडा"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/languages.tsx
+msgid "Add a new language"
+msgstr "नवीन भाषा जोडा"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/profiles.tsx
+msgid "Add a new profile"
+msgstr "नवीन प्रोफाईल जोडा"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/projects.tsx
+msgid "Add a new project"
+msgstr "नवीन प्रोजेक्ट जोडा"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/publications.tsx
+msgid "Add a new publication"
+msgstr "नवीन प्रकाशन जोडा"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/references.tsx
+msgid "Add a new reference"
+msgstr "नवीन रेफरन्स जोडा"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/skills.tsx
+msgid "Add a new skill"
+msgstr "नवीन कौशल्य जोडा"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/volunteer.tsx
+msgid "Add a new volunteer experience"
+msgstr "नवीन स्वयंसेवी अनुभव जोडा"
+
+#: src/components/input/rich-input.tsx
+msgid "Add Column After"
+msgstr "नंतर स्तंभ जोडा"
+
+#: src/components/input/rich-input.tsx
+msgid "Add Column Before"
+msgstr "आधी स्तंभ जोडा"
+
+#: src/dialogs/resume/sections/experience.tsx
+msgid "Add multiple roles to show career progression at the same company."
+msgstr "एकाच कंपनीत करिअर प्रगती दर्शवण्यासाठी अनेक भूमिका जोडा."
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/layout/pages.tsx
+msgid "Add Page"
+msgstr "पान जोडा"
+
+#: src/dialogs/resume/sections/experience.tsx
+msgid "Add Role"
+msgstr "भूमिका जोडा"
+
+#: src/components/input/rich-input.tsx
+msgid "Add Row After"
+msgstr "नंतर ओळ जोडा"
+
+#: src/components/input/rich-input.tsx
+msgid "Add Row Before"
+msgstr "आधी ओळ जोडा"
+
+#. placeholder {0}: skillsToSync.length
+#: src/routes/dashboard/job-search/-components/tailor-dialog.tsx
+msgid "Added {0} new skills to your original resume"
+msgstr "तुमच्या मूळ बायोडाटामध्ये नवीन कौशल्ये जोडली: {0}"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Advanced Filters"
+msgstr "प्रगत फिल्टर"
+
+#: src/utils/locale.ts
+msgid "Afrikaans"
+msgstr "आफ्रिकान्स"
+
+#: src/dialogs/resume/import.tsx
+#: src/dialogs/resume/import.tsx
+msgid "AI"
+msgstr "AI"
+
+#: src/routes/dashboard/job-search/-components/tailor-dialog.tsx
+msgid "AI returned some invalid references"
+msgstr "एआयने काही अमान्य संदर्भ परत केले"
+
+#: src/utils/locale.ts
+msgid "Albanian"
+msgstr "अल्बेनियन"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+msgid "Allow Public Access"
+msgstr "सार्वजनिक अ‍ॅक्सेस परवानगी द्या"
+
+#: src/routes/auth/register.tsx
+msgid "Already have an account? <0/>"
+msgstr "आधीच खाते आहे? <0/>"
+
+#: src/utils/locale.ts
+msgid "Amharic"
+msgstr "अम्हारिक"
+
+#: src/components/layout/error-screen.tsx
+#: src/components/layout/not-found-screen.tsx
+msgid "An error occurred while loading the page."
+msgstr "पान लोड करताना एरर आली."
+
+#: src/dialogs/resume/import.tsx
+msgid "An unknown error occurred while importing your resume."
+msgstr "तुमचा रेझ्युमे इम्पोर्ट करताना अज्ञात एरर आली."
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Any level"
+msgstr "कोणत्याही स्तरावर"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Any time"
+msgstr "कधीही"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Any type"
+msgstr "कोणत्याही प्रकारचा"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+msgid "Anyone visiting the resume's public URL must enter this password to access it."
+msgstr "रेझ्युमेच्या सार्वजनिक URL वर येणाऱ्या कोणालाही हा रेझ्युमे पाहण्यासाठी हे पासवर्ड टाकणे आवश्यक आहे."
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+msgid "Anyone who has the resume's public URL will be able to view and download your resume without entering a password."
+msgstr "ज्यांच्याकडे रेझ्युमेचा सार्वजनिक URL असेल ते कोणीही पासवर्ड न टाकता तुमचा रेझ्युमे पाहू आणि डाउनलोड करू शकतात."
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+msgid "Anyone with the link can view and download the resume."
+msgstr "ही लिंक ज्यांच्याकडे असेल ते हा रेझ्युमे पाहू व डाउनलोड करू शकतात."
+
+#: src/routes/dashboard/settings/ai.tsx
+msgid "API Key"
+msgstr "API Key"
+
+#: src/components/command-palette/pages/navigation.tsx
+#: src/components/command-palette/pages/navigation.tsx
+#: src/routes/dashboard/-components/sidebar.tsx
+#: src/routes/dashboard/settings/api-keys.tsx
+msgid "API Keys"
+msgstr "API Keys"
+
+#: src/routes/dashboard/settings/job-search.tsx
+msgid "API Usage"
+msgstr "एपीआय वापर"
+
+#: src/routes/dashboard/-components/sidebar.tsx
+msgid "App"
+msgstr "अ‍ॅप"
+
+#: src/routes/dashboard/job-search/-components/job-detail.tsx
+msgid "Apply"
+msgstr "लागू करा"
+
+#: src/routes/dashboard/job-search/-components/job-detail.tsx
+msgid "Apply Link"
+msgstr "अनुप्रयोग लिंक"
+
+#: src/routes/dashboard/job-search/-components/job-detail.tsx
+msgid "Apply Via"
+msgstr "मार्गे अर्ज करा"
+
+#: src/utils/locale.ts
+msgid "Arabic"
+msgstr "अरबी"
+
+#: src/hooks/use-form-blocker.tsx
+msgid "Are you sure you want to close this dialog?"
+msgstr "तुम्हाला हा संवाद बंद करायचा आहे का?"
+
+#: src/routes/dashboard/settings/api-keys.tsx
+#~ msgid "Are you sure you want to delete this API key?"
+#~ msgstr "तुम्हाला ही API key नक्की काढून टाकायची आहे का?"
+
+#: src/routes/builder/$resumeId/-components/header.tsx
+#: src/routes/dashboard/resumes/-components/menus/context-menu.tsx
+#: src/routes/dashboard/resumes/-components/menus/dropdown-menu.tsx
+msgid "Are you sure you want to delete this resume?"
+msgstr "तुम्हाला हा रेझ्युमे नक्की काढून टाकायचा आहे का?"
+
+#: src/routes/dashboard/settings/danger-zone.tsx
+msgid "Are you sure you want to delete your account?"
+msgstr "तुम्हाला तुमचे खाते नक्की काढून टाकायचे आहे का?"
+
+#: src/routes/builder/$resumeId/-components/header.tsx
+#: src/routes/dashboard/resumes/-components/menus/context-menu.tsx
+#: src/routes/dashboard/resumes/-components/menus/dropdown-menu.tsx
+msgid "Are you sure you want to lock this resume?"
+msgstr "तुम्हाला हा रेझ्युमे नक्की लॉक करायचा आहे का?"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+msgid "Are you sure you want to remove password protection?"
+msgstr "तुम्हाला पासवर्ड संरक्षण नक्की काढून टाकायचे आहे का?"
+
+#: src/dialogs/resume/sections/education.tsx
+msgid "Area of Study"
+msgstr "अभ्यासाचे क्षेत्र"
+
+#: src/components/command-palette/pages/navigation.tsx
+#: src/components/command-palette/pages/navigation.tsx
+#: src/routes/dashboard/-components/sidebar.tsx
+#: src/routes/dashboard/settings/ai.tsx
+msgid "Artificial Intelligence"
+msgstr "कृत्रिम बुद्धिमत्ता"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/picture.tsx
+msgid "Aspect Ratio"
+msgstr "प्रसर गुणोत्तर"
+
+#: src/components/command-palette/pages/navigation.tsx
+#: src/components/command-palette/pages/navigation.tsx
+#: src/routes/dashboard/-components/sidebar.tsx
+#: src/routes/dashboard/settings/authentication/index.tsx
+msgid "Authentication"
+msgstr "ओथेंटिकेशन"
+
+#: src/dialogs/resume/sections/award.tsx
+msgctxt "(noun) person, organization, or entity that gives an award"
+msgid "Awarder"
+msgstr "पुरस्कार दाता"
+
+#: src/dialogs/resume/sections/custom.tsx
+#: src/utils/resume/section.tsx
+msgid "Awards"
+msgstr "पुरस्कार"
+
+#: src/utils/locale.ts
+msgid "Azerbaijani"
+msgstr "अझरबैजानी"
+
+#: src/routes/auth/verify-2fa.tsx
+msgid "Back to Login"
+msgstr "लॉगिनला परत या"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/design.tsx
+msgid "Background Color"
+msgstr "पार्श्वभूमीचा रंग"
+
+#: src/dialogs/auth/enable-two-factor.tsx
+msgid "Backup codes copied to clipboard."
+msgstr "बॅकअप कोड्स क्लिपबोर्डवर कॉपी केले."
+
+#: src/routes/dashboard/settings/ai.tsx
+msgid "Base URL (Optional)"
+msgstr "बेस URL (ऐच्छिक)"
+
+#: src/utils/resume/section.tsx
+msgid "Basics"
+msgstr "मूलभूत"
+
+#: src/routes/dashboard/job-search/-components/job-detail.tsx
+msgid "Benefits"
+msgstr "फायदे"
+
+#: src/utils/locale.ts
+msgid "Bengali"
+msgstr "बंगाली"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/typography.tsx
+msgctxt "Body Text (paragraphs, lists, etc.)"
+msgid "Body"
+msgstr "बॉडी"
+
+#: src/components/input/rich-input.tsx
+msgid "Bold"
+msgstr "जाड (Bold)"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/picture.tsx
+msgid "Border Radius"
+msgstr "सीमेची त्रिज्या"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/picture.tsx
+msgid "Border Width"
+msgstr "सीमेची जाडी"
+
+#: src/components/command-palette/index.tsx
+msgid "Builder Command Palette"
+msgstr "बिल्डर कमांड पॅलेट"
+
+#: src/utils/locale.ts
+msgid "Bulgarian"
+msgstr "बल्गेरियन"
+
+#: src/components/input/rich-input.tsx
+msgid "Bullet List"
+msgstr "बुलेट यादी"
+
+#: src/dialogs/auth/enable-two-factor.tsx
+#: src/dialogs/resume/sections/award.tsx
+#: src/dialogs/resume/sections/award.tsx
+#: src/dialogs/resume/sections/certification.tsx
+#: src/dialogs/resume/sections/certification.tsx
+#: src/dialogs/resume/sections/cover-letter.tsx
+#: src/dialogs/resume/sections/cover-letter.tsx
+#: src/dialogs/resume/sections/custom.tsx
+#: src/dialogs/resume/sections/custom.tsx
+#: src/dialogs/resume/sections/education.tsx
+#: src/dialogs/resume/sections/education.tsx
+#: src/dialogs/resume/sections/experience.tsx
+#: src/dialogs/resume/sections/experience.tsx
+#: src/dialogs/resume/sections/interest.tsx
+#: src/dialogs/resume/sections/interest.tsx
+#: src/dialogs/resume/sections/language.tsx
+#: src/dialogs/resume/sections/language.tsx
+#: src/dialogs/resume/sections/profile.tsx
+#: src/dialogs/resume/sections/profile.tsx
+#: src/dialogs/resume/sections/project.tsx
+#: src/dialogs/resume/sections/project.tsx
+#: src/dialogs/resume/sections/publication.tsx
+#: src/dialogs/resume/sections/publication.tsx
+#: src/dialogs/resume/sections/reference.tsx
+#: src/dialogs/resume/sections/reference.tsx
+#: src/dialogs/resume/sections/skill.tsx
+#: src/dialogs/resume/sections/skill.tsx
+#: src/dialogs/resume/sections/summary-item.tsx
+#: src/dialogs/resume/sections/summary-item.tsx
+#: src/dialogs/resume/sections/volunteer.tsx
+#: src/dialogs/resume/sections/volunteer.tsx
+#: src/hooks/use-prompt.tsx
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+#: src/routes/dashboard/job-search/-components/tailor-dialog.tsx
+#: src/routes/dashboard/settings/danger-zone.tsx
+#: src/routes/dashboard/settings/profile.tsx
+msgid "Cancel"
+msgstr "रद्द करा"
+
+#: src/utils/locale.ts
+msgid "Catalan"
+msgstr "कॅटालन"
+
+#: src/components/input/rich-input.tsx
+msgid "Center Align"
+msgstr "मधोमध जुळवा"
+
+#: src/routes/builder/$resumeId/-components/dock.tsx
+msgid "Center view"
+msgstr "व्ह्यू केंद्रावर आणा"
+
+#: src/dialogs/resume/sections/custom.tsx
+#: src/utils/resume/section.tsx
+msgid "Certifications"
+msgstr "प्रमाणपत्रे"
+
+#: src/components/command-palette/pages/preferences/index.tsx
+msgid "Change language to..."
+msgstr "भाषा बदला..."
+
+#: src/components/command-palette/pages/preferences/index.tsx
+msgid "Change theme to..."
+msgstr "थीम बदला..."
+
+#: src/dialogs/resume/index.tsx
+msgid "Changed your mind? Rename your resume to something more descriptive."
+msgstr "मत बदलले आहे का? तुमच्या रेझ्युमेला अधिक वर्णनात्मक असे नवीन नाव द्या."
+
+#: src/routes/auth/forgot-password.tsx
+msgid "Check your email for a link to reset your password."
+msgstr "तुमचा पासवर्ड रिसेट करण्यासाठीच्या लिंकसाठी तुमचे ईमेल तपासा."
+
+#: src/routes/auth/register.tsx
+msgid "Check your email for a link to verify your account."
+msgstr "तुमचे खाते पडताळण्यासाठीच्या लिंकसाठी तुमचे ईमेल तपासा."
+
+#: src/utils/locale.ts
+msgid "Chinese (Simplified)"
+msgstr "चीनी (सुलभ)"
+
+#: src/utils/locale.ts
+msgid "Chinese (Traditional)"
+msgstr "चीनी (परंपरागत)"
+
+#: src/components/level/combobox.tsx
+msgid "Circle"
+msgstr "गोलाकार"
+
+#: src/routes/dashboard/job-search/index.tsx
+msgid "Clear all"
+msgstr "सर्व मिटवा"
+
+#: src/dialogs/resume/import.tsx
+msgid "Click here to select a file to import"
+msgstr "इम्पोर्ट करण्यासाठी फाईल निवडण्यासाठी येथे क्लिक करा"
+
+#: src/components/ui/dialog.tsx
+#: src/components/ui/sheet.tsx
+msgid "Close"
+msgstr "बंद करा"
+
+#: src/components/input/rich-input.tsx
+msgid "Code Block"
+msgstr "कोड ब्लॉक"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/custom.tsx
+#: src/routes/builder/$resumeId/-sidebar/left/shared/section-menu.tsx
+msgid "Columns"
+msgstr "स्तंभ"
+
+#: src/dialogs/resume/sections/experience.tsx
+msgid "Company"
+msgstr "कंपनी"
+
+#: src/routes/dashboard/job-search/index.tsx
+msgid "Configure Job Search"
+msgstr "नोकरी शोध कॉन्फिगर करा"
+
+#: src/dialogs/api-key/create.tsx
+#: src/hooks/use-prompt.tsx
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+#: src/routes/dashboard/settings/danger-zone.tsx
+msgid "Confirm"
+msgstr "पुष्टी करा"
+
+#: src/routes/dashboard/settings/authentication/-components/social-provider.tsx
+msgid "Connect"
+msgstr "कनेक्ट"
+
+#: src/dialogs/resume/sections/cover-letter.tsx
+#: src/dialogs/resume/sections/summary-item.tsx
+msgid "Content"
+msgstr "सामग्री"
+
+#: src/dialogs/auth/enable-two-factor.tsx
+#: src/dialogs/auth/enable-two-factor.tsx
+#: src/dialogs/auth/enable-two-factor.tsx
+#: src/routes/auth/register.tsx
+msgid "Continue"
+msgstr "पुढे"
+
+#: src/routes/dashboard/resumes/-components/cards/import-card.tsx
+#: src/routes/dashboard/resumes/-components/list-view.tsx
+msgid "Continue where you left off"
+msgstr "जिथे थांबला होतात तिथूनच सुरू करा"
+
+#: src/dialogs/resume/import.tsx
+msgid "Continue where you left off by importing an existing resume you created using ProTalent CV or any another resume builder. Supported formats include PDF, Microsoft Word, as well as JSON files from ProTalent CV."
+msgstr ""
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Contractor"
+msgstr "ठेकेदार"
+
+#: src/dialogs/auth/enable-two-factor.tsx
+msgid "Copy"
+msgstr "कॉपी करा"
+
+#: src/dialogs/auth/enable-two-factor.tsx
+msgid "Copy and store these backup codes in case you lose your device."
+msgstr "तुमचे डिव्हाइस हरवल्यासाठी, हे बॅकअप कोड्स कॉपी करून सुरक्षित ठिकाणी साठवा."
+
+#: src/dialogs/auth/enable-two-factor.tsx
+msgid "Copy Backup Codes"
+msgstr "बॅकअप कोड्स कॉपी करा"
+
+#: src/dialogs/api-key/create.tsx
+msgid "Copy this secret key and use it in your applications to access your data."
+msgstr "ही गुप्त key कॉपी करा आणि तुमच्या अ‍ॅप्लिकेशन्समध्ये तुमचा डेटा अ‍ॅक्सेस करण्यासाठी वापरा."
+
+#: src/routes/builder/$resumeId/-components/dock.tsx
+msgid "Copy URL"
+msgstr "URL कॉपी करा"
+
+#: src/routes/dashboard/job-search/index.tsx
+msgid "Could not fetch jobs"
+msgstr "नोकऱ्या मिळवता आल्या नाहीत"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Country"
+msgstr "देश"
+
+#: src/dialogs/resume/sections/custom.tsx
+#: src/utils/resume/section.tsx
+msgid "Cover Letter"
+msgstr "कव्हर लेटर"
+
+#: src/dialogs/api-key/create.tsx
+#: src/dialogs/resume/index.tsx
+#: src/dialogs/resume/sections/award.tsx
+#: src/dialogs/resume/sections/certification.tsx
+#: src/dialogs/resume/sections/cover-letter.tsx
+#: src/dialogs/resume/sections/custom.tsx
+#: src/dialogs/resume/sections/education.tsx
+#: src/dialogs/resume/sections/experience.tsx
+#: src/dialogs/resume/sections/interest.tsx
+#: src/dialogs/resume/sections/language.tsx
+#: src/dialogs/resume/sections/profile.tsx
+#: src/dialogs/resume/sections/project.tsx
+#: src/dialogs/resume/sections/publication.tsx
+#: src/dialogs/resume/sections/reference.tsx
+#: src/dialogs/resume/sections/skill.tsx
+#: src/dialogs/resume/sections/summary-item.tsx
+#: src/dialogs/resume/sections/volunteer.tsx
+msgid "Create"
+msgstr "बनवा"
+
+#: src/routes/auth/register.tsx
+msgid "Create a new account"
+msgstr "नवीन खाते बनवा"
+
+#: src/dialogs/api-key/create.tsx
+#: src/routes/dashboard/settings/api-keys.tsx
+msgid "Create a new API key"
+msgstr "नवीन API key बनवा"
+
+#: src/dialogs/resume/sections/award.tsx
+msgid "Create a new award"
+msgstr "नवीन वस्तू बनवा"
+
+#: src/dialogs/resume/sections/certification.tsx
+msgid "Create a new certification"
+msgstr "नवीन प्रमाणपत्र बनवा"
+
+#: src/dialogs/resume/sections/cover-letter.tsx
+msgid "Create a new cover letter"
+msgstr "नवीन कव्हर लेटर तयार करा"
+
+#: src/dialogs/resume/sections/custom.tsx
+msgid "Create a new custom section"
+msgstr "नवीन सानुकूल विभाग बनवा"
+
+#: src/dialogs/resume/sections/education.tsx
+msgid "Create a new education"
+msgstr "नवीन शैक्षणिक नोंद बनवा"
+
+#: src/dialogs/resume/sections/experience.tsx
+msgid "Create a new experience"
+msgstr "नवीन अनुभव बनवा"
+
+#: src/dialogs/resume/sections/interest.tsx
+msgid "Create a new interest"
+msgstr "नवीन आवड बनवा"
+
+#: src/dialogs/resume/sections/language.tsx
+msgid "Create a new language"
+msgstr "नवीन भाषा बनवा"
+
+#: src/dialogs/resume/sections/profile.tsx
+msgid "Create a new profile"
+msgstr "नवीन प्रोफाईल बनवा"
+
+#: src/dialogs/resume/sections/project.tsx
+msgid "Create a new project"
+msgstr "नवीन प्रोजेक्ट बनवा"
+
+#: src/dialogs/resume/sections/publication.tsx
+msgid "Create a new publication"
+msgstr "नवीन प्रकाशन बनवा"
+
+#: src/dialogs/resume/sections/reference.tsx
+msgid "Create a new reference"
+msgstr "नवीन रेफरन्स बनवा"
+
+#: src/components/command-palette/pages/resumes.tsx
+#: src/dialogs/resume/index.tsx
+#: src/routes/dashboard/resumes/-components/cards/create-card.tsx
+#: src/routes/dashboard/resumes/-components/list-view.tsx
+msgid "Create a new resume"
+msgstr "नवीन रेझ्युमे बनवा"
+
+#: src/dialogs/resume/sections/skill.tsx
+msgid "Create a new skill"
+msgstr "नवीन कौशल्य बनवा"
+
+#: src/dialogs/resume/sections/summary-item.tsx
+msgid "Create a new summary item"
+msgstr "नवीन सारांश आयटम तयार करा"
+
+#: src/dialogs/resume/sections/volunteer.tsx
+msgid "Create a new volunteer experience"
+msgstr "नवीन स्वयंसेवी अनुभव बनवा"
+
+#: src/dialogs/resume/index.tsx
+msgid "Create a Sample Resume"
+msgstr "नमुना रेझ्युमे बनवा"
+
+#: src/dialogs/api-key/create.tsx
+msgid "Creating your API key..."
+msgstr "तुमची API key तयार केली जात आहे..."
+
+#: src/dialogs/resume/index.tsx
+#: src/dialogs/resume/index.tsx
+msgid "Creating your resume..."
+msgstr "तुमचा रेझ्युमे तयार केला जात आहे..."
+
+#: src/dialogs/auth/change-password.tsx
+msgid "Current Password"
+msgstr "वर्तमान पासवर्ड"
+
+#: src/utils/resume/section.tsx
+msgid "Custom CSS"
+msgstr "सानुकूल CSS"
+
+#: src/utils/resume/section.tsx
+msgid "Custom Sections"
+msgstr "सानुकूल विभाग"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/information.tsx
+msgid "ProTalent CV is a free CV and resume builder by DPN Media Works. Build, customize, and share polished resumes in minutes."
+msgstr ""
+
+#: src/utils/locale.ts
+msgid "Czech"
+msgstr "चेक"
+
+#: src/components/command-palette/pages/navigation.tsx
+#: src/components/command-palette/pages/navigation.tsx
+#: src/routes/dashboard/-components/sidebar.tsx
+#: src/routes/dashboard/settings/danger-zone.tsx
+msgid "Danger Zone"
+msgstr "धोकादायक क्षेत्र"
+
+#: src/utils/locale.ts
+msgid "Danish"
+msgstr "डॅनिश"
+
+#: src/components/user/dropdown-menu.tsx
+#: src/utils/theme.ts
+msgid "Dark"
+msgstr "गडद"
+
+#: src/components/command-palette/pages/preferences/theme.tsx
+msgid "Dark theme"
+msgstr "गडद थीम"
+
+#: src/dialogs/resume/sections/award.tsx
+#: src/dialogs/resume/sections/certification.tsx
+#: src/dialogs/resume/sections/publication.tsx
+msgid "Date"
+msgstr "तारीख"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Date Posted"
+msgstr "पोस्ट केलेली तारीख"
+
+#: src/dialogs/resume/sections/education.tsx
+msgid "Degree"
+msgstr "पदवी"
+
+#: src/routes/builder/$resumeId/-components/header.tsx
+#: src/routes/builder/$resumeId/-sidebar/left/sections/custom.tsx
+#: src/routes/builder/$resumeId/-sidebar/left/shared/section-item.tsx
+#: src/routes/dashboard/resumes/-components/menus/context-menu.tsx
+#: src/routes/dashboard/resumes/-components/menus/dropdown-menu.tsx
+msgid "Delete"
+msgstr "हटवा"
+
+#: src/routes/dashboard/settings/danger-zone.tsx
+msgid "Delete Account"
+msgstr "खाते हटवा"
+
+#: src/components/input/rich-input.tsx
+msgid "Delete Column"
+msgstr "स्तंभ हटवा"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/layout/pages.tsx
+msgid "Delete Page"
+msgstr "पान काढून टाका"
+
+#: src/components/input/rich-input.tsx
+msgid "Delete Row"
+msgstr "ओळ हटवा"
+
+#: src/components/input/rich-input.tsx
+msgid "Delete Table"
+msgstr "टेबल हटवा"
+
+#: src/routes/dashboard/settings/danger-zone.tsx
+msgid "Deleting your account..."
+msgstr "तुमचे खाते हटवले जात आहे..."
+
+#: src/routes/dashboard/settings/api-keys.tsx
+#~ msgid "Deleting your API key..."
+#~ msgstr "तुमची API key हटवली जात आहे..."
+
+#: src/routes/builder/$resumeId/-components/header.tsx
+#: src/routes/dashboard/resumes/-components/menus/context-menu.tsx
+#: src/routes/dashboard/resumes/-components/menus/dropdown-menu.tsx
+msgid "Deleting your resume..."
+msgstr "तुमचा रेझ्युमे हटवला जात आहे..."
+
+#: src/dialogs/resume/sections/award.tsx
+#: src/dialogs/resume/sections/certification.tsx
+#: src/dialogs/resume/sections/education.tsx
+#: src/dialogs/resume/sections/experience.tsx
+#: src/dialogs/resume/sections/experience.tsx
+#: src/dialogs/resume/sections/project.tsx
+#: src/dialogs/resume/sections/publication.tsx
+#: src/dialogs/resume/sections/reference.tsx
+#: src/dialogs/resume/sections/volunteer.tsx
+#: src/routes/dashboard/job-search/-components/job-detail.tsx
+msgid "Description"
+msgstr "वर्णन"
+
+#: src/utils/resume/section.tsx
+msgid "Design"
+msgstr "डिझाइन"
+
+#: src/routes/dashboard/job-search/-components/job-detail.tsx
+msgid "Direct"
+msgstr "थेट"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Direct Apply"
+msgstr "थेट लागू करा"
+
+#: src/routes/dashboard/job-search/-components/use-job-search.ts
+msgid "Direct apply only"
+msgstr "फक्त थेट लागू करा"
+
+#: src/dialogs/auth/disable-two-factor.tsx
+#: src/routes/dashboard/settings/authentication/-components/two-factor.tsx
+msgid "Disable 2FA"
+msgstr "2FA अक्षम करा"
+
+#: src/dialogs/auth/disable-two-factor.tsx
+msgid "Disable Two-Factor Authentication"
+msgstr "दुहेरी घटक ओथेंटिकेशन अक्षम करा"
+
+#: src/routes/dashboard/settings/ai.tsx
+msgid "Disabled"
+msgstr "अक्षम केलेले"
+
+#: src/dialogs/auth/disable-two-factor.tsx
+msgid "Disabling two-factor authentication..."
+msgstr "दुहेरी घटक ओथेंटिकेशन अक्षम केले जात आहे..."
+
+#: src/routes/dashboard/settings/authentication/-components/social-provider.tsx
+msgid "Disconnect"
+msgstr "डिस्कनेक्ट"
+
+#: src/routes/auth/login.tsx
+msgid "Don't have an account? <0/>"
+msgstr "खाते नाही? <0/>"
+
+#: src/dialogs/auth/enable-two-factor.tsx
+#: src/routes/$username/$slug.tsx
+msgid "Download"
+msgstr "डाउनलोड"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/export.tsx
+msgid "Download a copy of your resume as a Word document. Use this file to further customize your resume in Microsoft Word or Google Docs."
+msgstr "आपल्या रिझ्युमेची एक प्रत Word दस्तऐवज म्हणून डाउनलोड करा. Microsoft Word किंवा Google Docs मध्ये आपल्या रिझ्युमेला अधिक सानुकूलित करण्यासाठी ही फाइल वापरा."
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/export.tsx
+msgid "Download a copy of your resume in JSON format. Use this file for backup or to import your resume into other applications, including AI assistants."
+msgstr "तुमचा रेझ्युमे JSON फॉर्मॅटमध्ये कॉपी म्हणून डाउनलोड करा. ही फाईल बॅकअपसाठी किंवा AI सहाय्यकांसह इतर अ‍ॅप्लिकेशन्समध्ये रेझ्युमे इम्पोर्ट करण्यासाठी वापरा."
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/export.tsx
+msgid "Download a copy of your resume in PDF format. Use this file for printing or to easily share your resume with recruiters."
+msgstr "तुमचा रेझ्युमे PDF फॉर्मॅटमध्ये कॉपी म्हणून डाउनलोड करा. ही फाईल प्रिंट करण्यासाठी किंवा रिक्रूटर्सना सहजपणे शेअर करण्यासाठी वापरा."
+
+#: src/routes/builder/$resumeId/-components/dock.tsx
+msgid "Download DOCX"
+msgstr "DOCX डाउनलोड करा"
+
+#: src/routes/builder/$resumeId/-components/dock.tsx
+msgid "Download JSON"
+msgstr "JSON डाउनलोड करा"
+
+#: src/routes/builder/$resumeId/-components/dock.tsx
+msgid "Download PDF"
+msgstr "PDF डाउनलोड करा"
+
+#: src/routes/$username/$slug.tsx
+msgid "Downloading..."
+msgstr "डाउनलोड करत आहे..."
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/statistics.tsx
+msgid "Downloads"
+msgstr "डाउनलोड"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/information.tsx
+msgid "DPN Media Works"
+msgstr ""
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/layout/pages.tsx
+msgid "Drag and drop sections here to move them between columns"
+msgstr "विभागांना एका स्तंभातून दुसऱ्या स्तंभात हलवण्यासाठी त्यांना येथे ड्रॅग आणि ड्रॉप करा"
+
+#: src/dialogs/resume/index.tsx
+#: src/routes/builder/$resumeId/-components/header.tsx
+#: src/routes/builder/$resumeId/-sidebar/left/sections/custom.tsx
+#: src/routes/builder/$resumeId/-sidebar/left/shared/section-item.tsx
+#: src/routes/dashboard/resumes/-components/menus/context-menu.tsx
+#: src/routes/dashboard/resumes/-components/menus/dropdown-menu.tsx
+msgid "Duplicate"
+msgstr "नक्कल"
+
+#: src/dialogs/resume/index.tsx
+msgid "Duplicate Resume"
+msgstr "रेझ्युमेची नक्कल तयार करा"
+
+#: src/dialogs/resume/index.tsx
+msgid "Duplicate your resume to create a new one, just like the original."
+msgstr "तुमचा रेझ्युमे डुप्लिकेट करून अगदी मूळसारखाच नवीन रेझ्युमे तयार करा."
+
+#: src/dialogs/resume/index.tsx
+msgid "Duplicating your resume..."
+msgstr "तुमचा रेझ्युमे डुप्लिकेट केला जात आहे..."
+
+#: src/utils/locale.ts
+msgid "Dutch"
+msgstr "डच"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "e.g. 150000"
+msgstr "उदा. १५००००"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "e.g. 50000"
+msgstr "उदा. ५००००"
+
+#: src/routes/dashboard/job-search/index.tsx
+msgid "e.g. frontend developer jobs in Berlin"
+msgstr "उदा. बर्लिनमधील फ्रंटएंड डेव्हलपर नोकऱ्या"
+
+#: src/dialogs/resume/sections/custom.tsx
+#: src/utils/resume/section.tsx
+msgid "Education"
+msgstr "शिक्षण"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/basics.tsx
+msgid "Email"
+msgstr "ईमेल"
+
+#: src/routes/auth/forgot-password.tsx
+#: src/routes/auth/login.tsx
+#: src/routes/auth/register.tsx
+#: src/routes/dashboard/settings/profile.tsx
+msgid "Email Address"
+msgstr "ईमेल पत्ता"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/css.tsx
+msgctxt "Turn On/Apply Custom CSS"
+msgid "Enable"
+msgstr "सक्षम करा"
+
+#: src/routes/dashboard/settings/authentication/-components/two-factor.tsx
+msgid "Enable 2FA"
+msgstr "2FA सक्षम करा"
+
+#: src/routes/dashboard/settings/ai.tsx
+msgid "Enable AI Features"
+msgstr "AI फिचर्स सक्षम करा"
+
+#: src/dialogs/auth/enable-two-factor.tsx
+msgid "Enable Two-Factor Authentication"
+msgstr "दुहेरी घटक ओथेंटिकेशन सक्षम करा"
+
+#: src/routes/dashboard/settings/ai.tsx
+msgid "Enabled"
+msgstr "सक्षम केलेले"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+msgid "Enabling password protection..."
+msgstr "पासवर्ड संरक्षण सक्षम केले जात आहे..."
+
+#: src/dialogs/auth/enable-two-factor.tsx
+msgid "Enabling two-factor authentication..."
+msgstr "दुहेरी घटक ओथेंटिकेशन सक्षम केले जात आहे..."
+
+#: src/utils/locale.ts
+msgid "English"
+msgstr "इंग्रजी"
+
+#: src/utils/locale.ts
+msgid "English (United Kingdom)"
+msgstr "इंग्रजी (युनायटेड किंगडम)"
+
+#: src/routes/auth/verify-2fa-backup.tsx
+msgid "Enter one of your saved backup codes to access your account"
+msgstr "तुमचे जतन केलेले बॅकअप कोड्सपैकी एक टाका आणि तुमच्या खात्यात प्रवेश करा"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/custom-fields.tsx
+msgid "Enter the URL to link to"
+msgstr "लिंक करायची URL टाका"
+
+#: src/routes/auth/verify-2fa.tsx
+msgid "Enter the verification code from your authenticator app"
+msgstr "तुमच्या ओथेंटिकेटर अ‍ॅपवरील पडताळणी कोड प्रविष्ट करा"
+
+#: src/dialogs/auth/change-password.tsx
+msgid "Enter your current password and a new password to update your account."
+msgstr "तुमच्या खात्याचे अपडेट करण्यासाठी सध्याचा आणि नवीन पासवर्ड टाका."
+
+#: src/dialogs/auth/enable-two-factor.tsx
+msgid "Enter your password to confirm setting up two-factor authentication. When enabled, you'll need to enter a code from your authenticator app every time you log in."
+msgstr "दुहेरी घटक ओथेंटिकेशन सेटअप करण्यासाठी तुमचा पासवर्ड टाका. हे सक्षम केल्यावर, प्रत्येक वेळी लॉगिन करताना तुम्हाला ओथेंटिकेटर अ‍ॅपमधून कोड टाकावा लागेल."
+
+#: src/dialogs/auth/disable-two-factor.tsx
+msgid "Enter your password to disable two-factor authentication. Your account will be less secure without 2FA enabled."
+msgstr "दुहेरी घटक ओथेंटिकेशन अक्षम करण्यासाठी तुमचा पासवर्ड टाका. 2FA शिवाय तुमचे खाते कमी सुरक्षित राहील."
+
+#: src/routes/dashboard/settings/job-search.tsx
+msgid "Enter your RapidAPI key"
+msgstr "आपली RapidAPI की प्रविष्ट करा"
+
+#: src/routes/dashboard/settings/ai.tsx
+msgid "Everything entered here is stored locally on your browser. Your data is only sent to the server when making a request to the AI provider, and is never stored or logged on our servers."
+msgstr "इथे टाकलेली सर्व माहिती तुमच्या ब्राउझरमध्ये लोकली साठवली जाते. तुमचा डेटा फक्त AI प्रोव्हायडरकडे रिक्वेस्ट करताना सर्व्हरवर पाठवला जातो आणि आमच्या सर्व्हरवर कधीही साठवला किंवा लॉग केला जात नाही."
+
+#: src/routes/dashboard/job-search/-components/use-job-search.ts
+msgid "Exclude {value}"
+msgstr "वगळा {value}"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Exclude Companies"
+msgstr "कंपन्या वगळा"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Exclude Keywords"
+msgstr "कीवर्ड वगळा"
+
+#: src/components/input/rich-input.tsx
+msgid "Exit Fullscreen"
+msgstr "पूर्ण स्क्रीनमधून बाहेर पडा"
+
+#: src/dialogs/resume/sections/custom.tsx
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+#: src/utils/resume/section.tsx
+msgid "Experience"
+msgstr "अनुभव"
+
+#: src/dialogs/api-key/create.tsx
+msgid "Expires in"
+msgstr "समाप्त होईल"
+
+#: src/routes/dashboard/settings/api-keys.tsx
+#~ msgid "Expires on {0}"
+#~ msgstr "{0} रोजी कालबाह्य होते"
+
+#: src/routes/dashboard/settings/api-keys.tsx
+msgid "Explore the API documentation to learn how to integrate ProTalent CV with your applications. Find detailed endpoints, request examples, and authentication methods."
+msgstr ""
+
+#: src/utils/resume/section.tsx
+msgid "Export"
+msgstr "निर्यात करा"
+
+#: src/routes/dashboard/job-search/-components/tailor-dialog.tsx
+msgid "Failed to duplicate resume"
+msgstr "रिझ्युमेची प्रत तयार करण्यात अयशस्वी"
+
+#: src/dialogs/auth/enable-two-factor.tsx
+msgid "Failed to setup two-factor authentication."
+msgstr "दुहेरी घटक ओथेंटिकेशन सेटअप करण्यात अयशस्वी."
+
+#: src/routes/auth/login.tsx
+msgid "Failed to sign in. Please try again."
+msgstr "साइन इन अयशस्वी. कृपया पुन्हा प्रयत्न करा."
+
+#: src/routes/dashboard/job-search/-components/tailor-dialog.tsx
+msgid "Failed to sync skills"
+msgstr "कौशल्ये समक्रमित करण्यात अयशस्वी"
+
+#: src/routes/dashboard/resumes/index.tsx
+msgid "Filter by"
+msgstr "यावरून फिल्टर करा"
+
+#: src/utils/locale.ts
+msgid "Finnish"
+msgstr "फिन्निश"
+
+#: src/dialogs/resume/sections/language.tsx
+msgid "Fluency"
+msgstr "फ्लुएंसी"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/typography.tsx
+#: src/routes/builder/$resumeId/-sidebar/right/sections/typography.tsx
+msgid "Font Family"
+msgstr "फाँट फॅमिली"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/typography.tsx
+#: src/routes/builder/$resumeId/-sidebar/right/sections/typography.tsx
+msgid "Font Size"
+msgstr "फाँटचा आकार"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/typography.tsx
+msgid "Font Weight"
+msgstr "फाँट जाडी"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/typography.tsx
+msgid "Font Weights"
+msgstr "फाँट प्रतिरूप"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/notes.tsx
+msgid "For example, information regarding which companies you sent this resume to or the links to the job descriptions can be noted down here."
+msgstr "उदाहरणार्थ, तुम्ही हा रेझ्युमे कोणत्या कंपन्यांना पाठवला किंवा जॉब डिस्क्रिप्शनच्या लिंक्स इत्यादी माहिती येथे लिहून ठेवू शकता."
+
+#: src/dialogs/api-key/create.tsx
+msgid "For security reasons, this key will only be displayed once."
+msgstr "सुरक्षा कारणास्तव ही key फक्त एकदाच दाखवली जाईल."
+
+#: src/routes/auth/login.tsx
+msgid "Forgot Password?"
+msgstr "पासवर्ड विसरलात का?"
+
+#: src/routes/auth/forgot-password.tsx
+msgid "Forgot your password?"
+msgstr "तुमचे पासवर्ड विसरलात का?"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/page.tsx
+msgctxt "Page Format (A4, Letter or Free-Form)"
+msgid "Format"
+msgstr "स्वरूप"
+
+#: src/routes/dashboard/settings/profile.tsx
+msgid "Free Account"
+msgstr ""
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/page.tsx
+msgid "Free-Form"
+msgstr "मुक्त-स्वरूप"
+
+#: src/utils/locale.ts
+msgid "French"
+msgstr "फ्रेंच"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/layout/pages.tsx
+msgid "Full Width"
+msgstr "पूर्ण रुंदी"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Full-time"
+msgstr "पूर्णवेळ"
+
+#: src/components/input/rich-input.tsx
+msgid "Fullscreen"
+msgstr "पूर्ण स्क्रीन"
+
+#: src/dialogs/resume/index.tsx
+msgid "Generate a random name"
+msgstr "एखादे रँडम नाव तयार करा"
+
+#: src/utils/locale.ts
+msgid "German"
+msgstr "जर्मन"
+
+#: src/routes/dashboard/settings/job-search.tsx
+msgid "Get your API key from RapidAPI by subscribing to the JSearch API."
+msgstr "JSearch API ची सदस्यता घेऊन RapidAPI कडून आपली API की मिळवा."
+
+#: src/components/layout/not-found-screen.tsx
+#: src/routes/auth/verify-2fa-backup.tsx
+msgid "Go Back"
+msgstr "मागे जा"
+
+#: src/routes/dashboard/job-search/index.tsx
+msgid "Go to Settings"
+msgstr "सेटिंग्जवर जा"
+
+#: src/components/command-palette/pages/navigation.tsx
+msgid "Go to..."
+msgstr "इथे जा..."
+
+#: src/dialogs/resume/sections/education.tsx
+msgid "Grade"
+msgstr "ग्रेड"
+
+#: src/utils/locale.ts
+msgid "Greek"
+msgstr "ग्रीक"
+
+#: src/routes/dashboard/resumes/index.tsx
+msgid "Grid"
+msgstr "ग्रिड"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/typography.tsx
+msgctxt "Headings or Titles (H1, H2, H3, H4, H5, H6)"
+msgid "Heading"
+msgstr "शीर्षके"
+
+#: src/components/input/rich-input.tsx
+msgid "Heading 1"
+msgstr "हॅडिंग 1"
+
+#: src/components/input/rich-input.tsx
+msgid "Heading 2"
+msgstr "हॅडिंग 2"
+
+#: src/components/input/rich-input.tsx
+msgid "Heading 3"
+msgstr "हॅडिंग 3"
+
+#: src/components/input/rich-input.tsx
+msgid "Heading 4"
+msgstr "हॅडिंग 4"
+
+#: src/components/input/rich-input.tsx
+msgid "Heading 5"
+msgstr "हॅडिंग 5"
+
+#: src/components/input/rich-input.tsx
+msgid "Heading 6"
+msgstr "हॅडिंग 6"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/basics.tsx
+msgid "Headline"
+msgstr "मथळा"
+
+#: src/utils/locale.ts
+msgid "Hebrew"
+msgstr "हिब्रू"
+
+#: src/dialogs/resume/template/gallery.tsx
+msgid "Here's a range of resume templates for different professions and personalities. Whether you prefer modern or classic, bold or simple, there is a design to match you. Look through the options below and choose a template that fits your style."
+msgstr "वेगवेगळ्या व्यवसाय आणि व्यक्तिमत्त्वांसाठी असलेल्या साच्यांची ही एक मालिका आहे. तुम्हाला आधुनिक की क्लासिक, ठळक की साधे असे काहीही आवडत असो, तुमच्यासाठी जुळणारा एक डिझाइन येथे आहे. खालील पर्याय पहा आणि तुमच्या शैलीला सूट होणारा साचा निवडा."
+
+#: src/dialogs/api-key/create.tsx
+msgid "Here's your new API key"
+msgstr "तुमची नवीन API key येथे आहे"
+
+#: src/components/level/combobox.tsx
+#: src/dialogs/resume/sections/language.tsx
+#: src/dialogs/resume/sections/skill.tsx
+msgid "Hidden"
+msgstr "लपवलेले"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/custom.tsx
+#: src/routes/builder/$resumeId/-sidebar/left/shared/section-item.tsx
+#: src/routes/builder/$resumeId/-sidebar/left/shared/section-menu.tsx
+msgid "Hide"
+msgstr "लपवा"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/page.tsx
+msgid "Hide all icons on the resume"
+msgstr "रेझ्युमेवरील सर्व आयकन्स लपवा"
+
+#: src/components/input/rich-input.tsx
+msgid "Highlight"
+msgstr "हायलाइट"
+
+#: src/utils/locale.ts
+msgid "Hindi"
+msgstr "हिंदी"
+
+#: src/components/command-palette/pages/navigation.tsx
+#: src/components/command-palette/pages/navigation.tsx
+msgid "Home"
+msgstr "होम"
+
+#: src/routes/dashboard/settings/api-keys.tsx
+msgid "How do I use the API?"
+msgstr "मी API कसा वापरू?"
+
+#: src/utils/locale.ts
+msgid "Hungarian"
+msgstr "हंगेरीयन"
+
+#: src/components/level/combobox.tsx
+#: src/routes/builder/$resumeId/-sidebar/right/sections/design.tsx
+msgid "Icon"
+msgstr "आयकन"
+
+#: src/dialogs/resume/import.tsx
+msgid "Import"
+msgstr "आयात करा"
+
+#: src/dialogs/resume/import.tsx
+#: src/routes/dashboard/resumes/-components/cards/import-card.tsx
+#: src/routes/dashboard/resumes/-components/list-view.tsx
+msgid "Import an existing resume"
+msgstr "अस्तित्वात असलेला रेझ्युमे आयात करा"
+
+#: src/dialogs/resume/import.tsx
+msgid "Importing your resume..."
+msgstr "तुमचा रेझ्युमे इम्पोर्ट केला जात आहे..."
+
+#: src/dialogs/resume/import.tsx
+msgid "Importing..."
+msgstr "इम्पोर्ट करत आहे..."
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Include Keywords"
+msgstr "कीवर्ड्स समाविष्ट करा"
+
+#: src/utils/locale.ts
+msgid "Indonesian"
+msgstr "इंडोनेशियन"
+
+#: src/utils/resume/section.tsx
+msgid "Information"
+msgstr "माहिती"
+
+#: src/components/input/rich-input.tsx
+msgid "Inline Code"
+msgstr "इनलाइन कोड"
+
+#: src/components/input/rich-input.tsx
+msgid "Insert Table"
+msgstr "टेबल घाला"
+
+#: src/dialogs/resume/sections/custom.tsx
+#: src/utils/resume/section.tsx
+msgid "Interests"
+msgstr "आवडी"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Intern"
+msgstr "इंटर्न"
+
+#: src/dialogs/resume/sections/certification.tsx
+msgid "Issuer"
+msgstr "जारीकर्ता"
+
+#: src/utils/locale.ts
+msgid "Italian"
+msgstr "इटालियन"
+
+#: src/components/input/rich-input.tsx
+msgid "Italic"
+msgstr "तिरपे (Italic)"
+
+#: src/utils/locale.ts
+msgid "Japanese"
+msgstr "जपानी"
+
+#: src/routes/dashboard/-components/sidebar.tsx
+#: src/routes/dashboard/job-search/index.tsx
+msgid "Job Search"
+msgstr "नोकरी शोध"
+
+#: src/routes/dashboard/-components/sidebar.tsx
+#: src/routes/dashboard/settings/job-search.tsx
+msgid "Job Search API"
+msgstr "नोकरी शोध API"
+
+#: src/routes/dashboard/settings/job-search.tsx
+msgid "JSearch aggregates job listings from multiple job boards using Google for Jobs. You can filter by country (ISO alpha-2 code), date posted, job type, remote options, and experience level."
+msgstr "JSearch Google for Jobs वापरून अनेक नोकरी मंचांवरील नोकरीच्या जाहिराती एकत्र करते. आपण देश (ISO अल्फा-2 कोड), प्रकाशित तारीख, नोकरीचा प्रकार, रिमोट पर्याय आणि अनुभव पातळीनुसार फिल्टर करू शकता."
+
+#: src/routes/dashboard/settings/job-search.tsx
+msgid "JSearch API Documentation"
+msgstr "जेसर्च एपीआय दस्तऐवजीकरण"
+
+#: src/components/input/rich-input.tsx
+msgid "Justify Align"
+msgstr "समसमान जुळवा"
+
+#: src/utils/locale.ts
+msgid "Kannada"
+msgstr "कन्नड"
+
+#: src/dialogs/resume/sections/interest.tsx
+#: src/dialogs/resume/sections/skill.tsx
+msgid "Keywords"
+msgstr "कीवर्ड"
+
+#: src/utils/locale.ts
+msgid "Khmer"
+msgstr "ख्मेर"
+
+#: src/utils/locale.ts
+msgid "Korean"
+msgstr "कोरियन"
+
+#: src/components/input/url-input.tsx
+msgid "Label"
+msgstr "लेबल"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/picture.tsx
+msgid "Landscape"
+msgstr "लँडस्केप"
+
+#: src/components/command-palette/pages/preferences/language.tsx
+#: src/components/user/dropdown-menu.tsx
+#: src/dialogs/resume/sections/language.tsx
+#: src/routes/builder/$resumeId/-sidebar/right/sections/page.tsx
+#: src/routes/dashboard/settings/preferences.tsx
+msgid "Language"
+msgstr "भाषा"
+
+#: src/dialogs/resume/sections/custom.tsx
+#: src/utils/resume/section.tsx
+msgid "Languages"
+msgstr "भाषा"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Last 3 days"
+msgstr "गेल्या ३ दिवस"
+
+#. placeholder {0}: statistics.lastDownloadedAt.toDateString()
+#: src/routes/builder/$resumeId/-sidebar/right/sections/statistics.tsx
+msgid "Last downloaded on {0}"
+msgstr "शेवटचे डाउनलोड केलेले: {0}"
+
+#: src/routes/dashboard/resumes/-components/cards/resume-card.tsx
+#: src/routes/dashboard/resumes/-components/list-view.tsx
+msgid "Last updated on {updatedAt}"
+msgstr "शेवटचे अपडेट {updatedAt} रोजी केले"
+
+#. placeholder {0}: statistics.lastViewedAt.toDateString()
+#: src/routes/builder/$resumeId/-sidebar/right/sections/statistics.tsx
+msgid "Last viewed on {0}"
+msgstr "शेवटचा व्ह्यू {0} रोजी झाला"
+
+#: src/utils/locale.ts
+msgid "Latvian"
+msgstr "लॅटवियन"
+
+#: src/utils/resume/section.tsx
+msgid "Layout"
+msgstr "मांडणी"
+
+#: src/hooks/use-form-blocker.tsx
+msgid "Leave"
+msgstr "सोडा"
+
+#: src/routes/builder/$resumeId/-sidebar/left/shared/section-menu.tsx
+msgid "Leave empty to reset the title to the original."
+msgstr "शीर्षक मूळवर रीसेट करण्यासाठी रिकामे सोडा."
+
+#: src/components/input/rich-input.tsx
+msgid "Left Align"
+msgstr "डावीकडे जुळवा"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/page.tsx
+msgid "Letter"
+msgstr "पत्र"
+
+#: src/dialogs/resume/sections/language.tsx
+#: src/dialogs/resume/sections/skill.tsx
+#: src/routes/builder/$resumeId/-sidebar/right/sections/design.tsx
+msgid "Level"
+msgstr "स्तर"
+
+#: src/components/level/display.tsx
+msgid "Level {level} of 5"
+msgstr "5 पैकी {level}वा स्तर"
+
+#: src/components/user/dropdown-menu.tsx
+#: src/utils/theme.ts
+msgid "Light"
+msgstr "हलकी"
+
+#: src/components/command-palette/pages/preferences/theme.tsx
+msgid "Light theme"
+msgstr "हलकी थीम"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/typography.tsx
+#: src/routes/builder/$resumeId/-sidebar/right/sections/typography.tsx
+msgid "Line Height"
+msgstr "रेषेची उंची"
+
+#: src/routes/dashboard/settings/authentication/-components/hooks.tsx
+msgid "Linking your {providerName} account..."
+msgstr "तुमचे {providerName} खाते लिंक केले जात आहे..."
+
+#: src/routes/dashboard/resumes/index.tsx
+msgid "List"
+msgstr "यादी"
+
+#: src/utils/locale.ts
+msgid "Lithuanian"
+msgstr "लिथुआनियन"
+
+#: src/components/command-palette/pages/resumes.tsx
+msgid "Loading resumes..."
+msgstr "रेझ्युमे लोड केले जात आहेत..."
+
+#: src/components/layout/loading-screen.tsx
+msgid "Loading..."
+msgstr "लोड करत आहे..."
+
+#: src/dialogs/resume/sections/education.tsx
+#: src/dialogs/resume/sections/experience.tsx
+#: src/dialogs/resume/sections/volunteer.tsx
+#: src/routes/builder/$resumeId/-sidebar/left/sections/basics.tsx
+msgid "Location"
+msgstr "स्थान"
+
+#: src/routes/builder/$resumeId/-components/header.tsx
+#: src/routes/dashboard/resumes/-components/menus/context-menu.tsx
+#: src/routes/dashboard/resumes/-components/menus/dropdown-menu.tsx
+msgid "Lock"
+msgstr "कुलूप लावा"
+
+#: src/components/user/dropdown-menu.tsx
+msgid "Logout"
+msgstr "लॉग आउट"
+
+#: src/routes/auth/verify-2fa.tsx
+msgid "Lost access to your authenticator?"
+msgstr "तुम्हाला ओथेंटिकेटरवर प्रवेश नाही का?"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/layout/pages.tsx
+msgid "Main"
+msgstr "मुख्य"
+
+#: src/utils/locale.ts
+msgid "Malay"
+msgstr "मलय"
+
+#: src/utils/locale.ts
+msgid "Malayalam"
+msgstr "मल्याळम"
+
+#: src/utils/locale.ts
+msgid "Marathi"
+msgstr "मराठी"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/page.tsx
+msgid "Margin (Horizontal)"
+msgstr "मार्जिन (आडवे)"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/page.tsx
+msgid "Margin (Vertical)"
+msgstr "मार्जिन (उभे)"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Maximum Salary"
+msgstr "कमाल पगार"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Minimum Salary"
+msgstr "किमान वेतन"
+
+#: src/routes/dashboard/settings/ai.tsx
+msgid "Model"
+msgstr "मॉडेल"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "More than 3 years"
+msgstr "३ वर्षांपेक्षा जास्त"
+
+#: src/routes/builder/$resumeId/-sidebar/left/shared/section-item.tsx
+msgid "Move to"
+msgstr "येथे हलवा"
+
+#: src/dialogs/api-key/create.tsx
+#: src/dialogs/resume/index.tsx
+#: src/dialogs/resume/sections/interest.tsx
+#: src/dialogs/resume/sections/project.tsx
+#: src/dialogs/resume/sections/reference.tsx
+#: src/dialogs/resume/sections/skill.tsx
+#: src/routes/auth/register.tsx
+#: src/routes/builder/$resumeId/-sidebar/left/sections/basics.tsx
+#: src/routes/dashboard/settings/profile.tsx
+msgid "Name"
+msgstr "नाव"
+
+#: src/utils/locale.ts
+msgid "Nepali"
+msgstr "नेपाळी"
+
+#: src/dialogs/resume/sections/profile.tsx
+msgid "Network"
+msgstr "नेटवर्क"
+
+#: src/components/input/rich-input.tsx
+msgid "New Line"
+msgstr "नवीन ओळ"
+
+#: src/routes/builder/$resumeId/-sidebar/left/shared/section-item.tsx
+msgid "New Page"
+msgstr "नवीन पान"
+
+#: src/dialogs/auth/change-password.tsx
+#: src/routes/auth/reset-password.tsx
+msgid "New Password"
+msgstr "नवीन पासवर्ड"
+
+#: src/routes/builder/$resumeId/-sidebar/left/shared/section-item.tsx
+msgid "New Section"
+msgstr "नवीन विभाग"
+
+#: src/routes/dashboard/job-search/-components/tailor-dialog.tsx
+msgid "New Skills Detected"
+msgstr "नवीन कौशल्ये आढळली"
+
+#: src/routes/dashboard/job-search/index.tsx
+msgid "Next"
+msgstr "पुढील"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "No degree required"
+msgstr "पदवी आवश्यक नाही"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "No experience"
+msgstr "अनुभव नाही"
+
+#: src/routes/dashboard/job-search/index.tsx
+msgid "No jobs found. Try a different search query."
+msgstr "काहीही नोकऱ्या सापडल्या नाहीत. वेगळा शोध क्वेरी वापरून पहा."
+
+#: src/components/ui/combobox.tsx
+msgid "No results found."
+msgstr "कोणतेही परिणाम आढळले नाहीत."
+
+#: src/routes/dashboard/job-search/-components/tailor-dialog.tsx
+msgid "No resumes found. Create a resume first."
+msgstr "कोणतीही रिझ्युमे आढळली नाहीत. प्रथम रिझ्युमे तयार करा."
+
+#: src/utils/locale.ts
+msgid "Norwegian"
+msgstr "नॉर्वेजियन"
+
+#: src/utils/resume/section.tsx
+msgid "Notes"
+msgstr "टिपा"
+
+#: src/utils/locale.ts
+msgid "Odia"
+msgstr "ओडिया"
+
+#: src/routes/dashboard/resumes/-components/menus/context-menu.tsx
+#: src/routes/dashboard/resumes/-components/menus/dropdown-menu.tsx
+msgid "Open"
+msgstr "उघडा"
+
+#: src/routes/auth/forgot-password.tsx
+msgid "Open Email Client"
+msgstr "ईमेल क्लायंट उघडा"
+
+#. placeholder {0}: job.job_title
+#: src/routes/dashboard/job-search/-components/tailor-dialog.tsx
+msgid "Optimizing summary, experience, and skills for {0}"
+msgstr "सारांश, अनुभव आणि कौशल्ये अनुकूलित करणे {0}"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+msgid "Optionally, set a password so that only people with the password can view your resume through the link."
+msgstr "पर्यायी पद्धतीने, पासवर्ड सेट करा जेणेकरून लिंकद्वारे फक्त पासवर्ड माहित असलेले लोकच तुमचा रेझ्युमे पाहू शकतील."
+
+#: src/routes/auth/-components/social-auth.tsx
+msgctxt "Choose to authenticate with a social provider (Google, GitHub, etc.) instead of email and password"
+msgid "or continue with"
+msgstr "किंवा यांनी लॉगइन करा"
+
+#: src/components/input/rich-input.tsx
+msgid "Ordered List"
+msgstr "क्रमबद्ध यादी"
+
+#: src/dialogs/resume/sections/volunteer.tsx
+msgid "Organization"
+msgstr "संघटना"
+
+#: src/dialogs/resume/sections/experience.tsx
+msgid "Overall Period"
+msgstr "एकूण कालावधी"
+
+#: src/dialogs/resume/sections/experience.tsx
+msgid "Overall Title (optional)"
+msgstr "एकूण शीर्षक (पर्यायी)"
+
+#: src/utils/resume/section.tsx
+msgid "Page"
+msgstr "पान"
+
+#. placeholder {0}: pageIndex + 1
+#: src/routes/builder/$resumeId/-sidebar/left/shared/section-item.tsx
+#: src/routes/builder/$resumeId/-sidebar/right/sections/layout/pages.tsx
+msgid "Page {0}"
+msgstr "पान {0}"
+
+#: src/routes/dashboard/job-search/index.tsx
+msgid "Page {currentPage}"
+msgstr "पृष्ठ {currentPage}"
+
+#: src/components/resume/preview.tsx
+msgid "Page {pageNumber} of {totalNumberOfPages}"
+msgstr "एकूण {totalNumberOfPages} पैकी पान {pageNumber}"
+
+#: src/components/input/rich-input.tsx
+msgid "Paragraph"
+msgstr "परिच्छेद"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Part-time"
+msgstr "अंशकालीन"
+
+#: src/dialogs/auth/disable-two-factor.tsx
+#: src/dialogs/auth/enable-two-factor.tsx
+#: src/routes/auth/login.tsx
+#: src/routes/auth/register.tsx
+#: src/routes/auth/resume-password.tsx
+#: src/routes/dashboard/settings/authentication/-components/password.tsx
+msgid "Password"
+msgstr "पासवर्ड"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+msgid "Password cannot be empty."
+msgstr "पासवर्ड रिकामा असू शकत नाही."
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+msgid "Password protection has been disabled."
+msgstr "पासवर्ड संरक्षण अक्षम केले गेले आहे."
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+msgid "Password protection has been enabled."
+msgstr "पासवर्ड संरक्षण सक्षम केले गेले आहे."
+
+#: src/dialogs/resume/sections/education.tsx
+#: src/dialogs/resume/sections/experience.tsx
+#: src/dialogs/resume/sections/experience.tsx
+#: src/dialogs/resume/sections/project.tsx
+#: src/dialogs/resume/sections/volunteer.tsx
+msgid "Period"
+msgstr "कालावधी"
+
+#: src/utils/locale.ts
+msgid "Persian"
+msgstr "फारसी"
+
+#: src/dialogs/resume/sections/reference.tsx
+#: src/routes/builder/$resumeId/-sidebar/left/sections/basics.tsx
+msgid "Phone"
+msgstr "फोन"
+
+#: src/utils/resume/section.tsx
+msgid "Picture"
+msgstr "चित्र"
+
+#: src/routes/auth/reset-password.tsx
+msgid "Please enter a new password for your account"
+msgstr "तुमच्या खात्यासाठी कृपया नवीन पासवर्ड टाका"
+
+#: src/routes/auth/resume-password.tsx
+msgid "Please enter the password shared with you by the owner of the resume to continue."
+msgstr "कृपया पुढे जाण्यासाठी रेझ्युमेच्या मालकाने तुमच्यासोबत शेअर केलेला पासवर्ड टाका."
+
+#: src/components/input/rich-input.tsx
+msgid "Please enter the URL you want to link to:"
+msgstr "कृपया तुम्हाला ज्या URL ला लिंक करायचे आहे ती URL टाका:"
+
+#: src/routes/builder/$resumeId/-components/dock.tsx
+#: src/routes/builder/$resumeId/-sidebar/right/sections/export.tsx
+msgid "Please wait while your PDF is being generated..."
+msgstr "कृपया तुमचा PDF तयार होईपर्यंत थांबा..."
+
+#: src/utils/locale.ts
+msgid "Polish"
+msgstr "पोलिश"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/picture.tsx
+msgid "Portrait"
+msgstr "पोर्ट्रेट"
+
+#: src/utils/locale.ts
+msgid "Portuguese (Brazil)"
+msgstr "पोर्तुगीज (ब्राझील)"
+
+#: src/utils/locale.ts
+msgid "Portuguese (Portugal)"
+msgstr "पोर्तुगीज (पोर्तुगाल)"
+
+#: src/dialogs/resume/sections/experience.tsx
+#: src/dialogs/resume/sections/experience.tsx
+#: src/dialogs/resume/sections/reference.tsx
+msgid "Position"
+msgstr "पद"
+
+#: src/components/command-palette/pages/navigation.tsx
+#: src/components/command-palette/pages/navigation.tsx
+#: src/components/command-palette/pages/preferences/index.tsx
+#: src/routes/dashboard/-components/sidebar.tsx
+#: src/routes/dashboard/settings/preferences.tsx
+msgid "Preferences"
+msgstr "प्राधान्ये"
+
+#: src/components/input/chip-input.tsx
+msgid "Press <0>{RETURN_KEY}</0> or <1>{COMMA_KEY}</1> to add or save the current keyword."
+msgstr "सध्याचा कीवर्ड जोडण्यासाठी किंवा जतन करण्यासाठी <0>{RETURN_KEY}</0> किंवा <1>{COMMA_KEY}</1> दाबा."
+
+#: src/routes/dashboard/job-search/index.tsx
+msgid "Previous"
+msgstr "मागील"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/design.tsx
+msgid "Primary Color"
+msgstr "प्राथमिक रंग"
+
+#: src/routes/_home/-sections/footer.tsx
+msgid "Privacy Policy"
+msgstr ""
+
+#: src/routes/dashboard/settings/profile.tsx
+msgid "Pro Account"
+msgstr ""
+
+#: src/dialogs/resume/sections/skill.tsx
+msgid "Proficiency"
+msgstr "प्रभावीता"
+
+#: src/components/command-palette/pages/navigation.tsx
+#: src/components/command-palette/pages/navigation.tsx
+#: src/routes/dashboard/-components/sidebar.tsx
+#: src/routes/dashboard/settings/profile.tsx
+msgid "Profile"
+msgstr "प्रोफाईल"
+
+#: src/dialogs/resume/sections/custom.tsx
+#: src/utils/resume/section.tsx
+msgid "Profiles"
+msgstr "प्रोफाईल्स"
+
+#: src/components/level/combobox.tsx
+msgid "Progress Bar"
+msgstr "प्रगती पट्टी"
+
+#: src/dialogs/resume/sections/custom.tsx
+#: src/utils/resume/section.tsx
+msgid "Projects"
+msgstr "प्रोजेक्ट्स"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+msgid "Protect your resume from unauthorized access with a password"
+msgstr "तुमचा रेझ्युमे पासवर्डने सुरक्षित करा, अनधिकृत प्रवेशापासून संरक्षण करा"
+
+#: src/routes/dashboard/settings/ai.tsx
+msgid "Provider"
+msgstr "प्रोव्हायडर"
+
+#. placeholder {0}: planConfig.freeSharingDays
+#: src/routes/dashboard/settings/profile.tsx
+msgid "Public sharing: {0} days"
+msgstr ""
+
+#: src/routes/dashboard/settings/profile.tsx
+msgid "Public sharing: permanent"
+msgstr ""
+
+#: src/dialogs/resume/sections/custom.tsx
+#: src/utils/resume/section.tsx
+msgid "Publications"
+msgstr "प्रकाशने"
+
+#: src/dialogs/resume/sections/publication.tsx
+msgid "Publisher"
+msgstr "प्रकाशक"
+
+#. placeholder {0}: quota.remaining
+#: src/routes/dashboard/job-search/index.tsx
+msgid "Quota: {0} remaining"
+msgstr "कोटा: {0} उरलेली"
+
+#: src/routes/dashboard/settings/job-search.tsx
+msgid "RapidAPI Key"
+msgstr "रॅपिडएपीआय की"
+
+#: src/dialogs/resume/sections/cover-letter.tsx
+msgid "Recipient"
+msgstr "प्राप्तकर्ता"
+
+#: src/components/level/combobox.tsx
+msgid "Rectangle"
+msgstr "आयत"
+
+#: src/components/level/combobox.tsx
+msgid "Rectangle (Full Width)"
+msgstr "आयत (पूर्ण रुंदी)"
+
+#: src/routes/builder/$resumeId/-components/dock.tsx
+msgctxt "'Ctrl' may be replaced with the locale-specific equivalent (e.g. 'Strg' for QWERTZ layouts)."
+msgid "Redo (Ctrl+Y)"
+msgstr "पुन्हा करा (Ctrl+Y)"
+
+#: src/dialogs/resume/sections/custom.tsx
+#: src/utils/resume/section.tsx
+msgid "References"
+msgstr "रेफरन्सेस"
+
+#: src/components/layout/error-screen.tsx
+msgid "Refresh"
+msgstr "ताजेतवाने करा"
+
+#: src/routes/auth/forgot-password.tsx
+msgid "Remember your password? <0/>"
+msgstr "तुमचा पासवर्ड आठवतो? <0/>"
+
+#: src/routes/dashboard/job-search/-components/job-detail.tsx
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+#: src/routes/dashboard/job-search/index.tsx
+msgid "Remote"
+msgstr "दूरस्थ"
+
+#: src/routes/dashboard/job-search/-components/use-job-search.ts
+msgid "Remote only"
+msgstr "केवळ रिमोट"
+
+#: src/dialogs/resume/sections/experience.tsx
+msgid "Remove"
+msgstr "काढा"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+msgid "Remove Password"
+msgstr "पासवर्ड काढा"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+msgid "Removing password protection..."
+msgstr "पासवर्ड संरक्षण काढून टाकले जात आहे..."
+
+#: src/routes/builder/$resumeId/-sidebar/left/shared/section-menu.tsx
+msgid "Rename"
+msgstr "नाव बदला"
+
+#: src/dialogs/resume/sections/experience.tsx
+msgid "Reorder"
+msgstr "पुन्हा क्रमवारी लावा"
+
+#: src/routes/dashboard/job-search/-components/job-detail.tsx
+msgid "Required Skills"
+msgstr "आवश्यक कौशल्ये"
+
+#: src/routes/dashboard/settings/profile.tsx
+msgid "Resend verification email"
+msgstr "पडताळणी ईमेल पुन्हा पाठवा"
+
+#: src/routes/dashboard/settings/profile.tsx
+msgid "Resending verification email..."
+msgstr "पडताळणी ईमेल पुन्हा पाठवला जात आहे..."
+
+#: src/routes/builder/$resumeId/-sidebar/left/shared/section-menu.tsx
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Reset"
+msgstr "रीसेट करा"
+
+#: src/routes/auth/reset-password.tsx
+msgid "Reset Password"
+msgstr "पासवर्ड रीसेट करा"
+
+#: src/routes/auth/reset-password.tsx
+msgid "Reset your password"
+msgstr "तुमचा पासवर्ड रीसेट करा"
+
+#: src/routes/auth/reset-password.tsx
+msgid "Resetting your password..."
+msgstr "तुमचा पासवर्ड रीसेट केला जात आहे..."
+
+#. placeholder {0}: planConfig.freeResumeLimit
+#: src/routes/dashboard/settings/profile.tsx
+msgid "Resume limit: {0} resumes"
+msgstr ""
+
+#: src/routes/dashboard/settings/profile.tsx
+msgid "Resume limit: unlimited"
+msgstr ""
+
+#: src/routes/dashboard/job-search/-components/tailor-dialog.tsx
+#: src/routes/dashboard/job-search/-components/tailor-dialog.tsx
+#: src/routes/dashboard/job-search/-components/tailor-dialog.tsx
+msgid "Resume tailored successfully"
+msgstr "यशस्वीरित्या सानुकूलित केलेले बायोडाटा"
+
+#: src/components/command-palette/pages/navigation.tsx
+#: src/components/command-palette/pages/navigation.tsx
+#: src/components/command-palette/pages/resumes.tsx
+#: src/components/command-palette/pages/resumes.tsx
+#: src/components/command-palette/pages/resumes.tsx
+#: src/routes/dashboard/-components/sidebar.tsx
+#: src/routes/dashboard/resumes/index.tsx
+msgid "Resumes"
+msgstr "रेझ्युमे"
+
+#: src/routes/dashboard/job-search/index.tsx
+msgid "Retry"
+msgstr "पुन्हा प्रयत्न करा"
+
+#: src/components/input/rich-input.tsx
+msgid "Right Align"
+msgstr "उजवीकडे जुळवा"
+
+#: src/dialogs/resume/sections/experience.tsx
+msgid "Role Progression"
+msgstr "भूमिका प्रगती"
+
+#: src/utils/locale.ts
+msgid "Romanian"
+msgstr "रोमानियन"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/picture.tsx
+msgid "Rotation"
+msgstr "रोटेशन"
+
+#: src/utils/locale.ts
+msgid "Russian"
+msgstr "रशियन"
+
+#. placeholder {0}: selectedSkills.size
+#: src/routes/dashboard/job-search/-components/tailor-dialog.tsx
+msgid "Save {0} Skills"
+msgstr "{0} कौशल्ये जतन करा"
+
+#: src/dialogs/resume/index.tsx
+#: src/dialogs/resume/sections/award.tsx
+#: src/dialogs/resume/sections/certification.tsx
+#: src/dialogs/resume/sections/cover-letter.tsx
+#: src/dialogs/resume/sections/custom.tsx
+#: src/dialogs/resume/sections/education.tsx
+#: src/dialogs/resume/sections/experience.tsx
+#: src/dialogs/resume/sections/interest.tsx
+#: src/dialogs/resume/sections/language.tsx
+#: src/dialogs/resume/sections/profile.tsx
+#: src/dialogs/resume/sections/project.tsx
+#: src/dialogs/resume/sections/publication.tsx
+#: src/dialogs/resume/sections/reference.tsx
+#: src/dialogs/resume/sections/skill.tsx
+#: src/dialogs/resume/sections/summary-item.tsx
+#: src/dialogs/resume/sections/volunteer.tsx
+#: src/routes/dashboard/settings/profile.tsx
+msgid "Save Changes"
+msgstr "बदल सेव्ह करा"
+
+#: src/dialogs/auth/enable-two-factor.tsx
+msgid "Scan the QR code below with your preferred authenticator app. You can also copy the secret below and paste it into your app."
+msgstr "खालील QR कोड तुमच्या पसंतीच्या ओथेंटिकेटर अ‍ॅपने स्कॅन करा. तुम्ही खाली दिलेला secret कॉपी करून तो अ‍ॅपमध्ये पेस्टही करू शकता."
+
+#: src/dialogs/resume/sections/education.tsx
+msgid "School"
+msgstr "शाळा"
+
+#: src/routes/dashboard/job-search/index.tsx
+#: src/routes/dashboard/job-search/index.tsx
+msgid "Search"
+msgstr "शोध"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Search countries"
+msgstr "देश शोधा"
+
+#: src/components/input/icon-picker.tsx
+#: src/components/input/icon-picker.tsx
+msgid "Search for an icon"
+msgstr "आयकन शोधा"
+
+#: src/components/command-palette/pages/resumes.tsx
+msgid "Search for..."
+msgstr "शोधा..."
+
+#: src/components/ui/combobox.tsx
+msgid "Search..."
+msgstr "शोधा..."
+
+#: src/dialogs/auth/enable-two-factor.tsx
+msgid "Secret copied to clipboard."
+msgstr "गुप्त कोड क्लिपबोर्डवर कॉपी केला."
+
+#: src/dialogs/resume/sections/custom.tsx
+msgid "Section Type"
+msgstr "विभागाचा प्रकार"
+
+#. placeholder {0}: job.job_title
+#. placeholder {1}: job.employer_name
+#. placeholder {2}: aiEnabled ? " and the AI will optimize it for this position." : "."
+#: src/routes/dashboard/job-search/-components/tailor-dialog.tsx
+msgid "Select a resume to tailor for \"{0}\" at {1}. A copy will be created{2}"
+msgstr "{1}येथे \"{0}\" साठी सानुकूल करण्यासाठी एक रिझ्युमे निवडा.{2} वर एक प्रत तयार केली जाईल."
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Select country"
+msgstr "देश निवडा"
+
+#: src/components/ui/combobox.tsx
+msgid "Select..."
+msgstr "निवडा..."
+
+#: src/routes/auth/forgot-password.tsx
+msgid "Send Password Reset Email"
+msgstr "पासवर्ड रीसेट ईमेल पाठवा"
+
+#: src/routes/auth/forgot-password.tsx
+msgid "Sending password reset email..."
+msgstr "पासवर्ड रीसेट ईमेल पाठवला जात आहे..."
+
+#: src/components/input/rich-input.tsx
+msgid "Separator"
+msgstr "सेपरेटर"
+
+#: src/utils/locale.ts
+msgid "Serbian"
+msgstr "सर्बियन"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+#: src/routes/dashboard/settings/authentication/-components/password.tsx
+msgid "Set Password"
+msgstr "पासवर्ड सेट करा"
+
+#: src/components/command-palette/pages/navigation.tsx
+#: src/components/command-palette/pages/navigation.tsx
+#: src/components/command-palette/pages/navigation.tsx
+#: src/routes/dashboard/-components/sidebar.tsx
+msgid "Settings"
+msgstr "सेटिंग"
+
+#: src/dialogs/auth/enable-two-factor.tsx
+msgid "Setup Authenticator App"
+msgstr "ओथेंटिकेटर अ‍ॅप सेटअप करा"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/picture.tsx
+msgid "Shadow Width"
+msgstr "शॅडोची जाडी"
+
+#: src/utils/resume/section.tsx
+msgid "Sharing"
+msgstr "शेअर करणे"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/custom.tsx
+#: src/routes/builder/$resumeId/-sidebar/left/shared/section-item.tsx
+#: src/routes/builder/$resumeId/-sidebar/left/shared/section-menu.tsx
+msgid "Show"
+msgstr "दाखवा"
+
+#: src/dialogs/resume/sections/award.tsx
+#: src/dialogs/resume/sections/certification.tsx
+#: src/dialogs/resume/sections/education.tsx
+#: src/dialogs/resume/sections/experience.tsx
+#: src/dialogs/resume/sections/profile.tsx
+#: src/dialogs/resume/sections/project.tsx
+#: src/dialogs/resume/sections/publication.tsx
+#: src/dialogs/resume/sections/reference.tsx
+#: src/dialogs/resume/sections/volunteer.tsx
+msgid "Show link in title"
+msgstr "शीर्षकात लिंक दाखवा"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/layout/pages.tsx
+msgid "Sidebar"
+msgstr "बाजूची पट्टी"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/layout/index.tsx
+msgid "Sidebar Width"
+msgstr "साइडबारची रुंदी"
+
+#: src/routes/auth/login.tsx
+msgid "Sign in"
+msgstr "साइन इन"
+
+#: src/routes/auth/login.tsx
+msgid "Sign in to your account"
+msgstr "तुमच्या खात्यात साइन इन करा"
+
+#: src/routes/auth/register.tsx
+msgid "Sign up"
+msgstr "साइन अप करा"
+
+#: src/routes/auth/-components/social-auth.tsx
+#: src/routes/auth/-components/social-auth.tsx
+#: src/routes/auth/login.tsx
+msgid "Signing in..."
+msgstr "साइन इन..."
+
+#: src/components/user/dropdown-menu.tsx
+msgid "Signing out..."
+msgstr "साइन आउट होत आहे..."
+
+#: src/routes/auth/register.tsx
+msgid "Signing up..."
+msgstr "साइन अप होत आहे..."
+
+#: src/dialogs/resume/template/data.ts
+msgid "Single-column with a magenta left border accent; compact and efficient for entry-level or internship applications."
+msgstr "एकाच स्तंभाचा साचा, डाव्या बाजूला मॅजेंटा रंगाचा किनार असलेला; एंट्री-लेव्हल किंवा इंटर्नशिप अर्जांसाठी कॉम्पॅक्ट आणि कार्यक्षम."
+
+#: src/dialogs/resume/template/data.ts
+msgid "Single-column with a minimal top header and lots of whitespace; clean and modern for designers or content creators."
+msgstr "एकाच स्तंभाचा साचा, वर मिनिमल हेडर आणि भरपूर रिकामी जागा; डिझायनर किंवा कंटेंट क्रिएटर्ससाठी स्वच्छ आणि आधुनिक."
+
+#: src/dialogs/resume/template/data.ts
+msgid "Single-column with a sidebar and clean grid layout; versatile for any professional or technical role."
+msgstr "एकाच स्तंभाचा साचा, साइडबार आणि स्वच्छ ग्रीड मांडणीसह; कोणत्याही व्यावसायिक किंवा टेक्निकल भूमिकेसाठी उपयुक्त."
+
+#: src/dialogs/resume/template/data.ts
+msgid "Single-column; polished and serious for senior or enterprise-level positions."
+msgstr "एकाच स्तंभाचा, परिष्कृत आणि गंभीर लुक असलेला साचा; वरिष्ठ किंवा एंटरप्राइझ-स्तरीय पदांसाठी योग्य."
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/picture.tsx
+msgid "Size"
+msgstr "आकार"
+
+#: src/dialogs/resume/sections/custom.tsx
+#: src/utils/resume/section.tsx
+msgid "Skills"
+msgstr "कौशल्ये"
+
+#: src/routes/dashboard/job-search/-components/tailor-dialog.tsx
+msgid "Skip"
+msgstr "उपेक्ष करा"
+
+#: src/utils/locale.ts
+msgid "Slovak"
+msgstr "स्लोव्हाक"
+
+#: src/utils/locale.ts
+msgid "Slovenian"
+msgstr ""
+
+#: src/dialogs/resume/index.tsx
+msgid "Slug"
+msgstr "युआरएल"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+msgid "Something went wrong. Please try again."
+msgstr "काही तरी चूक झाली. कृपया पुन्हा प्रयत्न करा."
+
+#: src/routes/dashboard/resumes/index.tsx
+msgid "Sort by"
+msgstr "यावरून क्रम लावा"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/page.tsx
+msgid "Spacing (Horizontal)"
+msgstr "स्पेसिंग (आडवे)"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/page.tsx
+msgid "Spacing (Vertical)"
+msgstr "स्पेसिंग (उभे)"
+
+#: src/utils/locale.ts
+msgid "Spanish"
+msgstr "स्पॅनिश"
+
+#: src/components/level/combobox.tsx
+#: src/routes/builder/$resumeId/-sidebar/left/sections/picture.tsx
+msgid "Square"
+msgstr "चौकोन"
+
+#: src/dialogs/resume/index.tsx
+msgid "Start building your resume by giving it a name."
+msgstr "रेझ्युमेला नाव देऊन तो बनवायला सुरू करा."
+
+#: src/routes/dashboard/resumes/-components/cards/create-card.tsx
+#: src/routes/dashboard/resumes/-components/list-view.tsx
+msgid "Start building your resume from scratch"
+msgstr "शून्यापासून तुमचा रेझ्युमे बनवायला सुरू करा"
+
+#: src/utils/resume/section.tsx
+msgid "Statistics"
+msgstr "आकडेवारी"
+
+#: src/hooks/use-form-blocker.tsx
+msgid "Stay"
+msgstr "राहा"
+
+#: src/components/input/rich-input.tsx
+msgid "Strike"
+msgstr "स्ट्राइक"
+
+#: src/dialogs/resume/sections/custom.tsx
+#: src/utils/resume/section.tsx
+msgid "Summary"
+msgstr "सारांश"
+
+#: src/utils/locale.ts
+msgid "Swedish"
+msgstr "स्वीडिश"
+
+#: src/components/theme/toggle-button.tsx
+msgid "Switch to dark theme"
+msgstr "गडद थीमवर स्विच करा"
+
+#: src/components/theme/toggle-button.tsx
+msgid "Switch to light theme"
+msgstr "हलकी थीमवर स्विच करा"
+
+#: src/components/input/rich-input.tsx
+msgid "Table"
+msgstr "टेबल"
+
+#: src/dialogs/resume/index.tsx
+msgid "Tags"
+msgstr "टॅग्स"
+
+#: src/dialogs/resume/index.tsx
+msgid "Tags can be used to categorize your resume by keywords."
+msgstr "टॅग्सचा वापर करून तुम्ही तुमचा रेझ्युमे कीवर्डनुसार गटवू शकता."
+
+#: src/routes/dashboard/job-search/-components/job-detail.tsx
+#: src/routes/dashboard/job-search/-components/tailor-dialog.tsx
+msgid "Tailor Resume"
+msgstr "सुट्या मोजणीसाठी रेज्युमे"
+
+#: src/routes/dashboard/job-search/-components/tailor-dialog.tsx
+msgid "Tailoring failed"
+msgstr "टेलरिंग अयशस्वी झाले"
+
+#: src/routes/dashboard/job-search/-components/tailor-dialog.tsx
+msgid "Tailoring your resume..."
+msgstr "तुमचे रिझ्युमे सानुकूलित करणे..."
+
+#: src/utils/locale.ts
+msgid "Tamil"
+msgstr "तमिळ"
+
+#: src/utils/locale.ts
+msgid "Telugu"
+msgstr "तेलगू"
+
+#: src/utils/resume/section.tsx
+msgid "Template"
+msgstr "साचा"
+
+#: src/dialogs/resume/template/gallery.tsx
+msgid "Template Gallery"
+msgstr "साचा गॅलरी"
+
+#: src/routes/_home/-sections/footer.tsx
+msgid "Terms of Service"
+msgstr ""
+
+#: src/routes/dashboard/settings/ai.tsx
+#: src/routes/dashboard/settings/job-search.tsx
+msgid "Test Connection"
+msgstr "कनेक्शन तपासा"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/design.tsx
+msgid "Text Color"
+msgstr "मजकुराचा रंग"
+
+#: src/utils/locale.ts
+msgid "Thai"
+msgstr "थाई"
+
+#: src/routes/dashboard/job-search/-components/tailor-dialog.tsx
+msgid "The AI identified new skills from your experience that match this job. Select which ones to save back to your original resume for future applications. This will permanently modify your original resume and cannot be undone."
+msgstr "कृत्रिम बुद्धिमत्तेने तुमच्या अनुभवातून या नोकरीशी जुळणारी नवीन कौशल्ये ओळखली आहेत. भविष्यातील अर्जांसाठी मूळ रिझ्युमेमध्ये कोणती कौशल्ये जतन करायची ते निवडा. यामुळे तुमचा मूळ रिझ्युमे कायमचा बदलला जाईल आणि तो परत बदलता येणार नाही."
+
+#: src/routes/dashboard/settings/api-keys.tsx
+#~ msgid "The API key has been deleted successfully."
+#~ msgstr "API key यशस्वीरित्या हटवली गेली आहे."
+
+#: src/routes/dashboard/settings/api-keys.tsx
+#~ msgid "The API key will no longer be able to access your data after deletion. This action cannot be undone."
+#~ msgstr "ही API key डिलीट केल्यानंतर तुमच्या डेटाला पुन्हा अ‍ॅक्सेस करू शकणार नाही. ही क्रिया उलट करता येणार नाही."
+
+#: src/components/command-palette/index.tsx
+msgid "The command you're looking for doesn't exist."
+msgstr "तुम्ही शोधत असलेला कमांड अस्तित्वात नाही."
+
+#: src/components/resume/preview.tsx
+msgid "The content is too tall for this page, this may cause undesirable results when exporting to PDF."
+msgstr "या पृष्ठासाठी सामग्री खूप उंच आहे, यामुळे PDF मध्ये निर्यात करताना अनपेक्षित परिणाम येऊ शकतात."
+
+#: src/routes/$username/$slug.tsx
+msgid "The owner's free share link is no longer active."
+msgstr ""
+
+#: src/routes/auth/resume-password.tsx
+msgid "The password you entered is incorrect"
+msgstr "तुम्ही टाकलेला पासवर्ड चुकीचा आहे"
+
+#: src/routes/auth/resume-password.tsx
+msgid "The resume you are trying to access is password protected"
+msgstr "ज्या रेझ्युमेला तुम्ही अ‍ॅक्सेस करण्याचा प्रयत्न करत आहात तो पासवर्डने संरक्षित आहे"
+
+#: src/components/input/rich-input.tsx
+msgid "The URL you entered is not valid."
+msgstr "तुम्ही टाकलेली URL वैध नाही."
+
+#: src/components/command-palette/pages/preferences/theme.tsx
+#: src/components/user/dropdown-menu.tsx
+#: src/routes/dashboard/settings/preferences.tsx
+msgid "Theme"
+msgstr "थीम"
+
+#: src/dialogs/auth/enable-two-factor.tsx
+msgid "Then, enter the 6 digit code that the app provides to continue."
+msgstr "त्यानंतर, पुढे जाण्यासाठी अ‍ॅपमधील 6 अंकी कोड टाका."
+
+#: src/routes/builder/$resumeId/-components/dock.tsx
+#: src/routes/builder/$resumeId/-sidebar/right/sections/export.tsx
+msgid "There was a problem while generating the DOCX, please try again."
+msgstr "DOCX तयार करताना अडचण आली, कृपया पुन्हा प्रयत्न करा."
+
+#: src/routes/builder/$resumeId/-components/dock.tsx
+#: src/routes/builder/$resumeId/-sidebar/right/sections/export.tsx
+msgid "There was a problem while generating the PDF, please try again in some time."
+msgstr "PDF तयार करताना समस्या आली, कृपया थोड्या वेळाने पुन्हा प्रयत्न करा."
+
+#: src/routes/builder/$resumeId/-components/header.tsx
+#: src/routes/dashboard/resumes/-components/menus/context-menu.tsx
+#: src/routes/dashboard/resumes/-components/menus/dropdown-menu.tsx
+msgid "This action cannot be undone."
+msgstr "ही क्रिया उलट करता येणार नाही."
+
+#: src/routes/dashboard/settings/danger-zone.tsx
+msgid "This action cannot be undone. All your data will be permanently deleted."
+msgstr "ही क्रिया उलट करता येणार नाही. तुमचा सर्व डेटा कायमस्वरूपी हटवला जाईल."
+
+#: src/dialogs/resume/import.tsx
+#: src/dialogs/resume/import.tsx
+msgid "This feature requires AI Integration to be enabled. Please enable it in the settings."
+msgstr "या फिचरसाठी AI इंटिग्रेशन सक्षम असणे आवश्यक आहे. कृपया सेटिंगमध्ये ते सक्षम करा."
+
+#: src/dialogs/resume/index.tsx
+msgid "This is a URL-friendly name for your resume."
+msgstr "हा तुमच्या रेझ्युमेसाठी URL-फ्रेंडली नाव आहे."
+
+#. placeholder {0}: shareExpiry.toLocaleDateString()
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+msgid "This link expires on {0}."
+msgstr ""
+
+#: src/dialogs/resume/import.tsx
+msgid "This may take a few minutes, depending on the response of the AI provider. Please do not close the window or refresh the page."
+msgstr "AI प्रोव्हायडरच्या प्रतिसादावर अवलंबून, यासाठी काही मिनिटे लागू शकतात. कृपया विंडो बंद करू नका किंवा पान रीफ्रेश करू नका."
+
+#: src/routes/builder/$resumeId/-components/dock.tsx
+#: src/routes/builder/$resumeId/-sidebar/right/sections/export.tsx
+msgid "This may take a while depending on the server capacity. Please do not close the window or refresh the page."
+msgstr "सर्व्हर क्षमतेवर अवलंबून, यासाठी थोडा वेळ लागू शकतो. कृपया विंडो बंद करू नका किंवा पान रीफ्रेश करू नका."
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "This month"
+msgstr "या महिन्यात"
+
+#: src/components/resume/store/resume.ts
+msgid "This resume is locked and cannot be updated."
+msgstr "हा रेझ्युमे लॉक केलेला आहे आणि अपडेट करता किंवा हटवता येणार नाही."
+
+#: src/routes/$username/$slug.tsx
+msgid "This resume link has expired."
+msgstr ""
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/notes.tsx
+msgid "This section is reserved for your personal notes specific to this resume. The content here remains private and is not shared with anyone else."
+msgstr "हा भाग या रेझ्युमेशी संबंधित असलेल्या तुमच्या खाजगी टिपांसाठी आरक्षित आहे. यातला सर्व काँटेंट खाजगी राहतो व तो इतर कोणाशीही शेअर केला जात नाही."
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+msgid "This share link has expired."
+msgstr ""
+
+#: src/routes/auth/register.tsx
+msgid "This step is optional, but recommended."
+msgstr "हा टप्पा ऐच्छिक आहे, पण शिफारस केलेला आहे."
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "This week"
+msgstr "या आठवड्यात"
+
+#: src/dialogs/api-key/create.tsx
+msgid "This will generate a new API key to access the ProTalent CV API to allow machines to interact with your resume data."
+msgstr ""
+
+#: src/dialogs/api-key/create.tsx
+msgid "Tip: Give your API key a name, corresponding to the purpose of the key, to help you identify it later."
+msgstr "टीप: तुमच्या API key ला तिच्या उद्देशानुसार नाव द्या, म्हणजे नंतर ओळखणे सोपे जाईल."
+
+#: src/dialogs/resume/index.tsx
+msgid "Tip: You can name the resume referring to the position you are applying for."
+msgstr "टीप: तुम्ही रेझ्युमेला तुम्ही अर्ज करत असलेल्या पदानुसार नाव देऊ शकता."
+
+#: src/dialogs/resume/sections/award.tsx
+#: src/dialogs/resume/sections/certification.tsx
+#: src/dialogs/resume/sections/custom.tsx
+#: src/dialogs/resume/sections/publication.tsx
+msgid "Title"
+msgstr "शीर्षक"
+
+#: src/routes/dashboard/settings/danger-zone.tsx
+msgid "To delete your account, you need to enter the confirmation text and click the button below."
+msgstr "तुमचे खाते हटवण्यासाठी तुम्हाला पुष्टीकरण मजकूर टाकून खालील बटणावर क्लिक करणे आवश्यक आहे."
+
+#: src/routes/dashboard/job-search/index.tsx
+msgid "To search for job listings, you need to configure your RapidAPI key in settings."
+msgstr "नोकरीच्या जाहिराती शोधण्यासाठी, तुम्हाला सेटिंग्जमध्ये तुमची RapidAPI की कॉन्फिगर करावी लागेल."
+
+#: src/routes/dashboard/job-search/-components/job-utils.ts
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Today"
+msgstr "आज"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/statistics.tsx
+msgid "Track your resume's views and downloads"
+msgstr "तुमच्या रेझ्युमेचे views आणि downloads ट्रॅक करा"
+
+#: src/components/resume/preview.tsx
+msgid "Try reducing content, adjusting font size, or switching to a more compact template."
+msgstr ""
+
+#: src/utils/locale.ts
+msgid "Turkish"
+msgstr "तुर्की"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/statistics.tsx
+msgid "Turn on public sharing to track how many times your resume has been viewed or downloaded. Only you can see your resume's statistics."
+msgstr "सार्वजनिक शेअरिंग सुरू करा, आणि तुमचा रेझ्युमे किती वेळा पाहिला किंवा डाउनलोड केला गेला आहे ते ट्रॅक करा. तुमच्या रेझ्युमेची आकडेवारी फक्त तुम्हालाच दिसेल."
+
+#: src/dialogs/resume/template/data.ts
+msgid "Two-column with a bold colored sidebar and skill bars; great for creative or tech roles where visual flair is welcome."
+msgstr "दोन स्तंभांचा साचा, ठळक रंगाच्या साइडबार आणि कौशल्य पट्ट्यांसह; व्हिज्युअल फ्लेअरला प्राधान्य असणाऱ्या क्रिएटिव्ह किंवा टेक भूमिकांसाठी योग्य."
+
+#: src/dialogs/resume/template/data.ts
+msgid "Two-column with a dark teal sidebar and skills grid; modern feel for developers, data scientists, or technical PMs."
+msgstr "दोन स्तंभांचा साचा, गडद हिरवट-निळ्या साइडबार आणि कौशल्यांच्या ग्रीडसह; डेव्हलपर्स, डेटा सायंटिस्ट्स किंवा टेक्निकल PM साठी आधुनिक लुक."
+
+#: src/dialogs/resume/template/data.ts
+msgid "Two-column with a left margin color; simple and approachable for creative, editorial, or junior roles."
+msgstr "दोन स्तंभांचा साचा, डावीकडे रंगीत मार्जिनसह; क्रिएटिव्ह, एडिटोरियल किंवा ज्युनियर भूमिकांसाठी साधा आणि सहजता देणारा."
+
+#: src/dialogs/resume/template/data.ts
+msgid "Two-column with a muted color sidebar; earthy and calm, suits sustainability, healthcare, or nonprofit sectors."
+msgstr "दोन स्तंभांचा साचा, म्युटेड रंगाच्या साइडबारसह; पृथ्वीतील आणि शांत लुक, टिकाव, हेल्थकेअर किंवा नॉनप्रॉफिट क्षेत्रांसाठी योग्य."
+
+#: src/dialogs/resume/template/data.ts
+msgid "Two-column with a soft header accent and circular profile photo; ideal for marketing, HR, or client-facing roles."
+msgstr "दोन स्तंभांचा साचा, मऊ हेडर अ‍ॅक्सेंट आणि गोलाकार प्रोफाईल फोटोसह; मार्केटिंग, HR किंवा क्लायंट-फेसिंग भूमिकांसाठी आदर्श."
+
+#: src/dialogs/resume/template/data.ts
+msgid "Two-column with accent colors and clean typography; balanced choice for business analysts or operations roles."
+msgstr "दोन स्तंभांचा साचा, अ‍ॅक्सेंट रंग आणि स्वच्छ टायपोग्राफीसह; बिझनेस अ‍ॅनालिस्ट किंवा ऑपरेशन्स भूमिकांसाठी संतुलित पर्याय."
+
+#: src/dialogs/resume/template/data.ts
+msgid "Two-column, clean and professional with subtle section dividers; suits corporate, finance, or consulting positions."
+msgstr "दोन स्तंभांचा साचा, स्वच्छ आणि व्यावसायिक, सूक्ष्म विभाग विभाजकांसह; कॉर्पोरेट, फायनान्स किंवा कन्सल्टिंग पदांसाठी योग्य."
+
+#: src/dialogs/resume/template/data.ts
+msgid "Two-column, minimal and text-dense with no decorative elements; perfect for traditional industries or ATS-heavy applications."
+msgstr "दोन स्तंभांचा, मिनिमल आणि मजकूर-घन साचा, कोणतेही सजावटी घटक नाहीत; पारंपरिक उद्योग किंवा ATS-आधारित अर्जांसाठी परिपूर्ण."
+
+#: src/dialogs/resume/template/data.ts
+msgid "Two-column, minimal with light gray sidebar and subtle icons; professional and understated for legal, finance, or executive roles."
+msgstr "दोन स्तंभांचा, मितव्ययी साचा, हलक्या राखाडी साइडबार आणि सूक्ष्म आयकन्ससह; लीगल, फायनान्स किंवा एक्झिक्युटिव्ह भूमिकांसाठी व्यावसायिक आणि विनम्र."
+
+#: src/routes/auth/verify-2fa.tsx
+#: src/routes/dashboard/settings/authentication/-components/two-factor.tsx
+msgid "Two-Factor Authentication"
+msgstr "दुहेरी घटक ओथेंटिकेशन"
+
+#: src/dialogs/auth/disable-two-factor.tsx
+msgid "Two-factor authentication has been disabled successfully."
+msgstr "दुहेरी घटक ओथेंटिकेशन यशस्वीरित्या अक्षम केले गेले आहे."
+
+#: src/dialogs/auth/enable-two-factor.tsx
+msgid "Two-factor authentication has been setup successfully."
+msgstr "दुहेरी घटक ओथेंटिकेशन यशस्वीरित्या सेटअप केले गेले आहे."
+
+#: src/dialogs/resume/import.tsx
+#: src/routes/builder/$resumeId/-sidebar/right/sections/design.tsx
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Type"
+msgstr "प्रकार"
+
+#: src/routes/dashboard/settings/danger-zone.tsx
+msgid "Type \"{CONFIRMATION_TEXT}\" to confirm"
+msgstr "पुष्टी करण्यासाठी \"{CONFIRMATION_TEXT}\" टाइप करा"
+
+#: src/components/command-palette/index.tsx
+msgid "Type a command or search..."
+msgstr "कमान्ड टाइप करा किंवा शोधा..."
+
+#: src/utils/resume/section.tsx
+msgid "Typography"
+msgstr "टायपोग्राफी"
+
+#: src/utils/locale.ts
+msgid "Ukrainian"
+msgstr "युक्रेनियन"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Under 3 years"
+msgstr "३ वर्षांखाली"
+
+#: src/components/input/rich-input.tsx
+msgid "Underline"
+msgstr "अधोरेखा"
+
+#: src/routes/builder/$resumeId/-components/dock.tsx
+msgctxt "'Ctrl' may be replaced with the locale-specific equivalent (e.g. 'Strg' for QWERTZ layouts)."
+msgid "Undo (Ctrl+Z)"
+msgstr "पूर्ववत करा (Ctrl+Z)"
+
+#: src/routes/dashboard/settings/authentication/-components/hooks.tsx
+msgid "Unlinking your {providerName} account..."
+msgstr "तुमचे {providerName} खाते अनलिंक केले जात आहे..."
+
+#: src/routes/auth/resume-password.tsx
+#: src/routes/builder/$resumeId/-components/header.tsx
+#: src/routes/dashboard/resumes/-components/menus/context-menu.tsx
+#: src/routes/dashboard/resumes/-components/menus/dropdown-menu.tsx
+msgid "Unlock"
+msgstr "कुलूप उघडा"
+
+#: src/routes/dashboard/settings/profile.tsx
+msgid "Unverified"
+msgstr "न पडताळलेले"
+
+#: src/routes/builder/$resumeId/-components/header.tsx
+#: src/routes/builder/$resumeId/-sidebar/left/sections/custom.tsx
+#: src/routes/builder/$resumeId/-sidebar/left/shared/section-item.tsx
+#: src/routes/dashboard/resumes/-components/menus/context-menu.tsx
+#: src/routes/dashboard/resumes/-components/menus/dropdown-menu.tsx
+msgid "Update"
+msgstr "अपडेट करा"
+
+#: src/dialogs/resume/sections/award.tsx
+msgid "Update an existing award"
+msgstr "अस्तित्वातील पुरस्कार अपडेट करा"
+
+#: src/dialogs/resume/sections/certification.tsx
+msgid "Update an existing certification"
+msgstr "अस्तित्वातील प्रमाणपत्र अपडेट करा"
+
+#: src/dialogs/resume/sections/cover-letter.tsx
+msgid "Update an existing cover letter"
+msgstr "विद्यमान कव्हर लेटर अपडेट करा"
+
+#: src/dialogs/resume/sections/custom.tsx
+msgid "Update an existing custom section"
+msgstr "अस्तित्वातील सानुकूल विभाग अपडेट करा"
+
+#: src/dialogs/resume/sections/education.tsx
+msgid "Update an existing education"
+msgstr "अस्तित्वातील शैक्षणिक नोंद अपडेट करा"
+
+#: src/dialogs/resume/sections/experience.tsx
+msgid "Update an existing experience"
+msgstr "अस्तित्वातील अनुभव अपडेट करा"
+
+#: src/dialogs/resume/sections/interest.tsx
+msgid "Update an existing interest"
+msgstr "अस्तित्वातील आवड अपडेट करा"
+
+#: src/dialogs/resume/sections/language.tsx
+msgid "Update an existing language"
+msgstr "अस्तित्वातील भाषा अपडेट करा"
+
+#: src/dialogs/resume/sections/profile.tsx
+msgid "Update an existing profile"
+msgstr "अस्तित्वातील प्रोफाईल अपडेट करा"
+
+#: src/dialogs/resume/sections/project.tsx
+msgid "Update an existing project"
+msgstr "अस्तित्वातील प्रोजेक्ट अपडेट करा"
+
+#: src/dialogs/resume/sections/publication.tsx
+msgid "Update an existing publication"
+msgstr "अस्तित्वातील प्रकाशन अपडेट करा"
+
+#: src/dialogs/resume/sections/reference.tsx
+msgid "Update an existing reference"
+msgstr "अस्तित्वातील रेफरन्स अपडेट करा"
+
+#: src/dialogs/resume/sections/skill.tsx
+msgid "Update an existing skill"
+msgstr "अस्तित्वातील कौशल्य अपडेट करा"
+
+#: src/dialogs/resume/sections/summary-item.tsx
+msgid "Update an existing summary item"
+msgstr "विद्यमान सारांश आयटम अपडेट करा"
+
+#: src/dialogs/resume/sections/volunteer.tsx
+msgid "Update an existing volunteer experience"
+msgstr "अस्तित्वातील स्वयंसेवी अनुभव अपडेट करा"
+
+#: src/dialogs/auth/change-password.tsx
+#: src/routes/dashboard/settings/authentication/-components/password.tsx
+msgid "Update Password"
+msgstr "पासवर्ड बदला"
+
+#: src/dialogs/resume/index.tsx
+msgid "Update Resume"
+msgstr "रेझ्युमे अपडेट करा"
+
+#: src/dialogs/auth/change-password.tsx
+msgid "Update your password"
+msgstr "तुमचा पासवर्ड अपडेट करा"
+
+#: src/dialogs/auth/change-password.tsx
+msgid "Updating your password..."
+msgstr "तुमचा पासवर्ड अपडेट केला जात आहे..."
+
+#: src/dialogs/resume/index.tsx
+msgid "Updating your resume..."
+msgstr "तुमचा रेझ्युमे अपडेट केला जात आहे..."
+
+#: src/routes/dashboard/settings/profile.tsx
+msgid "Upgrade"
+msgstr ""
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/picture.tsx
+msgid "Uploading picture..."
+msgstr "चित्र अपलोड केले जात आहे..."
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/picture.tsx
+msgid "URL"
+msgstr "यूआरएल"
+
+#: src/dialogs/resume/sections/profile.tsx
+#: src/routes/auth/register.tsx
+#: src/routes/dashboard/settings/profile.tsx
+msgid "Username"
+msgstr "वापरकर्तानाव"
+
+#: src/utils/locale.ts
+msgid "Uzbek"
+msgstr "उझबेक"
+
+#: src/components/input/rich-input.tsx
+msgid "Valid URLs must start with http:// or https://."
+msgstr "वैध URL ची सुरुवात http:// किंवा https:// ने होणे आवश्यक आहे."
+
+#: src/routes/dashboard/settings/profile.tsx
+msgid "Verified"
+msgstr "पडताळलेले"
+
+#: src/routes/auth/verify-2fa-backup.tsx
+#: src/routes/auth/verify-2fa.tsx
+msgid "Verify"
+msgstr "पडताळा"
+
+#: src/routes/auth/verify-2fa-backup.tsx
+msgid "Verify with a Backup Code"
+msgstr "बॅकअप कोडने पडताळा करा"
+
+#: src/routes/auth/verify-2fa-backup.tsx
+msgid "Verifying backup code..."
+msgstr "बॅकअप कोड पडताळला जात आहे..."
+
+#: src/dialogs/auth/enable-two-factor.tsx
+#: src/routes/auth/verify-2fa.tsx
+msgid "Verifying code..."
+msgstr "कोड पडताळला जात आहे..."
+
+#: src/routes/auth/resume-password.tsx
+msgid "Verifying password..."
+msgstr "पासवर्ड पडताळला जात आहे..."
+
+#: src/routes/auth/register.tsx
+msgid "Verifying your email is required when resetting your password."
+msgstr "पासवर्ड रीसेट करताना ईमेल पडताळणे आवश्यक आहे."
+
+#: src/utils/locale.ts
+msgid "Vietnamese"
+msgstr "व्हिएतनामी"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/statistics.tsx
+msgid "Views"
+msgstr "दृश्ये"
+
+#: src/dialogs/resume/sections/custom.tsx
+#: src/utils/resume/section.tsx
+msgid "Volunteer"
+msgstr "स्वयंसेवा"
+
+#: src/dialogs/resume/sections/award.tsx
+#: src/dialogs/resume/sections/certification.tsx
+#: src/dialogs/resume/sections/education.tsx
+#: src/dialogs/resume/sections/experience.tsx
+#: src/dialogs/resume/sections/profile.tsx
+#: src/dialogs/resume/sections/project.tsx
+#: src/dialogs/resume/sections/publication.tsx
+#: src/dialogs/resume/sections/reference.tsx
+#: src/dialogs/resume/sections/volunteer.tsx
+#: src/routes/builder/$resumeId/-sidebar/left/sections/basics.tsx
+msgid "Website"
+msgstr "संकेतस्थळ"
+
+#: src/routes/builder/$resumeId/-sidebar/left/shared/section-menu.tsx
+msgid "What do you want to rename this section to?"
+msgstr "हा विभाग तुम्हाला कोणत्या नावाने पुन्हा नाव द्यायचा आहे?"
+
+#: src/routes/dashboard/settings/job-search.tsx
+msgid "What is JSearch API?"
+msgstr "JSearch API म्हणजे काय?"
+
+#: src/routes/builder/$resumeId/-components/header.tsx
+#: src/routes/dashboard/resumes/-components/menus/context-menu.tsx
+#: src/routes/dashboard/resumes/-components/menus/dropdown-menu.tsx
+msgid "When locked, the resume cannot be updated or deleted."
+msgstr "रेझ्युमे लॉक केल्यावर तो अपडेट किंवा डिलीट करता येणार नाही."
+
+#: src/routes/dashboard/job-search/-components/job-utils.ts
+msgid "Yesterday"
+msgstr "काल"
+
+#: src/routes/auth/login.tsx
+msgid "You can also use your username to login."
+msgstr "तुम्ही लॉगिन करताना तुमचे वापरकर्तानावसुद्धा वापरू शकता."
+
+#: src/hooks/use-form-blocker.tsx
+msgid "You have unsaved changes that will be lost."
+msgstr "तुमच्या जतन न केलेल्या बदलांचा नाश होईल."
+
+#: src/routes/auth/forgot-password.tsx
+#: src/routes/auth/register.tsx
+msgid "You've got mail!"
+msgstr "तुम्हाला मेल पाठवले आहे!"
+
+#: src/routes/dashboard/resumes/-components/cards/create-card.tsx
+#: src/routes/dashboard/resumes/-components/cards/import-card.tsx
+msgid "You've reached the maximum of {limit} resumes for your account. Please delete a resume to create a new one."
+msgstr ""
+
+#: src/routes/dashboard/settings/danger-zone.tsx
+msgid "Your account has been deleted successfully."
+msgstr "तुमचे खाते यशस्वीरित्या हटवले गेले आहे."
+
+#: src/dialogs/api-key/create.tsx
+msgid "Your API key has been copied to the clipboard."
+msgstr "तुमची API key क्लिपबोर्डवर कॉपी केली गेली आहे."
+
+#: src/routes/builder/$resumeId/index.tsx
+msgid "Your changes are saved automatically."
+msgstr "तुमचे बदल आपोआप सेव्ह केले जातात."
+
+#: src/routes/dashboard/settings/ai.tsx
+msgid "Your data is stored locally"
+msgstr "तुमचा डेटा लोकली साठवला जातो"
+
+#: src/routes/auth/reset-password.tsx
+msgid "Your password has been reset successfully. You can now sign in with your new password."
+msgstr "तुमचा पासवर्ड यशस्वीरित्या रिसेट केला गेला आहे. तुम्ही आता नवीन पासवर्डने साइन इन करू शकता."
+
+#: src/dialogs/auth/change-password.tsx
+msgid "Your password has been updated successfully."
+msgstr "आपला पासवर्ड यशस्वीरित्या अपडेट केला गेला आहे."
+
+#: src/routes/dashboard/settings/profile.tsx
+msgid "Your profile has been updated successfully."
+msgstr "तुमचा प्रोफाईल यशस्वीरित्या अपडेट केला गेला आहे."
+
+#: src/routes/dashboard/settings/job-search.tsx
+msgid "Your RapidAPI key is stored locally on your browser. It is only sent to the server when making a request to search for jobs, and is never stored or logged on our servers."
+msgstr "तुमची RapidAPI की तुमच्या ब्राउझरमध्ये स्थानिकपणे संग्रहित असते. ती फक्त नोकऱ्या शोधण्यासाठी विनंती करताना सर्व्हरकडे पाठवली जाते आणि आमच्या सर्व्हरवर कधीही संग्रहित किंवा लॉग केली जात नाही."
+
+#: src/dialogs/resume/index.tsx
+#: src/dialogs/resume/index.tsx
+msgid "Your resume has been created successfully."
+msgstr "तुमचा रेझ्युमे यशस्वीरित्या तयार केला गेला आहे."
+
+#: src/routes/builder/$resumeId/-components/header.tsx
+#: src/routes/dashboard/resumes/-components/menus/context-menu.tsx
+#: src/routes/dashboard/resumes/-components/menus/dropdown-menu.tsx
+msgid "Your resume has been deleted successfully."
+msgstr "तुमचा रेझ्युमे यशस्वीरित्या हटवला गेला आहे."
+
+#: src/dialogs/resume/index.tsx
+msgid "Your resume has been duplicated successfully."
+msgstr "तुमचा रेझ्युमे यशस्वीरित्या डुप्लिकेट केला गेला आहे."
+
+#: src/dialogs/resume/import.tsx
+msgid "Your resume has been imported successfully."
+msgstr "तुमचा रेझ्युमे यशस्वीरित्या इम्पोर्ट केला गेला आहे."
+
+#: src/dialogs/resume/index.tsx
+msgid "Your resume has been updated successfully."
+msgstr "तुमचा रेझ्युमे यशस्वीरित्या अपडेट केला गेला आहे."
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+msgid "Your resume's public link is currently protected by a password. Share the password only with people you trust."
+msgstr "तुमच्या रेझ्युमेचा सार्वजनिक दुवा सध्या पासवर्डने संरक्षित आहे. पासवर्ड फक्त ज्यांवर तुम्हाला विश्वास आहे त्यांच्यासोबतच शेअर करा."
+
+#: src/routes/builder/$resumeId/-components/dock.tsx
+msgid "Zoom in"
+msgstr "आत झूम करा"
+
+#: src/routes/builder/$resumeId/-components/dock.tsx
+msgid "Zoom out"
+msgstr "बाहेर झूम करा"
+
+#: src/utils/locale.ts
+msgid "Zulu"
+msgstr "झुलू"

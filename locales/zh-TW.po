@@ -1,0 +1,2903 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2025-11-04 23:14+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: zh\n"
+"Project-Id-Version: reactive-resume\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-03-19 09:07\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Traditional\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: reactive-resume\n"
+"X-Crowdin-Project-ID: 503410\n"
+"X-Crowdin-Language: zh-TW\n"
+"X-Crowdin-File: /main/locales/en-US.po\n"
+"X-Crowdin-File-ID: 518\n"
+
+#. js-lingui-explicit-id
+#: src/routes/dashboard/resumes/index.tsx
+msgid "Last Updated"
+msgstr "最後更新日期"
+
+#. js-lingui-explicit-id
+#: src/routes/dashboard/resumes/index.tsx
+msgid "Created"
+msgstr "建立日期"
+
+#. js-lingui-explicit-id
+#: src/routes/dashboard/resumes/index.tsx
+msgid "Name"
+msgstr "名稱"
+
+#. placeholder {0}: section.items.length
+#: src/routes/builder/$resumeId/-sidebar/left/sections/custom.tsx
+msgid "{0, plural, one {# item} other {# items}}"
+msgstr "{0, plural, other {# 個項目}}"
+
+#. placeholder {0}: item.roles.length
+#: src/routes/builder/$resumeId/-sidebar/left/sections/experience.tsx
+msgid "{0, plural, one {# role} other {# roles}}"
+msgstr "{0, plural, other {# 個職位}}"
+
+#. placeholder {0}: quota.used
+#. placeholder {1}: quota.limit
+#: src/routes/dashboard/job-search/index.tsx
+msgid "{0} / {1} requests used"
+msgstr "{0} / {1} 已使用的請求"
+
+#. placeholder {0}: Math.floor(diffDays / 30)
+#: src/routes/dashboard/job-search/-components/job-utils.ts
+msgid "{0} months ago"
+msgstr "{0} 幾個月前"
+
+#. placeholder {0}: Math.floor(diffDays / 7)
+#: src/routes/dashboard/job-search/-components/job-utils.ts
+msgid "{0} weeks ago"
+msgstr "{0} 週前"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/custom.tsx
+#: src/routes/builder/$resumeId/-sidebar/left/shared/section-menu.tsx
+msgid "{column, plural, one {# Column} other {# Columns}}"
+msgstr "{column, plural, other {# 欄}}"
+
+#: src/routes/dashboard/job-search/-components/job-utils.ts
+msgid "{diffDays} days ago"
+msgstr "{diffDays} 天前"
+
+#: src/routes/dashboard/settings/job-search.tsx
+msgid "{used} of {limit} requests used ({remaining} remaining)"
+msgstr "{used} 已使用的 {limit} 請求 ({remaining} 剩餘)"
+
+#: src/dialogs/api-key/create.tsx
+msgid "1 month"
+msgstr "1 個月"
+
+#: src/dialogs/api-key/create.tsx
+msgid "1 year"
+msgstr "1 年"
+
+#: src/dialogs/api-key/create.tsx
+msgid "3 months"
+msgstr "3 個月"
+
+#: src/dialogs/api-key/create.tsx
+msgid "6 months"
+msgstr "6 個月"
+
+#: src/routes/dashboard/settings/profile.tsx
+msgid "A confirmation link has been sent to your current email address. Please check your inbox to confirm the change."
+msgstr "確認連結已傳送至您目前的電子郵件地址。請檢查收件匣以完成變更確認。"
+
+#: src/routes/builder/$resumeId/-components/dock.tsx
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+msgid "A link to your resume has been copied to clipboard."
+msgstr "履歷連結已複製到剪貼簿。"
+
+#: src/routes/dashboard/settings/profile.tsx
+msgid "A new verification link has been sent to your email address. Please check your inbox to verify your account."
+msgstr "新的驗證連結已傳送至您的電子郵件地址。請檢查收件匣以驗證您的帳戶。"
+
+#: src/dialogs/resume/index.tsx
+#: src/dialogs/resume/index.tsx
+msgid "A resume with this slug already exists."
+msgstr "已有使用這個標示碼的履歷。"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/page.tsx
+msgid "A4"
+msgstr "A4"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/information.tsx
+msgid "About ProTalent CV"
+msgstr ""
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/custom-fields.tsx
+msgid "Add a custom field"
+msgstr "新增自訂欄位"
+
+#: src/components/input/url-input.tsx
+msgid "Add a label to the URL"
+msgstr "為此 URL 新增標籤"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/awards.tsx
+msgid "Add a new award"
+msgstr "新增得獎紀錄"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/certifications.tsx
+msgid "Add a new certification"
+msgstr "新增證照"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/custom.tsx
+msgid "Add a new custom section"
+msgstr "新增自訂段落"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/education.tsx
+msgid "Add a new education"
+msgstr "新增學歷"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/experience.tsx
+msgid "Add a new experience"
+msgstr "新增經歷"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/interests.tsx
+msgid "Add a new interest"
+msgstr "新增興趣項目"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/custom.tsx
+#: src/routes/builder/$resumeId/-sidebar/left/shared/section-menu.tsx
+msgid "Add a new item"
+msgstr "新增項目"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/languages.tsx
+msgid "Add a new language"
+msgstr "新增語言"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/profiles.tsx
+msgid "Add a new profile"
+msgstr "新增個人檔案"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/projects.tsx
+msgid "Add a new project"
+msgstr "新增專案"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/publications.tsx
+msgid "Add a new publication"
+msgstr "新增出版品"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/references.tsx
+msgid "Add a new reference"
+msgstr "新增推薦人"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/skills.tsx
+msgid "Add a new skill"
+msgstr "新增技能"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/volunteer.tsx
+msgid "Add a new volunteer experience"
+msgstr "新增志工經歷"
+
+#: src/components/input/rich-input.tsx
+msgid "Add Column After"
+msgstr "在後方新增欄"
+
+#: src/components/input/rich-input.tsx
+msgid "Add Column Before"
+msgstr "在前方新增欄"
+
+#: src/dialogs/resume/sections/experience.tsx
+msgid "Add multiple roles to show career progression at the same company."
+msgstr "新增多個職位以展示在同一公司的職涯晉升情況。"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/layout/pages.tsx
+msgid "Add Page"
+msgstr "新增頁面"
+
+#: src/dialogs/resume/sections/experience.tsx
+msgid "Add Role"
+msgstr "新增職位"
+
+#: src/components/input/rich-input.tsx
+msgid "Add Row After"
+msgstr "在後方新增列"
+
+#: src/components/input/rich-input.tsx
+msgid "Add Row Before"
+msgstr "在前方新增列"
+
+#. placeholder {0}: skillsToSync.length
+#: src/routes/dashboard/job-search/-components/tailor-dialog.tsx
+msgid "Added {0} new skills to your original resume"
+msgstr "在原有的履歷中加入 {0} 新技能"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Advanced Filters"
+msgstr "進階過濾器"
+
+#: src/utils/locale.ts
+msgid "Afrikaans"
+msgstr "南非荷蘭語"
+
+#: src/dialogs/resume/import.tsx
+#: src/dialogs/resume/import.tsx
+msgid "AI"
+msgstr "AI"
+
+#: src/routes/dashboard/job-search/-components/tailor-dialog.tsx
+msgid "AI returned some invalid references"
+msgstr "AI 返回了一些無效的參照"
+
+#: src/utils/locale.ts
+msgid "Albanian"
+msgstr "阿爾巴尼亞語"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+msgid "Allow Public Access"
+msgstr "允許公開存取"
+
+#: src/routes/auth/register.tsx
+msgid "Already have an account? <0/>"
+msgstr "已有帳戶？<0/>"
+
+#: src/utils/locale.ts
+msgid "Amharic"
+msgstr "阿姆哈拉語"
+
+#: src/components/layout/error-screen.tsx
+#: src/components/layout/not-found-screen.tsx
+msgid "An error occurred while loading the page."
+msgstr "載入頁面時發生錯誤。"
+
+#: src/dialogs/resume/import.tsx
+msgid "An unknown error occurred while importing your resume."
+msgstr "匯入履歷時發生未知錯誤。"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Any level"
+msgstr "任何等級"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Any time"
+msgstr "任何時間"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Any type"
+msgstr "任何類型"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+msgid "Anyone visiting the resume's public URL must enter this password to access it."
+msgstr "任何造訪此履歷公開 URL 的人都必須輸入這個密碼才能存取。"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+msgid "Anyone who has the resume's public URL will be able to view and download your resume without entering a password."
+msgstr "任何擁有此履歷公開 URL 的人，都可以在不輸入密碼的情況下檢視與下載您的履歷。"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+msgid "Anyone with the link can view and download the resume."
+msgstr "任何擁有連結的人都可以檢視和下載履歷。"
+
+#: src/routes/dashboard/settings/ai.tsx
+msgid "API Key"
+msgstr "API Key"
+
+#: src/components/command-palette/pages/navigation.tsx
+#: src/components/command-palette/pages/navigation.tsx
+#: src/routes/dashboard/-components/sidebar.tsx
+#: src/routes/dashboard/settings/api-keys.tsx
+msgid "API Keys"
+msgstr "API Key"
+
+#: src/routes/dashboard/settings/job-search.tsx
+msgid "API Usage"
+msgstr "API 使用方式"
+
+#: src/routes/dashboard/-components/sidebar.tsx
+msgid "App"
+msgstr "應用程式"
+
+#: src/routes/dashboard/job-search/-components/job-detail.tsx
+msgid "Apply"
+msgstr "申請"
+
+#: src/routes/dashboard/job-search/-components/job-detail.tsx
+msgid "Apply Link"
+msgstr "申請連結"
+
+#: src/routes/dashboard/job-search/-components/job-detail.tsx
+msgid "Apply Via"
+msgstr "申請途徑"
+
+#: src/utils/locale.ts
+msgid "Arabic"
+msgstr "阿拉伯文"
+
+#: src/hooks/use-form-blocker.tsx
+msgid "Are you sure you want to close this dialog?"
+msgstr "確定要關閉此對話框嗎？"
+
+#: src/routes/dashboard/settings/api-keys.tsx
+#~ msgid "Are you sure you want to delete this API key?"
+#~ msgstr "確定要刪除此 API Key 嗎？"
+
+#: src/routes/builder/$resumeId/-components/header.tsx
+#: src/routes/dashboard/resumes/-components/menus/context-menu.tsx
+#: src/routes/dashboard/resumes/-components/menus/dropdown-menu.tsx
+msgid "Are you sure you want to delete this resume?"
+msgstr "您確定要刪除這份履歷嗎？"
+
+#: src/routes/dashboard/settings/danger-zone.tsx
+msgid "Are you sure you want to delete your account?"
+msgstr "您確定要刪除您的帳戶嗎？"
+
+#: src/routes/builder/$resumeId/-components/header.tsx
+#: src/routes/dashboard/resumes/-components/menus/context-menu.tsx
+#: src/routes/dashboard/resumes/-components/menus/dropdown-menu.tsx
+msgid "Are you sure you want to lock this resume?"
+msgstr "您確定要鎖定這份履歷嗎？"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+msgid "Are you sure you want to remove password protection?"
+msgstr "您確定要移除密碼保護嗎？"
+
+#: src/dialogs/resume/sections/education.tsx
+msgid "Area of Study"
+msgstr "學習領域"
+
+#: src/components/command-palette/pages/navigation.tsx
+#: src/components/command-palette/pages/navigation.tsx
+#: src/routes/dashboard/-components/sidebar.tsx
+#: src/routes/dashboard/settings/ai.tsx
+msgid "Artificial Intelligence"
+msgstr "人工智慧"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/picture.tsx
+msgid "Aspect Ratio"
+msgstr "顯示比例"
+
+#: src/components/command-palette/pages/navigation.tsx
+#: src/components/command-palette/pages/navigation.tsx
+#: src/routes/dashboard/-components/sidebar.tsx
+#: src/routes/dashboard/settings/authentication/index.tsx
+msgid "Authentication"
+msgstr "驗證"
+
+#: src/dialogs/resume/sections/award.tsx
+msgctxt "(noun) person, organization, or entity that gives an award"
+msgid "Awarder"
+msgstr "頒獎者"
+
+#: src/dialogs/resume/sections/custom.tsx
+#: src/utils/resume/section.tsx
+msgid "Awards"
+msgstr "獎項"
+
+#: src/utils/locale.ts
+msgid "Azerbaijani"
+msgstr "亞塞拜然語"
+
+#: src/routes/auth/verify-2fa.tsx
+msgid "Back to Login"
+msgstr "返回登入"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/design.tsx
+msgid "Background Color"
+msgstr "背景顏色"
+
+#: src/dialogs/auth/enable-two-factor.tsx
+msgid "Backup codes copied to clipboard."
+msgstr "備份代碼已複製到剪貼簿。"
+
+#: src/routes/dashboard/settings/ai.tsx
+msgid "Base URL (Optional)"
+msgstr "基底 URL（選填）"
+
+#: src/utils/resume/section.tsx
+msgid "Basics"
+msgstr "基本資料"
+
+#: src/routes/dashboard/job-search/-components/job-detail.tsx
+msgid "Benefits"
+msgstr "優點"
+
+#: src/utils/locale.ts
+msgid "Bengali"
+msgstr "孟加拉語"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/typography.tsx
+msgctxt "Body Text (paragraphs, lists, etc.)"
+msgid "Body"
+msgstr "內文"
+
+#: src/components/input/rich-input.tsx
+msgid "Bold"
+msgstr "粗體"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/picture.tsx
+msgid "Border Radius"
+msgstr "邊框弧度"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/picture.tsx
+msgid "Border Width"
+msgstr "邊框寬度"
+
+#: src/components/command-palette/index.tsx
+msgid "Builder Command Palette"
+msgstr "編輯器指令選單"
+
+#: src/utils/locale.ts
+msgid "Bulgarian"
+msgstr "保加利亞語"
+
+#: src/components/input/rich-input.tsx
+msgid "Bullet List"
+msgstr "項目符號清單"
+
+#: src/dialogs/auth/enable-two-factor.tsx
+#: src/dialogs/resume/sections/award.tsx
+#: src/dialogs/resume/sections/award.tsx
+#: src/dialogs/resume/sections/certification.tsx
+#: src/dialogs/resume/sections/certification.tsx
+#: src/dialogs/resume/sections/cover-letter.tsx
+#: src/dialogs/resume/sections/cover-letter.tsx
+#: src/dialogs/resume/sections/custom.tsx
+#: src/dialogs/resume/sections/custom.tsx
+#: src/dialogs/resume/sections/education.tsx
+#: src/dialogs/resume/sections/education.tsx
+#: src/dialogs/resume/sections/experience.tsx
+#: src/dialogs/resume/sections/experience.tsx
+#: src/dialogs/resume/sections/interest.tsx
+#: src/dialogs/resume/sections/interest.tsx
+#: src/dialogs/resume/sections/language.tsx
+#: src/dialogs/resume/sections/language.tsx
+#: src/dialogs/resume/sections/profile.tsx
+#: src/dialogs/resume/sections/profile.tsx
+#: src/dialogs/resume/sections/project.tsx
+#: src/dialogs/resume/sections/project.tsx
+#: src/dialogs/resume/sections/publication.tsx
+#: src/dialogs/resume/sections/publication.tsx
+#: src/dialogs/resume/sections/reference.tsx
+#: src/dialogs/resume/sections/reference.tsx
+#: src/dialogs/resume/sections/skill.tsx
+#: src/dialogs/resume/sections/skill.tsx
+#: src/dialogs/resume/sections/summary-item.tsx
+#: src/dialogs/resume/sections/summary-item.tsx
+#: src/dialogs/resume/sections/volunteer.tsx
+#: src/dialogs/resume/sections/volunteer.tsx
+#: src/hooks/use-prompt.tsx
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+#: src/routes/dashboard/job-search/-components/tailor-dialog.tsx
+#: src/routes/dashboard/settings/danger-zone.tsx
+#: src/routes/dashboard/settings/profile.tsx
+msgid "Cancel"
+msgstr "取消"
+
+#: src/utils/locale.ts
+msgid "Catalan"
+msgstr "加泰隆尼亞語"
+
+#: src/components/input/rich-input.tsx
+msgid "Center Align"
+msgstr "置中對齊"
+
+#: src/routes/builder/$resumeId/-components/dock.tsx
+msgid "Center view"
+msgstr "置中檢視"
+
+#: src/dialogs/resume/sections/custom.tsx
+#: src/utils/resume/section.tsx
+msgid "Certifications"
+msgstr "證照"
+
+#: src/components/command-palette/pages/preferences/index.tsx
+msgid "Change language to..."
+msgstr "變更語言為…"
+
+#: src/components/command-palette/pages/preferences/index.tsx
+msgid "Change theme to..."
+msgstr "變更主題為…"
+
+#: src/dialogs/resume/index.tsx
+msgid "Changed your mind? Rename your resume to something more descriptive."
+msgstr "改變主意了嗎？將履歷重新命名成更具描述性的名稱吧。"
+
+#: src/routes/auth/forgot-password.tsx
+msgid "Check your email for a link to reset your password."
+msgstr "請到電子郵件收件匣查看重設密碼的連結。"
+
+#: src/routes/auth/register.tsx
+msgid "Check your email for a link to verify your account."
+msgstr "請到電子郵件收件匣查看用於驗證帳戶的連結。"
+
+#: src/utils/locale.ts
+msgid "Chinese (Simplified)"
+msgstr "中文（簡體）"
+
+#: src/utils/locale.ts
+msgid "Chinese (Traditional)"
+msgstr "中文（繁體）"
+
+#: src/components/level/combobox.tsx
+msgid "Circle"
+msgstr "圓形"
+
+#: src/routes/dashboard/job-search/index.tsx
+msgid "Clear all"
+msgstr "清除所有"
+
+#: src/dialogs/resume/import.tsx
+msgid "Click here to select a file to import"
+msgstr "按這裡選擇要匯入的檔案"
+
+#: src/components/ui/dialog.tsx
+#: src/components/ui/sheet.tsx
+msgid "Close"
+msgstr "關閉"
+
+#: src/components/input/rich-input.tsx
+msgid "Code Block"
+msgstr "程式碼區塊"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/custom.tsx
+#: src/routes/builder/$resumeId/-sidebar/left/shared/section-menu.tsx
+msgid "Columns"
+msgstr "欄"
+
+#: src/dialogs/resume/sections/experience.tsx
+msgid "Company"
+msgstr "公司"
+
+#: src/routes/dashboard/job-search/index.tsx
+msgid "Configure Job Search"
+msgstr "設定工作搜尋"
+
+#: src/dialogs/api-key/create.tsx
+#: src/hooks/use-prompt.tsx
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+#: src/routes/dashboard/settings/danger-zone.tsx
+msgid "Confirm"
+msgstr "確認"
+
+#: src/routes/dashboard/settings/authentication/-components/social-provider.tsx
+msgid "Connect"
+msgstr "連結"
+
+#: src/dialogs/resume/sections/cover-letter.tsx
+#: src/dialogs/resume/sections/summary-item.tsx
+msgid "Content"
+msgstr "內容"
+
+#: src/dialogs/auth/enable-two-factor.tsx
+#: src/dialogs/auth/enable-two-factor.tsx
+#: src/dialogs/auth/enable-two-factor.tsx
+#: src/routes/auth/register.tsx
+msgid "Continue"
+msgstr "繼續"
+
+#: src/routes/dashboard/resumes/-components/cards/import-card.tsx
+#: src/routes/dashboard/resumes/-components/list-view.tsx
+msgid "Continue where you left off"
+msgstr "從上次中斷的地方繼續"
+
+#: src/dialogs/resume/import.tsx
+msgid "Continue where you left off by importing an existing resume you created using ProTalent CV or any another resume builder. Supported formats include PDF, Microsoft Word, as well as JSON files from ProTalent CV."
+msgstr ""
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Contractor"
+msgstr "承包商"
+
+#: src/dialogs/auth/enable-two-factor.tsx
+msgid "Copy"
+msgstr "複製"
+
+#: src/dialogs/auth/enable-two-factor.tsx
+msgid "Copy and store these backup codes in case you lose your device."
+msgstr "請複製並妥善保存這些備份代碼，以防您遺失裝置。"
+
+#: src/dialogs/auth/enable-two-factor.tsx
+msgid "Copy Backup Codes"
+msgstr "複製備份代碼"
+
+#: src/dialogs/api-key/create.tsx
+msgid "Copy this secret key and use it in your applications to access your data."
+msgstr "複製這組私密金鑰，並在您的應用程式中使用它來存取您的資料。"
+
+#: src/routes/builder/$resumeId/-components/dock.tsx
+msgid "Copy URL"
+msgstr "複製 URL"
+
+#: src/routes/dashboard/job-search/index.tsx
+msgid "Could not fetch jobs"
+msgstr "無法取得工作"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Country"
+msgstr "國家"
+
+#: src/dialogs/resume/sections/custom.tsx
+#: src/utils/resume/section.tsx
+msgid "Cover Letter"
+msgstr "求職信"
+
+#: src/dialogs/api-key/create.tsx
+#: src/dialogs/resume/index.tsx
+#: src/dialogs/resume/sections/award.tsx
+#: src/dialogs/resume/sections/certification.tsx
+#: src/dialogs/resume/sections/cover-letter.tsx
+#: src/dialogs/resume/sections/custom.tsx
+#: src/dialogs/resume/sections/education.tsx
+#: src/dialogs/resume/sections/experience.tsx
+#: src/dialogs/resume/sections/interest.tsx
+#: src/dialogs/resume/sections/language.tsx
+#: src/dialogs/resume/sections/profile.tsx
+#: src/dialogs/resume/sections/project.tsx
+#: src/dialogs/resume/sections/publication.tsx
+#: src/dialogs/resume/sections/reference.tsx
+#: src/dialogs/resume/sections/skill.tsx
+#: src/dialogs/resume/sections/summary-item.tsx
+#: src/dialogs/resume/sections/volunteer.tsx
+msgid "Create"
+msgstr "建立"
+
+#: src/routes/auth/register.tsx
+msgid "Create a new account"
+msgstr "建立一個新帳戶"
+
+#: src/dialogs/api-key/create.tsx
+#: src/routes/dashboard/settings/api-keys.tsx
+msgid "Create a new API key"
+msgstr "建立新的 API Key"
+
+#: src/dialogs/resume/sections/award.tsx
+msgid "Create a new award"
+msgstr "建立新的得獎紀錄"
+
+#: src/dialogs/resume/sections/certification.tsx
+msgid "Create a new certification"
+msgstr "建立新的證照"
+
+#: src/dialogs/resume/sections/cover-letter.tsx
+msgid "Create a new cover letter"
+msgstr "建立新的求職信"
+
+#: src/dialogs/resume/sections/custom.tsx
+msgid "Create a new custom section"
+msgstr "建立新的自訂段落"
+
+#: src/dialogs/resume/sections/education.tsx
+msgid "Create a new education"
+msgstr "建立新的學歷"
+
+#: src/dialogs/resume/sections/experience.tsx
+msgid "Create a new experience"
+msgstr "建立新的經歷"
+
+#: src/dialogs/resume/sections/interest.tsx
+msgid "Create a new interest"
+msgstr "建立新的興趣項目"
+
+#: src/dialogs/resume/sections/language.tsx
+msgid "Create a new language"
+msgstr "建立新的語言"
+
+#: src/dialogs/resume/sections/profile.tsx
+msgid "Create a new profile"
+msgstr "建立新的個人檔案"
+
+#: src/dialogs/resume/sections/project.tsx
+msgid "Create a new project"
+msgstr "建立新的專案"
+
+#: src/dialogs/resume/sections/publication.tsx
+msgid "Create a new publication"
+msgstr "建立新的出版品"
+
+#: src/dialogs/resume/sections/reference.tsx
+msgid "Create a new reference"
+msgstr "建立新的推薦人"
+
+#: src/components/command-palette/pages/resumes.tsx
+#: src/dialogs/resume/index.tsx
+#: src/routes/dashboard/resumes/-components/cards/create-card.tsx
+#: src/routes/dashboard/resumes/-components/list-view.tsx
+msgid "Create a new resume"
+msgstr "建立新履歷"
+
+#: src/dialogs/resume/sections/skill.tsx
+msgid "Create a new skill"
+msgstr "建立新的技能"
+
+#: src/dialogs/resume/sections/summary-item.tsx
+msgid "Create a new summary item"
+msgstr "建立新的摘要項目"
+
+#: src/dialogs/resume/sections/volunteer.tsx
+msgid "Create a new volunteer experience"
+msgstr "建立新的志工經歷"
+
+#: src/dialogs/resume/index.tsx
+msgid "Create a Sample Resume"
+msgstr "建立履歷範例"
+
+#: src/dialogs/api-key/create.tsx
+msgid "Creating your API key..."
+msgstr "正在建立您的 API Key…"
+
+#: src/dialogs/resume/index.tsx
+#: src/dialogs/resume/index.tsx
+msgid "Creating your resume..."
+msgstr "正在建立您的履歷…"
+
+#: src/dialogs/auth/change-password.tsx
+msgid "Current Password"
+msgstr "目前密碼"
+
+#: src/utils/resume/section.tsx
+msgid "Custom CSS"
+msgstr "自訂 CSS"
+
+#: src/utils/resume/section.tsx
+msgid "Custom Sections"
+msgstr "自訂段落"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/information.tsx
+msgid "ProTalent CV is a free CV and resume builder by DPN Media Works. Build, customize, and share polished resumes in minutes."
+msgstr ""
+
+#: src/utils/locale.ts
+msgid "Czech"
+msgstr "捷克語"
+
+#: src/components/command-palette/pages/navigation.tsx
+#: src/components/command-palette/pages/navigation.tsx
+#: src/routes/dashboard/-components/sidebar.tsx
+#: src/routes/dashboard/settings/danger-zone.tsx
+msgid "Danger Zone"
+msgstr "危險操作"
+
+#: src/utils/locale.ts
+msgid "Danish"
+msgstr "丹麥語"
+
+#: src/components/user/dropdown-menu.tsx
+#: src/utils/theme.ts
+msgid "Dark"
+msgstr "暗色"
+
+#: src/components/command-palette/pages/preferences/theme.tsx
+msgid "Dark theme"
+msgstr "深色主題"
+
+#: src/dialogs/resume/sections/award.tsx
+#: src/dialogs/resume/sections/certification.tsx
+#: src/dialogs/resume/sections/publication.tsx
+msgid "Date"
+msgstr "日期"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Date Posted"
+msgstr "發佈日期"
+
+#: src/dialogs/resume/sections/education.tsx
+msgid "Degree"
+msgstr "學位"
+
+#: src/routes/builder/$resumeId/-components/header.tsx
+#: src/routes/builder/$resumeId/-sidebar/left/sections/custom.tsx
+#: src/routes/builder/$resumeId/-sidebar/left/shared/section-item.tsx
+#: src/routes/dashboard/resumes/-components/menus/context-menu.tsx
+#: src/routes/dashboard/resumes/-components/menus/dropdown-menu.tsx
+msgid "Delete"
+msgstr "刪除"
+
+#: src/routes/dashboard/settings/danger-zone.tsx
+msgid "Delete Account"
+msgstr "刪除帳號"
+
+#: src/components/input/rich-input.tsx
+msgid "Delete Column"
+msgstr "刪除欄"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/layout/pages.tsx
+msgid "Delete Page"
+msgstr "刪除頁面"
+
+#: src/components/input/rich-input.tsx
+msgid "Delete Row"
+msgstr "刪除列"
+
+#: src/components/input/rich-input.tsx
+msgid "Delete Table"
+msgstr "刪除表格"
+
+#: src/routes/dashboard/settings/danger-zone.tsx
+msgid "Deleting your account..."
+msgstr "正在刪除您的帳戶…"
+
+#: src/routes/dashboard/settings/api-keys.tsx
+#~ msgid "Deleting your API key..."
+#~ msgstr "正在刪除您的 API Key…"
+
+#: src/routes/builder/$resumeId/-components/header.tsx
+#: src/routes/dashboard/resumes/-components/menus/context-menu.tsx
+#: src/routes/dashboard/resumes/-components/menus/dropdown-menu.tsx
+msgid "Deleting your resume..."
+msgstr "正在刪除您的履歷…"
+
+#: src/dialogs/resume/sections/award.tsx
+#: src/dialogs/resume/sections/certification.tsx
+#: src/dialogs/resume/sections/education.tsx
+#: src/dialogs/resume/sections/experience.tsx
+#: src/dialogs/resume/sections/experience.tsx
+#: src/dialogs/resume/sections/project.tsx
+#: src/dialogs/resume/sections/publication.tsx
+#: src/dialogs/resume/sections/reference.tsx
+#: src/dialogs/resume/sections/volunteer.tsx
+#: src/routes/dashboard/job-search/-components/job-detail.tsx
+msgid "Description"
+msgstr "詳細資訊"
+
+#: src/utils/resume/section.tsx
+msgid "Design"
+msgstr "設計"
+
+#: src/routes/dashboard/job-search/-components/job-detail.tsx
+msgid "Direct"
+msgstr "直接"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Direct Apply"
+msgstr "直接申請"
+
+#: src/routes/dashboard/job-search/-components/use-job-search.ts
+msgid "Direct apply only"
+msgstr "僅限直接申請"
+
+#: src/dialogs/auth/disable-two-factor.tsx
+#: src/routes/dashboard/settings/authentication/-components/two-factor.tsx
+msgid "Disable 2FA"
+msgstr "停用雙因子驗證（2FA）"
+
+#: src/dialogs/auth/disable-two-factor.tsx
+msgid "Disable Two-Factor Authentication"
+msgstr "停用雙因子驗證"
+
+#: src/routes/dashboard/settings/ai.tsx
+msgid "Disabled"
+msgstr "已停用"
+
+#: src/dialogs/auth/disable-two-factor.tsx
+msgid "Disabling two-factor authentication..."
+msgstr "正在停用雙因子驗證…"
+
+#: src/routes/dashboard/settings/authentication/-components/social-provider.tsx
+msgid "Disconnect"
+msgstr "中斷連結"
+
+#: src/routes/auth/login.tsx
+msgid "Don't have an account? <0/>"
+msgstr "沒有帳戶？<0/>"
+
+#: src/dialogs/auth/enable-two-factor.tsx
+#: src/routes/$username/$slug.tsx
+msgid "Download"
+msgstr "下載"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/export.tsx
+msgid "Download a copy of your resume as a Word document. Use this file to further customize your resume in Microsoft Word or Google Docs."
+msgstr "將您的履歷下載為 Word 文件。使用此檔案在 Microsoft Word 或 Google Docs 中進一步自訂您的簡歷。"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/export.tsx
+msgid "Download a copy of your resume in JSON format. Use this file for backup or to import your resume into other applications, including AI assistants."
+msgstr "下載一份 JSON 格式的履歷備份。您可以用這個檔案做備份，或將履歷匯入到其他應用程式（包含 AI 助理）。"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/export.tsx
+msgid "Download a copy of your resume in PDF format. Use this file for printing or to easily share your resume with recruiters."
+msgstr "下載一份 PDF 格式的履歷副本。您可以用這個檔案列印，或輕鬆與招募人員分享您的履歷。"
+
+#: src/routes/builder/$resumeId/-components/dock.tsx
+msgid "Download DOCX"
+msgstr "下載 DOCX"
+
+#: src/routes/builder/$resumeId/-components/dock.tsx
+msgid "Download JSON"
+msgstr "下載 JSON"
+
+#: src/routes/builder/$resumeId/-components/dock.tsx
+msgid "Download PDF"
+msgstr "下載 PDF"
+
+#: src/routes/$username/$slug.tsx
+msgid "Downloading..."
+msgstr "正在下載…"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/statistics.tsx
+msgid "Downloads"
+msgstr "下載"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/information.tsx
+msgid "DPN Media Works"
+msgstr ""
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/layout/pages.tsx
+msgid "Drag and drop sections here to move them between columns"
+msgstr "將段落拖曳到這裡，以在不同欄之間移動它們"
+
+#: src/dialogs/resume/index.tsx
+#: src/routes/builder/$resumeId/-components/header.tsx
+#: src/routes/builder/$resumeId/-sidebar/left/sections/custom.tsx
+#: src/routes/builder/$resumeId/-sidebar/left/shared/section-item.tsx
+#: src/routes/dashboard/resumes/-components/menus/context-menu.tsx
+#: src/routes/dashboard/resumes/-components/menus/dropdown-menu.tsx
+msgid "Duplicate"
+msgstr "複製"
+
+#: src/dialogs/resume/index.tsx
+msgid "Duplicate Resume"
+msgstr "複製履歷"
+
+#: src/dialogs/resume/index.tsx
+msgid "Duplicate your resume to create a new one, just like the original."
+msgstr "複製您的履歷，以建立一份與原本相同的新履歷。"
+
+#: src/dialogs/resume/index.tsx
+msgid "Duplicating your resume..."
+msgstr "正在複製您的履歷…"
+
+#: src/utils/locale.ts
+msgid "Dutch"
+msgstr "荷蘭語"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "e.g. 150000"
+msgstr "例如：150000"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "e.g. 50000"
+msgstr "例如：50000"
+
+#: src/routes/dashboard/job-search/index.tsx
+msgid "e.g. frontend developer jobs in Berlin"
+msgstr "例如：在柏林的前端開發人員工作"
+
+#: src/dialogs/resume/sections/custom.tsx
+#: src/utils/resume/section.tsx
+msgid "Education"
+msgstr "學歷"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/basics.tsx
+msgid "Email"
+msgstr "電子郵件"
+
+#: src/routes/auth/forgot-password.tsx
+#: src/routes/auth/login.tsx
+#: src/routes/auth/register.tsx
+#: src/routes/dashboard/settings/profile.tsx
+msgid "Email Address"
+msgstr "電子郵件地址"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/css.tsx
+msgctxt "Turn On/Apply Custom CSS"
+msgid "Enable"
+msgstr "啟用"
+
+#: src/routes/dashboard/settings/authentication/-components/two-factor.tsx
+msgid "Enable 2FA"
+msgstr "啟用雙因子驗證"
+
+#: src/routes/dashboard/settings/ai.tsx
+msgid "Enable AI Features"
+msgstr "啟用 AI 功能"
+
+#: src/dialogs/auth/enable-two-factor.tsx
+msgid "Enable Two-Factor Authentication"
+msgstr "啟用雙因子驗證"
+
+#: src/routes/dashboard/settings/ai.tsx
+msgid "Enabled"
+msgstr "已啟用"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+msgid "Enabling password protection..."
+msgstr "正在啟用密碼保護…"
+
+#: src/dialogs/auth/enable-two-factor.tsx
+msgid "Enabling two-factor authentication..."
+msgstr "正在啟用雙因子驗證…"
+
+#: src/utils/locale.ts
+msgid "English"
+msgstr "英文"
+
+#: src/utils/locale.ts
+msgid "English (United Kingdom)"
+msgstr "英語（英國）"
+
+#: src/routes/auth/verify-2fa-backup.tsx
+msgid "Enter one of your saved backup codes to access your account"
+msgstr "請輸入其中一組已儲存的備份代碼以存取您的帳戶"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/custom-fields.tsx
+msgid "Enter the URL to link to"
+msgstr "輸入要連結到的 URL"
+
+#: src/routes/auth/verify-2fa.tsx
+msgid "Enter the verification code from your authenticator app"
+msgstr "請輸入您驗證器應用程式中的驗證碼"
+
+#: src/dialogs/auth/change-password.tsx
+msgid "Enter your current password and a new password to update your account."
+msgstr "請輸入目前密碼與新密碼以更新您的帳戶。"
+
+#: src/dialogs/auth/enable-two-factor.tsx
+msgid "Enter your password to confirm setting up two-factor authentication. When enabled, you'll need to enter a code from your authenticator app every time you log in."
+msgstr "請輸入您的密碼以確認設定雙因子驗證。啟用後，每次登入都需要輸入驗證器應用程式中的驗證碼。"
+
+#: src/dialogs/auth/disable-two-factor.tsx
+msgid "Enter your password to disable two-factor authentication. Your account will be less secure without 2FA enabled."
+msgstr "請輸入您的密碼以停用雙因子驗證。停用後，您的帳戶將會比較不安全。"
+
+#: src/routes/dashboard/settings/job-search.tsx
+msgid "Enter your RapidAPI key"
+msgstr "輸入您的 RapidAPI 金鑰"
+
+#: src/routes/dashboard/settings/ai.tsx
+msgid "Everything entered here is stored locally on your browser. Your data is only sent to the server when making a request to the AI provider, and is never stored or logged on our servers."
+msgstr "您在這裡輸入的所有內容都會儲存在瀏覽器本機。只有在向 AI 服務提供者發出請求時，您的資料才會被傳送到伺服器，而且絕不會在我們的伺服器上儲存或記錄。"
+
+#: src/routes/dashboard/job-search/-components/use-job-search.ts
+msgid "Exclude {value}"
+msgstr "不包括 {value}"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Exclude Companies"
+msgstr "排除公司"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Exclude Keywords"
+msgstr "排除關鍵字"
+
+#: src/components/input/rich-input.tsx
+msgid "Exit Fullscreen"
+msgstr "退出全螢幕"
+
+#: src/dialogs/resume/sections/custom.tsx
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+#: src/utils/resume/section.tsx
+msgid "Experience"
+msgstr "經歷"
+
+#: src/dialogs/api-key/create.tsx
+msgid "Expires in"
+msgstr "到期時間"
+
+#: src/routes/dashboard/settings/api-keys.tsx
+#~ msgid "Expires on {0}"
+#~ msgstr "將於 {0} 到期"
+
+#: src/routes/dashboard/settings/api-keys.tsx
+msgid "Explore the API documentation to learn how to integrate ProTalent CV with your applications. Find detailed endpoints, request examples, and authentication methods."
+msgstr ""
+
+#: src/utils/resume/section.tsx
+msgid "Export"
+msgstr "導出"
+
+#: src/routes/dashboard/job-search/-components/tailor-dialog.tsx
+msgid "Failed to duplicate resume"
+msgstr "履歷複製失敗"
+
+#: src/dialogs/auth/enable-two-factor.tsx
+msgid "Failed to setup two-factor authentication."
+msgstr "設定雙因子驗證失敗。"
+
+#: src/routes/auth/login.tsx
+msgid "Failed to sign in. Please try again."
+msgstr "登入失敗。請再試一次。"
+
+#: src/routes/dashboard/job-search/-components/tailor-dialog.tsx
+msgid "Failed to sync skills"
+msgstr "同步技能失敗"
+
+#: src/routes/dashboard/resumes/index.tsx
+msgid "Filter by"
+msgstr "篩選條件"
+
+#: src/utils/locale.ts
+msgid "Finnish"
+msgstr "芬蘭語"
+
+#: src/dialogs/resume/sections/language.tsx
+msgid "Fluency"
+msgstr "流利程度"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/typography.tsx
+#: src/routes/builder/$resumeId/-sidebar/right/sections/typography.tsx
+msgid "Font Family"
+msgstr "字體"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/typography.tsx
+#: src/routes/builder/$resumeId/-sidebar/right/sections/typography.tsx
+msgid "Font Size"
+msgstr "字體大小"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/typography.tsx
+msgid "Font Weight"
+msgstr "字重"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/typography.tsx
+msgid "Font Weights"
+msgstr "字重預設"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/notes.tsx
+msgid "For example, information regarding which companies you sent this resume to or the links to the job descriptions can be noted down here."
+msgstr "例如，您將這份履歷寄給哪些公司的相關資訊，或是工作說明的連結，都可以在這裡記下來。"
+
+#: src/dialogs/api-key/create.tsx
+msgid "For security reasons, this key will only be displayed once."
+msgstr "基於安全考量，此金鑰只會顯示一次。"
+
+#: src/routes/auth/login.tsx
+msgid "Forgot Password?"
+msgstr "忘記密碼？"
+
+#: src/routes/auth/forgot-password.tsx
+msgid "Forgot your password?"
+msgstr "忘記密碼？"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/page.tsx
+msgctxt "Page Format (A4, Letter or Free-Form)"
+msgid "Format"
+msgstr "格式"
+
+#: src/routes/dashboard/settings/profile.tsx
+msgid "Free Account"
+msgstr ""
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/page.tsx
+msgid "Free-Form"
+msgstr "自由格式"
+
+#: src/utils/locale.ts
+msgid "French"
+msgstr "法文"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/layout/pages.tsx
+msgid "Full Width"
+msgstr "全幅寬"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Full-time"
+msgstr "全職"
+
+#: src/components/input/rich-input.tsx
+msgid "Fullscreen"
+msgstr "全螢幕"
+
+#: src/dialogs/resume/index.tsx
+msgid "Generate a random name"
+msgstr "產生隨機名稱"
+
+#: src/utils/locale.ts
+msgid "German"
+msgstr "德文"
+
+#: src/routes/dashboard/settings/job-search.tsx
+msgid "Get your API key from RapidAPI by subscribing to the JSearch API."
+msgstr "透過訂閱 JSearch API，從 RapidAPI 取得您的 API 金鑰。"
+
+#: src/components/layout/not-found-screen.tsx
+#: src/routes/auth/verify-2fa-backup.tsx
+msgid "Go Back"
+msgstr "返回"
+
+#: src/routes/dashboard/job-search/index.tsx
+msgid "Go to Settings"
+msgstr "前往設定"
+
+#: src/components/command-palette/pages/navigation.tsx
+msgid "Go to..."
+msgstr "前往…"
+
+#: src/dialogs/resume/sections/education.tsx
+msgid "Grade"
+msgstr "成績"
+
+#: src/utils/locale.ts
+msgid "Greek"
+msgstr "希臘語"
+
+#: src/routes/dashboard/resumes/index.tsx
+msgid "Grid"
+msgstr "網格"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/typography.tsx
+msgctxt "Headings or Titles (H1, H2, H3, H4, H5, H6)"
+msgid "Heading"
+msgstr "標題文字"
+
+#: src/components/input/rich-input.tsx
+msgid "Heading 1"
+msgstr "標題 1"
+
+#: src/components/input/rich-input.tsx
+msgid "Heading 2"
+msgstr "標題 2"
+
+#: src/components/input/rich-input.tsx
+msgid "Heading 3"
+msgstr "標題 3"
+
+#: src/components/input/rich-input.tsx
+msgid "Heading 4"
+msgstr "標題 4"
+
+#: src/components/input/rich-input.tsx
+msgid "Heading 5"
+msgstr "標題 5"
+
+#: src/components/input/rich-input.tsx
+msgid "Heading 6"
+msgstr "標題 6"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/basics.tsx
+msgid "Headline"
+msgstr "標題"
+
+#: src/utils/locale.ts
+msgid "Hebrew"
+msgstr "希伯來語"
+
+#: src/dialogs/resume/template/gallery.tsx
+msgid "Here's a range of resume templates for different professions and personalities. Whether you prefer modern or classic, bold or simple, there is a design to match you. Look through the options below and choose a template that fits your style."
+msgstr "這裡提供一系列適合不同職業與個性的履歷範本。無論您偏好現代或經典、大膽或簡約，都能在這裡找到適合您的設計。請瀏覽下列選項，選擇最符合您風格的範本。"
+
+#: src/dialogs/api-key/create.tsx
+msgid "Here's your new API key"
+msgstr "這是您的新 API Key"
+
+#: src/components/level/combobox.tsx
+#: src/dialogs/resume/sections/language.tsx
+#: src/dialogs/resume/sections/skill.tsx
+msgid "Hidden"
+msgstr "隱藏"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/custom.tsx
+#: src/routes/builder/$resumeId/-sidebar/left/shared/section-item.tsx
+#: src/routes/builder/$resumeId/-sidebar/left/shared/section-menu.tsx
+msgid "Hide"
+msgstr "隱藏"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/page.tsx
+msgid "Hide all icons on the resume"
+msgstr "隱藏履歷中的所有圖示"
+
+#: src/components/input/rich-input.tsx
+msgid "Highlight"
+msgstr "螢光標記"
+
+#: src/utils/locale.ts
+msgid "Hindi"
+msgstr "印地語"
+
+#: src/components/command-palette/pages/navigation.tsx
+#: src/components/command-palette/pages/navigation.tsx
+msgid "Home"
+msgstr "首頁"
+
+#: src/routes/dashboard/settings/api-keys.tsx
+msgid "How do I use the API?"
+msgstr "我要如何使用 API？"
+
+#: src/utils/locale.ts
+msgid "Hungarian"
+msgstr "匈牙利語"
+
+#: src/components/level/combobox.tsx
+#: src/routes/builder/$resumeId/-sidebar/right/sections/design.tsx
+msgid "Icon"
+msgstr "圖示"
+
+#: src/dialogs/resume/import.tsx
+msgid "Import"
+msgstr "匯入"
+
+#: src/dialogs/resume/import.tsx
+#: src/routes/dashboard/resumes/-components/cards/import-card.tsx
+#: src/routes/dashboard/resumes/-components/list-view.tsx
+msgid "Import an existing resume"
+msgstr "匯入現有履歷"
+
+#: src/dialogs/resume/import.tsx
+msgid "Importing your resume..."
+msgstr "正在匯入您的履歷…"
+
+#: src/dialogs/resume/import.tsx
+msgid "Importing..."
+msgstr "正在匯入…"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Include Keywords"
+msgstr "包含關鍵字"
+
+#: src/utils/locale.ts
+msgid "Indonesian"
+msgstr "印尼語"
+
+#: src/utils/resume/section.tsx
+msgid "Information"
+msgstr "詳細資訊"
+
+#: src/components/input/rich-input.tsx
+msgid "Inline Code"
+msgstr "行內程式碼"
+
+#: src/components/input/rich-input.tsx
+msgid "Insert Table"
+msgstr "插入表格"
+
+#: src/dialogs/resume/sections/custom.tsx
+#: src/utils/resume/section.tsx
+msgid "Interests"
+msgstr "興趣"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Intern"
+msgstr "實習生"
+
+#: src/dialogs/resume/sections/certification.tsx
+msgid "Issuer"
+msgstr "發行者"
+
+#: src/utils/locale.ts
+msgid "Italian"
+msgstr "義大利語"
+
+#: src/components/input/rich-input.tsx
+msgid "Italic"
+msgstr "斜體"
+
+#: src/utils/locale.ts
+msgid "Japanese"
+msgstr "日文"
+
+#: src/routes/dashboard/-components/sidebar.tsx
+#: src/routes/dashboard/job-search/index.tsx
+msgid "Job Search"
+msgstr "工作搜尋"
+
+#: src/routes/dashboard/-components/sidebar.tsx
+#: src/routes/dashboard/settings/job-search.tsx
+msgid "Job Search API"
+msgstr "工作搜尋 API"
+
+#: src/routes/dashboard/settings/job-search.tsx
+msgid "JSearch aggregates job listings from multiple job boards using Google for Jobs. You can filter by country (ISO alpha-2 code), date posted, job type, remote options, and experience level."
+msgstr "JSearch 使用 Google for Jobs 匯整來自多個求職網站的工作清單。您可以依據國家 (ISO alpha-2 代碼)、刊登日期、工作類型、遠端選項及經驗等級進行篩選。"
+
+#: src/routes/dashboard/settings/job-search.tsx
+msgid "JSearch API Documentation"
+msgstr "JSearch API 文件"
+
+#: src/components/input/rich-input.tsx
+msgid "Justify Align"
+msgstr "左右對齊"
+
+#: src/utils/locale.ts
+msgid "Kannada"
+msgstr "卡納達語"
+
+#: src/dialogs/resume/sections/interest.tsx
+#: src/dialogs/resume/sections/skill.tsx
+msgid "Keywords"
+msgstr "關鍵詞"
+
+#: src/utils/locale.ts
+msgid "Khmer"
+msgstr "高棉語"
+
+#: src/utils/locale.ts
+msgid "Korean"
+msgstr "韓文"
+
+#: src/components/input/url-input.tsx
+msgid "Label"
+msgstr "標籤"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/picture.tsx
+msgid "Landscape"
+msgstr "橫向"
+
+#: src/components/command-palette/pages/preferences/language.tsx
+#: src/components/user/dropdown-menu.tsx
+#: src/dialogs/resume/sections/language.tsx
+#: src/routes/builder/$resumeId/-sidebar/right/sections/page.tsx
+#: src/routes/dashboard/settings/preferences.tsx
+msgid "Language"
+msgstr "語言"
+
+#: src/dialogs/resume/sections/custom.tsx
+#: src/utils/resume/section.tsx
+msgid "Languages"
+msgstr "語言"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Last 3 days"
+msgstr "最近 3 天"
+
+#. placeholder {0}: statistics.lastDownloadedAt.toDateString()
+#: src/routes/builder/$resumeId/-sidebar/right/sections/statistics.tsx
+msgid "Last downloaded on {0}"
+msgstr "上次下載日期：{0}"
+
+#: src/routes/dashboard/resumes/-components/cards/resume-card.tsx
+#: src/routes/dashboard/resumes/-components/list-view.tsx
+msgid "Last updated on {updatedAt}"
+msgstr "最後更新日期 {updatedAt}"
+
+#. placeholder {0}: statistics.lastViewedAt.toDateString()
+#: src/routes/builder/$resumeId/-sidebar/right/sections/statistics.tsx
+msgid "Last viewed on {0}"
+msgstr "上次檢視日期：{0}"
+
+#: src/utils/locale.ts
+msgid "Latvian"
+msgstr "拉脫維亞語"
+
+#: src/utils/resume/section.tsx
+msgid "Layout"
+msgstr "版面配置"
+
+#: src/hooks/use-form-blocker.tsx
+msgid "Leave"
+msgstr "離開"
+
+#: src/routes/builder/$resumeId/-sidebar/left/shared/section-menu.tsx
+msgid "Leave empty to reset the title to the original."
+msgstr "留空則會將標題重設為原始值。"
+
+#: src/components/input/rich-input.tsx
+msgid "Left Align"
+msgstr "靠左對齊"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/page.tsx
+msgid "Letter"
+msgstr "信件"
+
+#: src/dialogs/resume/sections/language.tsx
+#: src/dialogs/resume/sections/skill.tsx
+#: src/routes/builder/$resumeId/-sidebar/right/sections/design.tsx
+msgid "Level"
+msgstr "等級"
+
+#: src/components/level/display.tsx
+msgid "Level {level} of 5"
+msgstr "5 個等級中的第 {level} 級"
+
+#: src/components/user/dropdown-menu.tsx
+#: src/utils/theme.ts
+msgid "Light"
+msgstr "亮色"
+
+#: src/components/command-palette/pages/preferences/theme.tsx
+msgid "Light theme"
+msgstr "淺色主題"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/typography.tsx
+#: src/routes/builder/$resumeId/-sidebar/right/sections/typography.tsx
+msgid "Line Height"
+msgstr "行高"
+
+#: src/routes/dashboard/settings/authentication/-components/hooks.tsx
+msgid "Linking your {providerName} account..."
+msgstr "正在連結您的 {providerName} 帳戶…"
+
+#: src/routes/dashboard/resumes/index.tsx
+msgid "List"
+msgstr "列表"
+
+#: src/utils/locale.ts
+msgid "Lithuanian"
+msgstr "立陶宛語"
+
+#: src/components/command-palette/pages/resumes.tsx
+msgid "Loading resumes..."
+msgstr "正在載入履歷…"
+
+#: src/components/layout/loading-screen.tsx
+msgid "Loading..."
+msgstr "載入中…"
+
+#: src/dialogs/resume/sections/education.tsx
+#: src/dialogs/resume/sections/experience.tsx
+#: src/dialogs/resume/sections/volunteer.tsx
+#: src/routes/builder/$resumeId/-sidebar/left/sections/basics.tsx
+msgid "Location"
+msgstr "地點"
+
+#: src/routes/builder/$resumeId/-components/header.tsx
+#: src/routes/dashboard/resumes/-components/menus/context-menu.tsx
+#: src/routes/dashboard/resumes/-components/menus/dropdown-menu.tsx
+msgid "Lock"
+msgstr "鎖定"
+
+#: src/components/user/dropdown-menu.tsx
+msgid "Logout"
+msgstr "登出"
+
+#: src/routes/auth/verify-2fa.tsx
+msgid "Lost access to your authenticator?"
+msgstr "無法使用驗證器了嗎？"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/layout/pages.tsx
+msgid "Main"
+msgstr "主要"
+
+#: src/utils/locale.ts
+msgid "Malay"
+msgstr "馬來語"
+
+#: src/utils/locale.ts
+msgid "Malayalam"
+msgstr "馬拉雅拉姆語"
+
+#: src/utils/locale.ts
+msgid "Marathi"
+msgstr "馬拉提語"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/page.tsx
+msgid "Margin (Horizontal)"
+msgstr "邊界（水平）"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/page.tsx
+msgid "Margin (Vertical)"
+msgstr "邊界（垂直）"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Maximum Salary"
+msgstr "最高薪資"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Minimum Salary"
+msgstr "最低薪資"
+
+#: src/routes/dashboard/settings/ai.tsx
+msgid "Model"
+msgstr "模型"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "More than 3 years"
+msgstr "3 年以上"
+
+#: src/routes/builder/$resumeId/-sidebar/left/shared/section-item.tsx
+msgid "Move to"
+msgstr "移動到"
+
+#: src/dialogs/api-key/create.tsx
+#: src/dialogs/resume/index.tsx
+#: src/dialogs/resume/sections/interest.tsx
+#: src/dialogs/resume/sections/project.tsx
+#: src/dialogs/resume/sections/reference.tsx
+#: src/dialogs/resume/sections/skill.tsx
+#: src/routes/auth/register.tsx
+#: src/routes/builder/$resumeId/-sidebar/left/sections/basics.tsx
+#: src/routes/dashboard/settings/profile.tsx
+msgid "Name"
+msgstr "名稱"
+
+#: src/utils/locale.ts
+msgid "Nepali"
+msgstr "尼泊爾語"
+
+#: src/dialogs/resume/sections/profile.tsx
+msgid "Network"
+msgstr "網路"
+
+#: src/components/input/rich-input.tsx
+msgid "New Line"
+msgstr "新行"
+
+#: src/routes/builder/$resumeId/-sidebar/left/shared/section-item.tsx
+msgid "New Page"
+msgstr "新頁面"
+
+#: src/dialogs/auth/change-password.tsx
+#: src/routes/auth/reset-password.tsx
+msgid "New Password"
+msgstr "新密碼"
+
+#: src/routes/builder/$resumeId/-sidebar/left/shared/section-item.tsx
+msgid "New Section"
+msgstr "新段落"
+
+#: src/routes/dashboard/job-search/-components/tailor-dialog.tsx
+msgid "New Skills Detected"
+msgstr "偵測到新技能"
+
+#: src/routes/dashboard/job-search/index.tsx
+msgid "Next"
+msgstr "下一頁"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "No degree required"
+msgstr "不需要學位"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "No experience"
+msgstr "無經驗"
+
+#: src/routes/dashboard/job-search/index.tsx
+msgid "No jobs found. Try a different search query."
+msgstr "沒有找到工作。請嘗試其他搜尋查詢。"
+
+#: src/components/ui/combobox.tsx
+msgid "No results found."
+msgstr "找不到相符的結果。"
+
+#: src/routes/dashboard/job-search/-components/tailor-dialog.tsx
+msgid "No resumes found. Create a resume first."
+msgstr "未找到履歷。請先建立履歷。"
+
+#: src/utils/locale.ts
+msgid "Norwegian"
+msgstr "挪威語"
+
+#: src/utils/resume/section.tsx
+msgid "Notes"
+msgstr "注意事項"
+
+#: src/utils/locale.ts
+msgid "Odia"
+msgstr "歐利亞語"
+
+#: src/routes/dashboard/resumes/-components/menus/context-menu.tsx
+#: src/routes/dashboard/resumes/-components/menus/dropdown-menu.tsx
+msgid "Open"
+msgstr "開啟"
+
+#: src/routes/auth/forgot-password.tsx
+msgid "Open Email Client"
+msgstr "開啟電子郵件用戶端"
+
+#. placeholder {0}: job.job_title
+#: src/routes/dashboard/job-search/-components/tailor-dialog.tsx
+msgid "Optimizing summary, experience, and skills for {0}"
+msgstr "優化摘要、經驗和技能， {0} 。"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+msgid "Optionally, set a password so that only people with the password can view your resume through the link."
+msgstr "您也可以選擇設定密碼，讓只有知道密碼的人才能透過連結檢視您的履歷。"
+
+#: src/routes/auth/-components/social-auth.tsx
+msgctxt "Choose to authenticate with a social provider (Google, GitHub, etc.) instead of email and password"
+msgid "or continue with"
+msgstr "或繼續使用"
+
+#: src/components/input/rich-input.tsx
+msgid "Ordered List"
+msgstr "編號清單"
+
+#: src/dialogs/resume/sections/volunteer.tsx
+msgid "Organization"
+msgstr "組織"
+
+#: src/dialogs/resume/sections/experience.tsx
+msgid "Overall Period"
+msgstr "整體期間"
+
+#: src/dialogs/resume/sections/experience.tsx
+msgid "Overall Title (optional)"
+msgstr "整體標題（選填）"
+
+#: src/utils/resume/section.tsx
+msgid "Page"
+msgstr "頁"
+
+#. placeholder {0}: pageIndex + 1
+#: src/routes/builder/$resumeId/-sidebar/left/shared/section-item.tsx
+#: src/routes/builder/$resumeId/-sidebar/right/sections/layout/pages.tsx
+msgid "Page {0}"
+msgstr "第 {0} 頁"
+
+#: src/routes/dashboard/job-search/index.tsx
+msgid "Page {currentPage}"
+msgstr "頁面 {currentPage}"
+
+#: src/components/resume/preview.tsx
+msgid "Page {pageNumber} of {totalNumberOfPages}"
+msgstr "第 {pageNumber} / {totalNumberOfPages} 頁"
+
+#: src/components/input/rich-input.tsx
+msgid "Paragraph"
+msgstr "段落"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Part-time"
+msgstr "兼職"
+
+#: src/dialogs/auth/disable-two-factor.tsx
+#: src/dialogs/auth/enable-two-factor.tsx
+#: src/routes/auth/login.tsx
+#: src/routes/auth/register.tsx
+#: src/routes/auth/resume-password.tsx
+#: src/routes/dashboard/settings/authentication/-components/password.tsx
+msgid "Password"
+msgstr "密碼"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+msgid "Password cannot be empty."
+msgstr "密碼不能為空白。"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+msgid "Password protection has been disabled."
+msgstr "已停用密碼保護。"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+msgid "Password protection has been enabled."
+msgstr "已啟用密碼保護。"
+
+#: src/dialogs/resume/sections/education.tsx
+#: src/dialogs/resume/sections/experience.tsx
+#: src/dialogs/resume/sections/experience.tsx
+#: src/dialogs/resume/sections/project.tsx
+#: src/dialogs/resume/sections/volunteer.tsx
+msgid "Period"
+msgstr "期間"
+
+#: src/utils/locale.ts
+msgid "Persian"
+msgstr "波斯語"
+
+#: src/dialogs/resume/sections/reference.tsx
+#: src/routes/builder/$resumeId/-sidebar/left/sections/basics.tsx
+msgid "Phone"
+msgstr "電話"
+
+#: src/utils/resume/section.tsx
+msgid "Picture"
+msgstr "圖片"
+
+#: src/routes/auth/reset-password.tsx
+msgid "Please enter a new password for your account"
+msgstr "請為您的帳戶輸入新的密碼"
+
+#: src/routes/auth/resume-password.tsx
+msgid "Please enter the password shared with you by the owner of the resume to continue."
+msgstr "請輸入履歷擁有者提供給您的密碼以繼續。"
+
+#: src/components/input/rich-input.tsx
+msgid "Please enter the URL you want to link to:"
+msgstr "請輸入您要連結的 URL："
+
+#: src/routes/builder/$resumeId/-components/dock.tsx
+#: src/routes/builder/$resumeId/-sidebar/right/sections/export.tsx
+msgid "Please wait while your PDF is being generated..."
+msgstr "正在產生您的 PDF，請稍候…"
+
+#: src/utils/locale.ts
+msgid "Polish"
+msgstr "波蘭語"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/picture.tsx
+msgid "Portrait"
+msgstr "直向"
+
+#: src/utils/locale.ts
+msgid "Portuguese (Brazil)"
+msgstr "葡萄牙語（巴西）"
+
+#: src/utils/locale.ts
+msgid "Portuguese (Portugal)"
+msgstr "葡萄牙語（葡萄牙）"
+
+#: src/dialogs/resume/sections/experience.tsx
+#: src/dialogs/resume/sections/experience.tsx
+#: src/dialogs/resume/sections/reference.tsx
+msgid "Position"
+msgstr "職位"
+
+#: src/components/command-palette/pages/navigation.tsx
+#: src/components/command-palette/pages/navigation.tsx
+#: src/components/command-palette/pages/preferences/index.tsx
+#: src/routes/dashboard/-components/sidebar.tsx
+#: src/routes/dashboard/settings/preferences.tsx
+msgid "Preferences"
+msgstr "偏好設定"
+
+#: src/components/input/chip-input.tsx
+msgid "Press <0>{RETURN_KEY}</0> or <1>{COMMA_KEY}</1> to add or save the current keyword."
+msgstr "請按下 <0>{RETURN_KEY}</0> 或 <1>{COMMA_KEY}</1> 來新增或儲存目前的關鍵字。"
+
+#: src/routes/dashboard/job-search/index.tsx
+msgid "Previous"
+msgstr "上一頁"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/design.tsx
+msgid "Primary Color"
+msgstr "主要顏色"
+
+#: src/routes/_home/-sections/footer.tsx
+msgid "Privacy Policy"
+msgstr ""
+
+#: src/routes/dashboard/settings/profile.tsx
+msgid "Pro Account"
+msgstr ""
+
+#: src/dialogs/resume/sections/skill.tsx
+msgid "Proficiency"
+msgstr "熟練度"
+
+#: src/components/command-palette/pages/navigation.tsx
+#: src/components/command-palette/pages/navigation.tsx
+#: src/routes/dashboard/-components/sidebar.tsx
+#: src/routes/dashboard/settings/profile.tsx
+msgid "Profile"
+msgstr "個人設置"
+
+#: src/dialogs/resume/sections/custom.tsx
+#: src/utils/resume/section.tsx
+msgid "Profiles"
+msgstr "個人檔案"
+
+#: src/components/level/combobox.tsx
+msgid "Progress Bar"
+msgstr "進度條"
+
+#: src/dialogs/resume/sections/custom.tsx
+#: src/utils/resume/section.tsx
+msgid "Projects"
+msgstr "專案"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+msgid "Protect your resume from unauthorized access with a password"
+msgstr "使用密碼保護履歷，避免未經授權的存取"
+
+#: src/routes/dashboard/settings/ai.tsx
+msgid "Provider"
+msgstr "服務提供者"
+
+#. placeholder {0}: planConfig.freeSharingDays
+#: src/routes/dashboard/settings/profile.tsx
+msgid "Public sharing: {0} days"
+msgstr ""
+
+#: src/routes/dashboard/settings/profile.tsx
+msgid "Public sharing: permanent"
+msgstr ""
+
+#: src/dialogs/resume/sections/custom.tsx
+#: src/utils/resume/section.tsx
+msgid "Publications"
+msgstr "出版品"
+
+#: src/dialogs/resume/sections/publication.tsx
+msgid "Publisher"
+msgstr "出版者"
+
+#. placeholder {0}: quota.remaining
+#: src/routes/dashboard/job-search/index.tsx
+msgid "Quota: {0} remaining"
+msgstr "配額： {0} 剩餘"
+
+#: src/routes/dashboard/settings/job-search.tsx
+msgid "RapidAPI Key"
+msgstr "RapidAPI 鑰匙"
+
+#: src/dialogs/resume/sections/cover-letter.tsx
+msgid "Recipient"
+msgstr "收件人"
+
+#: src/components/level/combobox.tsx
+msgid "Rectangle"
+msgstr "長方形"
+
+#: src/components/level/combobox.tsx
+msgid "Rectangle (Full Width)"
+msgstr "長方形（全幅寬）"
+
+#: src/routes/builder/$resumeId/-components/dock.tsx
+msgctxt "'Ctrl' may be replaced with the locale-specific equivalent (e.g. 'Strg' for QWERTZ layouts)."
+msgid "Redo (Ctrl+Y)"
+msgstr "重做（Ctrl+Y）"
+
+#: src/dialogs/resume/sections/custom.tsx
+#: src/utils/resume/section.tsx
+msgid "References"
+msgstr "推薦人"
+
+#: src/components/layout/error-screen.tsx
+msgid "Refresh"
+msgstr "重新整理"
+
+#: src/routes/auth/forgot-password.tsx
+msgid "Remember your password? <0/>"
+msgstr "記得密碼？<0/>"
+
+#: src/routes/dashboard/job-search/-components/job-detail.tsx
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+#: src/routes/dashboard/job-search/index.tsx
+msgid "Remote"
+msgstr "遙控"
+
+#: src/routes/dashboard/job-search/-components/use-job-search.ts
+msgid "Remote only"
+msgstr "僅遠端"
+
+#: src/dialogs/resume/sections/experience.tsx
+msgid "Remove"
+msgstr "移除"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+msgid "Remove Password"
+msgstr "移除密碼"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+msgid "Removing password protection..."
+msgstr "正在移除密碼保護…"
+
+#: src/routes/builder/$resumeId/-sidebar/left/shared/section-menu.tsx
+msgid "Rename"
+msgstr "重新命名"
+
+#: src/dialogs/resume/sections/experience.tsx
+msgid "Reorder"
+msgstr "重新排序"
+
+#: src/routes/dashboard/job-search/-components/job-detail.tsx
+msgid "Required Skills"
+msgstr "所需技術"
+
+#: src/routes/dashboard/settings/profile.tsx
+msgid "Resend verification email"
+msgstr "重新傳送驗證電子郵件"
+
+#: src/routes/dashboard/settings/profile.tsx
+msgid "Resending verification email..."
+msgstr "正在重新傳送驗證電子郵件…"
+
+#: src/routes/builder/$resumeId/-sidebar/left/shared/section-menu.tsx
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Reset"
+msgstr "重置"
+
+#: src/routes/auth/reset-password.tsx
+msgid "Reset Password"
+msgstr "重設密碼"
+
+#: src/routes/auth/reset-password.tsx
+msgid "Reset your password"
+msgstr "重設您的密碼"
+
+#: src/routes/auth/reset-password.tsx
+msgid "Resetting your password..."
+msgstr "正在重設您的密碼…"
+
+#. placeholder {0}: planConfig.freeResumeLimit
+#: src/routes/dashboard/settings/profile.tsx
+msgid "Resume limit: {0} resumes"
+msgstr ""
+
+#: src/routes/dashboard/settings/profile.tsx
+msgid "Resume limit: unlimited"
+msgstr ""
+
+#: src/routes/dashboard/job-search/-components/tailor-dialog.tsx
+#: src/routes/dashboard/job-search/-components/tailor-dialog.tsx
+#: src/routes/dashboard/job-search/-components/tailor-dialog.tsx
+msgid "Resume tailored successfully"
+msgstr "成功量身訂做履歷表"
+
+#: src/components/command-palette/pages/navigation.tsx
+#: src/components/command-palette/pages/navigation.tsx
+#: src/components/command-palette/pages/resumes.tsx
+#: src/components/command-palette/pages/resumes.tsx
+#: src/components/command-palette/pages/resumes.tsx
+#: src/routes/dashboard/-components/sidebar.tsx
+#: src/routes/dashboard/resumes/index.tsx
+msgid "Resumes"
+msgstr "履歷"
+
+#: src/routes/dashboard/job-search/index.tsx
+msgid "Retry"
+msgstr "重試"
+
+#: src/components/input/rich-input.tsx
+msgid "Right Align"
+msgstr "靠右對齊"
+
+#: src/dialogs/resume/sections/experience.tsx
+msgid "Role Progression"
+msgstr "職位晉升"
+
+#: src/utils/locale.ts
+msgid "Romanian"
+msgstr "羅馬尼亞語"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/picture.tsx
+msgid "Rotation"
+msgstr "旋轉"
+
+#: src/utils/locale.ts
+msgid "Russian"
+msgstr "俄文"
+
+#. placeholder {0}: selectedSkills.size
+#: src/routes/dashboard/job-search/-components/tailor-dialog.tsx
+msgid "Save {0} Skills"
+msgstr "保存 {0} 技能"
+
+#: src/dialogs/resume/index.tsx
+#: src/dialogs/resume/sections/award.tsx
+#: src/dialogs/resume/sections/certification.tsx
+#: src/dialogs/resume/sections/cover-letter.tsx
+#: src/dialogs/resume/sections/custom.tsx
+#: src/dialogs/resume/sections/education.tsx
+#: src/dialogs/resume/sections/experience.tsx
+#: src/dialogs/resume/sections/interest.tsx
+#: src/dialogs/resume/sections/language.tsx
+#: src/dialogs/resume/sections/profile.tsx
+#: src/dialogs/resume/sections/project.tsx
+#: src/dialogs/resume/sections/publication.tsx
+#: src/dialogs/resume/sections/reference.tsx
+#: src/dialogs/resume/sections/skill.tsx
+#: src/dialogs/resume/sections/summary-item.tsx
+#: src/dialogs/resume/sections/volunteer.tsx
+#: src/routes/dashboard/settings/profile.tsx
+msgid "Save Changes"
+msgstr "儲存變更"
+
+#: src/dialogs/auth/enable-two-factor.tsx
+msgid "Scan the QR code below with your preferred authenticator app. You can also copy the secret below and paste it into your app."
+msgstr "使用您偏好的驗證器應用程式掃描下方 QR Code。您也可以複製下方的金鑰並貼到應用程式中。"
+
+#: src/dialogs/resume/sections/education.tsx
+msgid "School"
+msgstr "學校"
+
+#: src/routes/dashboard/job-search/index.tsx
+#: src/routes/dashboard/job-search/index.tsx
+msgid "Search"
+msgstr "搜尋"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Search countries"
+msgstr "搜尋國家"
+
+#: src/components/input/icon-picker.tsx
+#: src/components/input/icon-picker.tsx
+msgid "Search for an icon"
+msgstr "搜尋圖示"
+
+#: src/components/command-palette/pages/resumes.tsx
+msgid "Search for..."
+msgstr "搜尋履歷…"
+
+#: src/components/ui/combobox.tsx
+msgid "Search..."
+msgstr "搜尋..."
+
+#: src/dialogs/auth/enable-two-factor.tsx
+msgid "Secret copied to clipboard."
+msgstr "私密金鑰已複製到剪貼簿。"
+
+#: src/dialogs/resume/sections/custom.tsx
+msgid "Section Type"
+msgstr "段落類型"
+
+#. placeholder {0}: job.job_title
+#. placeholder {1}: job.employer_name
+#. placeholder {2}: aiEnabled ? " and the AI will optimize it for this position." : "."
+#: src/routes/dashboard/job-search/-components/tailor-dialog.tsx
+msgid "Select a resume to tailor for \"{0}\" at {1}. A copy will be created{2}"
+msgstr "選擇一份履歷，為{0}\" 量身打造，網址為 {1}。將建立一份副本{2}"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Select country"
+msgstr "選擇國家"
+
+#: src/components/ui/combobox.tsx
+msgid "Select..."
+msgstr "選擇..."
+
+#: src/routes/auth/forgot-password.tsx
+msgid "Send Password Reset Email"
+msgstr "傳送重設密碼電子郵件"
+
+#: src/routes/auth/forgot-password.tsx
+msgid "Sending password reset email..."
+msgstr "正在傳送重設密碼電子郵件…"
+
+#: src/components/input/rich-input.tsx
+msgid "Separator"
+msgstr "分隔線"
+
+#: src/utils/locale.ts
+msgid "Serbian"
+msgstr "塞爾維亞語"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+#: src/routes/dashboard/settings/authentication/-components/password.tsx
+msgid "Set Password"
+msgstr "設定密碼"
+
+#: src/components/command-palette/pages/navigation.tsx
+#: src/components/command-palette/pages/navigation.tsx
+#: src/components/command-palette/pages/navigation.tsx
+#: src/routes/dashboard/-components/sidebar.tsx
+msgid "Settings"
+msgstr "設定"
+
+#: src/dialogs/auth/enable-two-factor.tsx
+msgid "Setup Authenticator App"
+msgstr "設定驗證器應用程式"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/picture.tsx
+msgid "Shadow Width"
+msgstr "陰影寬度"
+
+#: src/utils/resume/section.tsx
+msgid "Sharing"
+msgstr "分享"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/custom.tsx
+#: src/routes/builder/$resumeId/-sidebar/left/shared/section-item.tsx
+#: src/routes/builder/$resumeId/-sidebar/left/shared/section-menu.tsx
+msgid "Show"
+msgstr "顯示"
+
+#: src/dialogs/resume/sections/award.tsx
+#: src/dialogs/resume/sections/certification.tsx
+#: src/dialogs/resume/sections/education.tsx
+#: src/dialogs/resume/sections/experience.tsx
+#: src/dialogs/resume/sections/profile.tsx
+#: src/dialogs/resume/sections/project.tsx
+#: src/dialogs/resume/sections/publication.tsx
+#: src/dialogs/resume/sections/reference.tsx
+#: src/dialogs/resume/sections/volunteer.tsx
+msgid "Show link in title"
+msgstr "在標題中顯示連結"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/layout/pages.tsx
+msgid "Sidebar"
+msgstr "側邊欄"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/layout/index.tsx
+msgid "Sidebar Width"
+msgstr "側邊欄寬度"
+
+#: src/routes/auth/login.tsx
+msgid "Sign in"
+msgstr "登入"
+
+#: src/routes/auth/login.tsx
+msgid "Sign in to your account"
+msgstr "登入您的帳戶"
+
+#: src/routes/auth/register.tsx
+msgid "Sign up"
+msgstr "註冊"
+
+#: src/routes/auth/-components/social-auth.tsx
+#: src/routes/auth/-components/social-auth.tsx
+#: src/routes/auth/login.tsx
+msgid "Signing in..."
+msgstr "正在登入…"
+
+#: src/components/user/dropdown-menu.tsx
+msgid "Signing out..."
+msgstr "正在登出…"
+
+#: src/routes/auth/register.tsx
+msgid "Signing up..."
+msgstr "正在註冊…"
+
+#: src/dialogs/resume/template/data.ts
+msgid "Single-column with a magenta left border accent; compact and efficient for entry-level or internship applications."
+msgstr "單欄版面，左側具有洋紅色邊框點綴；版面緊湊有效率，適合入門或實習職缺。"
+
+#: src/dialogs/resume/template/data.ts
+msgid "Single-column with a minimal top header and lots of whitespace; clean and modern for designers or content creators."
+msgstr "單欄版面，頂端極簡抬頭並保留大量留白；乾淨現代，適合設計師或內容創作者。"
+
+#: src/dialogs/resume/template/data.ts
+msgid "Single-column with a sidebar and clean grid layout; versatile for any professional or technical role."
+msgstr "單欄版面，包含側邊欄與俐落的網格配置；適用於任何專業或技術職位。"
+
+#: src/dialogs/resume/template/data.ts
+msgid "Single-column; polished and serious for senior or enterprise-level positions."
+msgstr "單欄版面，風格精緻嚴謹，適合資深或企業級職位。"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/picture.tsx
+msgid "Size"
+msgstr "尺寸"
+
+#: src/dialogs/resume/sections/custom.tsx
+#: src/utils/resume/section.tsx
+msgid "Skills"
+msgstr "技能"
+
+#: src/routes/dashboard/job-search/-components/tailor-dialog.tsx
+msgid "Skip"
+msgstr "跳過"
+
+#: src/utils/locale.ts
+msgid "Slovak"
+msgstr "斯洛伐克語"
+
+#: src/utils/locale.ts
+msgid "Slovenian"
+msgstr ""
+
+#: src/dialogs/resume/index.tsx
+msgid "Slug"
+msgstr "標示碼"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+msgid "Something went wrong. Please try again."
+msgstr "發生錯誤。請再試一次。"
+
+#: src/routes/dashboard/resumes/index.tsx
+msgid "Sort by"
+msgstr "排序方式"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/page.tsx
+msgid "Spacing (Horizontal)"
+msgstr "間距（水平）"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/page.tsx
+msgid "Spacing (Vertical)"
+msgstr "間距（垂直）"
+
+#: src/utils/locale.ts
+msgid "Spanish"
+msgstr "西班牙語"
+
+#: src/components/level/combobox.tsx
+#: src/routes/builder/$resumeId/-sidebar/left/sections/picture.tsx
+msgid "Square"
+msgstr "方形"
+
+#: src/dialogs/resume/index.tsx
+msgid "Start building your resume by giving it a name."
+msgstr "為您的履歷命名，開始建立您的履歷。"
+
+#: src/routes/dashboard/resumes/-components/cards/create-card.tsx
+#: src/routes/dashboard/resumes/-components/list-view.tsx
+msgid "Start building your resume from scratch"
+msgstr "從零開始建立您的履歷"
+
+#: src/utils/resume/section.tsx
+msgid "Statistics"
+msgstr "統計資料"
+
+#: src/hooks/use-form-blocker.tsx
+msgid "Stay"
+msgstr "留下"
+
+#: src/components/input/rich-input.tsx
+msgid "Strike"
+msgstr "刪除線"
+
+#: src/dialogs/resume/sections/custom.tsx
+#: src/utils/resume/section.tsx
+msgid "Summary"
+msgstr "摘要"
+
+#: src/utils/locale.ts
+msgid "Swedish"
+msgstr "瑞典語"
+
+#: src/components/theme/toggle-button.tsx
+msgid "Switch to dark theme"
+msgstr "切換至深色主題"
+
+#: src/components/theme/toggle-button.tsx
+msgid "Switch to light theme"
+msgstr "切換至淺色主題"
+
+#: src/components/input/rich-input.tsx
+msgid "Table"
+msgstr "表格"
+
+#: src/dialogs/resume/index.tsx
+msgid "Tags"
+msgstr "標籤"
+
+#: src/dialogs/resume/index.tsx
+msgid "Tags can be used to categorize your resume by keywords."
+msgstr "標籤可用來依關鍵詞替履歷分類。"
+
+#: src/routes/dashboard/job-search/-components/job-detail.tsx
+#: src/routes/dashboard/job-search/-components/tailor-dialog.tsx
+msgid "Tailor Resume"
+msgstr "裁縫簡歷"
+
+#: src/routes/dashboard/job-search/-components/tailor-dialog.tsx
+msgid "Tailoring failed"
+msgstr "裁縫失敗"
+
+#: src/routes/dashboard/job-search/-components/tailor-dialog.tsx
+msgid "Tailoring your resume..."
+msgstr "量身打造您的履歷..."
+
+#: src/utils/locale.ts
+msgid "Tamil"
+msgstr "泰米爾語"
+
+#: src/utils/locale.ts
+msgid "Telugu"
+msgstr "泰盧固語"
+
+#: src/utils/resume/section.tsx
+msgid "Template"
+msgstr "範本"
+
+#: src/dialogs/resume/template/gallery.tsx
+msgid "Template Gallery"
+msgstr "範本圖庫"
+
+#: src/routes/_home/-sections/footer.tsx
+msgid "Terms of Service"
+msgstr ""
+
+#: src/routes/dashboard/settings/ai.tsx
+#: src/routes/dashboard/settings/job-search.tsx
+msgid "Test Connection"
+msgstr "測試連線"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/design.tsx
+msgid "Text Color"
+msgstr "字型色彩"
+
+#: src/utils/locale.ts
+msgid "Thai"
+msgstr "泰文"
+
+#: src/routes/dashboard/job-search/-components/tailor-dialog.tsx
+msgid "The AI identified new skills from your experience that match this job. Select which ones to save back to your original resume for future applications. This will permanently modify your original resume and cannot be undone."
+msgstr "AI 從您的經驗中找出符合此工作的新技能。請選擇要儲存回原始履歷的技能，以便日後應徵時使用。這將永久修改您的原始履歷，且無法撤銷。"
+
+#: src/routes/dashboard/settings/api-keys.tsx
+#~ msgid "The API key has been deleted successfully."
+#~ msgstr "API Key 已成功刪除。"
+
+#: src/routes/dashboard/settings/api-keys.tsx
+#~ msgid "The API key will no longer be able to access your data after deletion. This action cannot be undone."
+#~ msgstr "刪除後，此 API Key 將無法再存取您的資料。此動作無法復原。"
+
+#: src/components/command-palette/index.tsx
+msgid "The command you're looking for doesn't exist."
+msgstr "您要找的指令不存在。"
+
+#: src/components/resume/preview.tsx
+msgid "The content is too tall for this page, this may cause undesirable results when exporting to PDF."
+msgstr "本頁內容過高，匯出為 PDF 時可能會出現不理想的效果。"
+
+#: src/routes/$username/$slug.tsx
+msgid "The owner's free share link is no longer active."
+msgstr ""
+
+#: src/routes/auth/resume-password.tsx
+msgid "The password you entered is incorrect"
+msgstr "您輸入的密碼不正確"
+
+#: src/routes/auth/resume-password.tsx
+msgid "The resume you are trying to access is password protected"
+msgstr "您嘗試存取的履歷已啟用密碼保護"
+
+#: src/components/input/rich-input.tsx
+msgid "The URL you entered is not valid."
+msgstr "您輸入的 URL 無效。"
+
+#: src/components/command-palette/pages/preferences/theme.tsx
+#: src/components/user/dropdown-menu.tsx
+#: src/routes/dashboard/settings/preferences.tsx
+msgid "Theme"
+msgstr "佈景主題"
+
+#: src/dialogs/auth/enable-two-factor.tsx
+msgid "Then, enter the 6 digit code that the app provides to continue."
+msgstr "接著，請輸入應用程式提供的 6 位數驗證碼以繼續。"
+
+#: src/routes/builder/$resumeId/-components/dock.tsx
+#: src/routes/builder/$resumeId/-sidebar/right/sections/export.tsx
+msgid "There was a problem while generating the DOCX, please try again."
+msgstr "生成 DOCX 時出現問題，請重試。"
+
+#: src/routes/builder/$resumeId/-components/dock.tsx
+#: src/routes/builder/$resumeId/-sidebar/right/sections/export.tsx
+msgid "There was a problem while generating the PDF, please try again in some time."
+msgstr "產生 PDF 時發生問題，請稍後再試一次。"
+
+#: src/routes/builder/$resumeId/-components/header.tsx
+#: src/routes/dashboard/resumes/-components/menus/context-menu.tsx
+#: src/routes/dashboard/resumes/-components/menus/dropdown-menu.tsx
+msgid "This action cannot be undone."
+msgstr "此動作無法復原。"
+
+#: src/routes/dashboard/settings/danger-zone.tsx
+msgid "This action cannot be undone. All your data will be permanently deleted."
+msgstr "此動作無法復原。您的所有資料都將被永久刪除。"
+
+#: src/dialogs/resume/import.tsx
+#: src/dialogs/resume/import.tsx
+msgid "This feature requires AI Integration to be enabled. Please enable it in the settings."
+msgstr "此功能需要啟用 AI 整合。請先在設定中啟用。"
+
+#: src/dialogs/resume/index.tsx
+msgid "This is a URL-friendly name for your resume."
+msgstr "這是用於履歷的 URL 友善名稱。"
+
+#. placeholder {0}: shareExpiry.toLocaleDateString()
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+msgid "This link expires on {0}."
+msgstr ""
+
+#: src/dialogs/resume/import.tsx
+msgid "This may take a few minutes, depending on the response of the AI provider. Please do not close the window or refresh the page."
+msgstr "這可能需要幾分鐘，取決於 AI 服務提供者的回應時間。請勿關閉視窗或重新整理頁面。"
+
+#: src/routes/builder/$resumeId/-components/dock.tsx
+#: src/routes/builder/$resumeId/-sidebar/right/sections/export.tsx
+msgid "This may take a while depending on the server capacity. Please do not close the window or refresh the page."
+msgstr "這可能需要一點時間，取決於伺服器資源。請勿關閉視窗或重新整理頁面。"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "This month"
+msgstr "本月"
+
+#: src/components/resume/store/resume.ts
+msgid "This resume is locked and cannot be updated."
+msgstr "這份履歷已被鎖定，無法更新。"
+
+#: src/routes/$username/$slug.tsx
+msgid "This resume link has expired."
+msgstr ""
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/notes.tsx
+msgid "This section is reserved for your personal notes specific to this resume. The content here remains private and is not shared with anyone else."
+msgstr "這部分專門用於你在這份履歷上做個人筆記。這裡的內容屬於私密，不會與其他人分享。"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+msgid "This share link has expired."
+msgstr ""
+
+#: src/routes/auth/register.tsx
+msgid "This step is optional, but recommended."
+msgstr "此步驟為選填，但建議您完成。"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "This week"
+msgstr "本週"
+
+#: src/dialogs/api-key/create.tsx
+msgid "This will generate a new API key to access the ProTalent CV API to allow machines to interact with your resume data."
+msgstr ""
+
+#: src/dialogs/api-key/create.tsx
+msgid "Tip: Give your API key a name, corresponding to the purpose of the key, to help you identify it later."
+msgstr "小提示：請為您的 API Key 取一個與用途相符的名稱，方便您日後辨識。"
+
+#: src/dialogs/resume/index.tsx
+msgid "Tip: You can name the resume referring to the position you are applying for."
+msgstr "祕訣： 您可以參考您申請的職位為履歷命名。"
+
+#: src/dialogs/resume/sections/award.tsx
+#: src/dialogs/resume/sections/certification.tsx
+#: src/dialogs/resume/sections/custom.tsx
+#: src/dialogs/resume/sections/publication.tsx
+msgid "Title"
+msgstr "標題"
+
+#: src/routes/dashboard/settings/danger-zone.tsx
+msgid "To delete your account, you need to enter the confirmation text and click the button below."
+msgstr "若要刪除帳戶，您必須先輸入確認文字，然後點擊下方按鈕。"
+
+#: src/routes/dashboard/job-search/index.tsx
+msgid "To search for job listings, you need to configure your RapidAPI key in settings."
+msgstr "若要搜尋工作清單，您需要在設定中設定您的 RapidAPI 金鑰。"
+
+#: src/routes/dashboard/job-search/-components/job-utils.ts
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Today"
+msgstr "今天"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/statistics.tsx
+msgid "Track your resume's views and downloads"
+msgstr "追蹤履歷的檢視與下載次數"
+
+#: src/components/resume/preview.tsx
+msgid "Try reducing content, adjusting font size, or switching to a more compact template."
+msgstr ""
+
+#: src/utils/locale.ts
+msgid "Turkish"
+msgstr "土耳其語"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/statistics.tsx
+msgid "Turn on public sharing to track how many times your resume has been viewed or downloaded. Only you can see your resume's statistics."
+msgstr "開啟公開分享以追蹤履歷被檢視與下載的次數。只有您可以看到履歷的統計資料。"
+
+#: src/dialogs/resume/template/data.ts
+msgid "Two-column with a bold colored sidebar and skill bars; great for creative or tech roles where visual flair is welcome."
+msgstr "雙欄版面，具醒目色彩側邊欄與技能條；非常適合需要視覺效果的創意或技術職位。"
+
+#: src/dialogs/resume/template/data.ts
+msgid "Two-column with a dark teal sidebar and skills grid; modern feel for developers, data scientists, or technical PMs."
+msgstr "雙欄版面，深藍綠色側邊欄與技能網格；現代感十足，適合開發者、資料科學家或技術專案經理。"
+
+#: src/dialogs/resume/template/data.ts
+msgid "Two-column with a left margin color; simple and approachable for creative, editorial, or junior roles."
+msgstr "雙欄版面，左側色塊邊距；風格簡單親切，適合創意、編輯或初階職位。"
+
+#: src/dialogs/resume/template/data.ts
+msgid "Two-column with a muted color sidebar; earthy and calm, suits sustainability, healthcare, or nonprofit sectors."
+msgstr "雙欄版面，使用柔和色調側邊欄；質感沉穩自然，適合永續發展、醫療保健或非營利領域。"
+
+#: src/dialogs/resume/template/data.ts
+msgid "Two-column with a soft header accent and circular profile photo; ideal for marketing, HR, or client-facing roles."
+msgstr "雙欄版面，具柔和抬頭色塊與圓形個人照片；非常適合行銷、人資或需要面對客戶的職位。"
+
+#: src/dialogs/resume/template/data.ts
+msgid "Two-column with accent colors and clean typography; balanced choice for business analysts or operations roles."
+msgstr "雙欄版面，搭配強調色與俐落字體；在商業分析或營運職位中，是兼顧平衡的選擇。"
+
+#: src/dialogs/resume/template/data.ts
+msgid "Two-column, clean and professional with subtle section dividers; suits corporate, finance, or consulting positions."
+msgstr "雙欄版面，乾淨專業並以細緻區隔線分段；適合企業、金融或顧問類職位。"
+
+#: src/dialogs/resume/template/data.ts
+msgid "Two-column, minimal and text-dense with no decorative elements; perfect for traditional industries or ATS-heavy applications."
+msgstr "雙欄版面，極簡且文字密集，毫無裝飾元素；非常適合傳統產業或高度仰賴 ATS 的應徵情境。"
+
+#: src/dialogs/resume/template/data.ts
+msgid "Two-column, minimal with light gray sidebar and subtle icons; professional and understated for legal, finance, or executive roles."
+msgstr "雙欄版面，極簡風格、搭配淺灰色側邊欄與細緻圖示；專業低調，適合法律、金融或高階管理職。"
+
+#: src/routes/auth/verify-2fa.tsx
+#: src/routes/dashboard/settings/authentication/-components/two-factor.tsx
+msgid "Two-Factor Authentication"
+msgstr "雙因子驗證"
+
+#: src/dialogs/auth/disable-two-factor.tsx
+msgid "Two-factor authentication has been disabled successfully."
+msgstr "已成功停用雙因子驗證。"
+
+#: src/dialogs/auth/enable-two-factor.tsx
+msgid "Two-factor authentication has been setup successfully."
+msgstr "已成功設定雙因子驗證。"
+
+#: src/dialogs/resume/import.tsx
+#: src/routes/builder/$resumeId/-sidebar/right/sections/design.tsx
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Type"
+msgstr "類型"
+
+#: src/routes/dashboard/settings/danger-zone.tsx
+msgid "Type \"{CONFIRMATION_TEXT}\" to confirm"
+msgstr "輸入「{CONFIRMATION_TEXT}」以確認"
+
+#: src/components/command-palette/index.tsx
+msgid "Type a command or search..."
+msgstr "輸入指令或搜尋…"
+
+#: src/utils/resume/section.tsx
+msgid "Typography"
+msgstr "字體樣式"
+
+#: src/utils/locale.ts
+msgid "Ukrainian"
+msgstr "烏克蘭語"
+
+#: src/routes/dashboard/job-search/-components/search-filters.tsx
+msgid "Under 3 years"
+msgstr "3 歲以下"
+
+#: src/components/input/rich-input.tsx
+msgid "Underline"
+msgstr "底線"
+
+#: src/routes/builder/$resumeId/-components/dock.tsx
+msgctxt "'Ctrl' may be replaced with the locale-specific equivalent (e.g. 'Strg' for QWERTZ layouts)."
+msgid "Undo (Ctrl+Z)"
+msgstr "復原（Ctrl+Z）"
+
+#: src/routes/dashboard/settings/authentication/-components/hooks.tsx
+msgid "Unlinking your {providerName} account..."
+msgstr "正在取消連結您的 {providerName} 帳戶…"
+
+#: src/routes/auth/resume-password.tsx
+#: src/routes/builder/$resumeId/-components/header.tsx
+#: src/routes/dashboard/resumes/-components/menus/context-menu.tsx
+#: src/routes/dashboard/resumes/-components/menus/dropdown-menu.tsx
+msgid "Unlock"
+msgstr "解鎖"
+
+#: src/routes/dashboard/settings/profile.tsx
+msgid "Unverified"
+msgstr "未驗證"
+
+#: src/routes/builder/$resumeId/-components/header.tsx
+#: src/routes/builder/$resumeId/-sidebar/left/sections/custom.tsx
+#: src/routes/builder/$resumeId/-sidebar/left/shared/section-item.tsx
+#: src/routes/dashboard/resumes/-components/menus/context-menu.tsx
+#: src/routes/dashboard/resumes/-components/menus/dropdown-menu.tsx
+msgid "Update"
+msgstr "更新"
+
+#: src/dialogs/resume/sections/award.tsx
+msgid "Update an existing award"
+msgstr "更新現有的得獎紀錄"
+
+#: src/dialogs/resume/sections/certification.tsx
+msgid "Update an existing certification"
+msgstr "更新現有的證照"
+
+#: src/dialogs/resume/sections/cover-letter.tsx
+msgid "Update an existing cover letter"
+msgstr "更新現有求職信"
+
+#: src/dialogs/resume/sections/custom.tsx
+msgid "Update an existing custom section"
+msgstr "更新現有的自訂段落"
+
+#: src/dialogs/resume/sections/education.tsx
+msgid "Update an existing education"
+msgstr "更新現有的學歷"
+
+#: src/dialogs/resume/sections/experience.tsx
+msgid "Update an existing experience"
+msgstr "更新現有的經歷"
+
+#: src/dialogs/resume/sections/interest.tsx
+msgid "Update an existing interest"
+msgstr "更新現有的興趣項目"
+
+#: src/dialogs/resume/sections/language.tsx
+msgid "Update an existing language"
+msgstr "更新現有的語言"
+
+#: src/dialogs/resume/sections/profile.tsx
+msgid "Update an existing profile"
+msgstr "更新現有的個人檔案"
+
+#: src/dialogs/resume/sections/project.tsx
+msgid "Update an existing project"
+msgstr "更新現有的專案"
+
+#: src/dialogs/resume/sections/publication.tsx
+msgid "Update an existing publication"
+msgstr "更新現有的出版品"
+
+#: src/dialogs/resume/sections/reference.tsx
+msgid "Update an existing reference"
+msgstr "更新現有的推薦人"
+
+#: src/dialogs/resume/sections/skill.tsx
+msgid "Update an existing skill"
+msgstr "更新現有的技能"
+
+#: src/dialogs/resume/sections/summary-item.tsx
+msgid "Update an existing summary item"
+msgstr "更新現有摘要項目"
+
+#: src/dialogs/resume/sections/volunteer.tsx
+msgid "Update an existing volunteer experience"
+msgstr "更新現有的志工經歷"
+
+#: src/dialogs/auth/change-password.tsx
+#: src/routes/dashboard/settings/authentication/-components/password.tsx
+msgid "Update Password"
+msgstr "更新密碼"
+
+#: src/dialogs/resume/index.tsx
+msgid "Update Resume"
+msgstr "更新履歷"
+
+#: src/dialogs/auth/change-password.tsx
+msgid "Update your password"
+msgstr "更新您的密碼"
+
+#: src/dialogs/auth/change-password.tsx
+msgid "Updating your password..."
+msgstr "正在更新您的密碼…"
+
+#: src/dialogs/resume/index.tsx
+msgid "Updating your resume..."
+msgstr "正在更新您的履歷…"
+
+#: src/routes/dashboard/settings/profile.tsx
+msgid "Upgrade"
+msgstr ""
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/picture.tsx
+msgid "Uploading picture..."
+msgstr "正在上傳圖片…"
+
+#: src/routes/builder/$resumeId/-sidebar/left/sections/picture.tsx
+msgid "URL"
+msgstr "URL"
+
+#: src/dialogs/resume/sections/profile.tsx
+#: src/routes/auth/register.tsx
+#: src/routes/dashboard/settings/profile.tsx
+msgid "Username"
+msgstr "使用者名稱"
+
+#: src/utils/locale.ts
+msgid "Uzbek"
+msgstr "烏茲別克語"
+
+#: src/components/input/rich-input.tsx
+msgid "Valid URLs must start with http:// or https://."
+msgstr "有效的 URL 必須以 http:// 或 https:// 開頭。"
+
+#: src/routes/dashboard/settings/profile.tsx
+msgid "Verified"
+msgstr "已驗證"
+
+#: src/routes/auth/verify-2fa-backup.tsx
+#: src/routes/auth/verify-2fa.tsx
+msgid "Verify"
+msgstr "驗證"
+
+#: src/routes/auth/verify-2fa-backup.tsx
+msgid "Verify with a Backup Code"
+msgstr "使用備份代碼驗證"
+
+#: src/routes/auth/verify-2fa-backup.tsx
+msgid "Verifying backup code..."
+msgstr "正在驗證備份代碼…"
+
+#: src/dialogs/auth/enable-two-factor.tsx
+#: src/routes/auth/verify-2fa.tsx
+msgid "Verifying code..."
+msgstr "正在驗證代碼…"
+
+#: src/routes/auth/resume-password.tsx
+msgid "Verifying password..."
+msgstr "正在驗證密碼…"
+
+#: src/routes/auth/register.tsx
+msgid "Verifying your email is required when resetting your password."
+msgstr "重設密碼時必須先驗證您的電子郵件。"
+
+#: src/utils/locale.ts
+msgid "Vietnamese"
+msgstr "越南語"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/statistics.tsx
+msgid "Views"
+msgstr "檢視數"
+
+#: src/dialogs/resume/sections/custom.tsx
+#: src/utils/resume/section.tsx
+msgid "Volunteer"
+msgstr "志工服務"
+
+#: src/dialogs/resume/sections/award.tsx
+#: src/dialogs/resume/sections/certification.tsx
+#: src/dialogs/resume/sections/education.tsx
+#: src/dialogs/resume/sections/experience.tsx
+#: src/dialogs/resume/sections/profile.tsx
+#: src/dialogs/resume/sections/project.tsx
+#: src/dialogs/resume/sections/publication.tsx
+#: src/dialogs/resume/sections/reference.tsx
+#: src/dialogs/resume/sections/volunteer.tsx
+#: src/routes/builder/$resumeId/-sidebar/left/sections/basics.tsx
+msgid "Website"
+msgstr "個人網站"
+
+#: src/routes/builder/$resumeId/-sidebar/left/shared/section-menu.tsx
+msgid "What do you want to rename this section to?"
+msgstr "您想將這個段落重新命名為什麼？"
+
+#: src/routes/dashboard/settings/job-search.tsx
+msgid "What is JSearch API?"
+msgstr "什麼是 JSearch API？"
+
+#: src/routes/builder/$resumeId/-components/header.tsx
+#: src/routes/dashboard/resumes/-components/menus/context-menu.tsx
+#: src/routes/dashboard/resumes/-components/menus/dropdown-menu.tsx
+msgid "When locked, the resume cannot be updated or deleted."
+msgstr "履歷被鎖定時，將無法更新或刪除。"
+
+#: src/routes/dashboard/job-search/-components/job-utils.ts
+msgid "Yesterday"
+msgstr "昨天"
+
+#: src/routes/auth/login.tsx
+msgid "You can also use your username to login."
+msgstr "您也可以使用使用者名稱登入。"
+
+#: src/hooks/use-form-blocker.tsx
+msgid "You have unsaved changes that will be lost."
+msgstr "您有未儲存的變更，這些變更將會遺失。"
+
+#: src/routes/auth/forgot-password.tsx
+#: src/routes/auth/register.tsx
+msgid "You've got mail!"
+msgstr "你有新郵件"
+
+#: src/routes/dashboard/resumes/-components/cards/create-card.tsx
+#: src/routes/dashboard/resumes/-components/cards/import-card.tsx
+msgid "You've reached the maximum of {limit} resumes for your account. Please delete a resume to create a new one."
+msgstr ""
+
+#: src/routes/dashboard/settings/danger-zone.tsx
+msgid "Your account has been deleted successfully."
+msgstr "您的帳戶已成功刪除。"
+
+#: src/dialogs/api-key/create.tsx
+msgid "Your API key has been copied to the clipboard."
+msgstr "您的 API Key 已複製到剪貼簿。"
+
+#: src/routes/builder/$resumeId/index.tsx
+msgid "Your changes are saved automatically."
+msgstr "您的變更會自動儲存。"
+
+#: src/routes/dashboard/settings/ai.tsx
+msgid "Your data is stored locally"
+msgstr "您的資料將儲存在本機裝置中"
+
+#: src/routes/auth/reset-password.tsx
+msgid "Your password has been reset successfully. You can now sign in with your new password."
+msgstr "您的密碼已成功重設。您現在可以使用新密碼登入。"
+
+#: src/dialogs/auth/change-password.tsx
+msgid "Your password has been updated successfully."
+msgstr "您的密碼已成功更新。"
+
+#: src/routes/dashboard/settings/profile.tsx
+msgid "Your profile has been updated successfully."
+msgstr "您的個人設定已成功更新。"
+
+#: src/routes/dashboard/settings/job-search.tsx
+msgid "Your RapidAPI key is stored locally on your browser. It is only sent to the server when making a request to search for jobs, and is never stored or logged on our servers."
+msgstr "您的 RapidAPI 密鑰會儲存在您瀏覽器的本機中。它只會在要求搜尋工作時傳送至伺服器，絕不會儲存或記錄在我們的伺服器上。"
+
+#: src/dialogs/resume/index.tsx
+#: src/dialogs/resume/index.tsx
+msgid "Your resume has been created successfully."
+msgstr "您的履歷已成功建立。"
+
+#: src/routes/builder/$resumeId/-components/header.tsx
+#: src/routes/dashboard/resumes/-components/menus/context-menu.tsx
+#: src/routes/dashboard/resumes/-components/menus/dropdown-menu.tsx
+msgid "Your resume has been deleted successfully."
+msgstr "您的履歷已成功刪除。"
+
+#: src/dialogs/resume/index.tsx
+msgid "Your resume has been duplicated successfully."
+msgstr "您的履歷已成功複製。"
+
+#: src/dialogs/resume/import.tsx
+msgid "Your resume has been imported successfully."
+msgstr "您的履歷已成功匯入。"
+
+#: src/dialogs/resume/index.tsx
+msgid "Your resume has been updated successfully."
+msgstr "您的履歷已成功更新。"
+
+#: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
+msgid "Your resume's public link is currently protected by a password. Share the password only with people you trust."
+msgstr "您的履歷公開連結目前已受密碼保護。請只將密碼提供給您信任的人。"
+
+#: src/routes/builder/$resumeId/-components/dock.tsx
+msgid "Zoom in"
+msgstr "放大"
+
+#: src/routes/builder/$resumeId/-components/dock.tsx
+msgid "Zoom out"
+msgstr "縮小"
+
+#: src/utils/locale.ts
+msgid "Zulu"
+msgstr "祖魯語"
