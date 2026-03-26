@@ -51,7 +51,7 @@ export function Hero() {
         style={{ background: "var(--cvp-glow)", filter: "blur(80px)" }}
       />
 
-      <div className="relative z-[1] mx-auto grid w-full max-w-[1100px] items-center gap-20 lg:grid-cols-[1fr_420px]">
+      <div className="relative z-[1] mx-auto grid w-full max-w-[1100px] items-center gap-10 md:grid-cols-[1fr_320px] md:gap-8 lg:grid-cols-[1fr_420px] lg:gap-20">
         {/* Left column — text */}
         <div>
           <div
@@ -95,7 +95,7 @@ export function Hero() {
             technical knowledge needed — just you and your story.
           </p>
 
-          <div className="flex flex-wrap items-center gap-4">
+          <div className="flex flex-wrap items-center gap-3">
             <Link
               to="/dashboard"
               className="inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-[15px] font-medium transition-[background,transform] duration-200 hover:-translate-y-0.5"
@@ -120,7 +120,7 @@ export function Hero() {
           </div>
 
           <div
-            className="mt-12 grid grid-cols-3 gap-6 border-t pt-10"
+            className="mt-7 grid grid-cols-3 gap-6 border-t pt-7"
             style={{ borderColor: "var(--cvp-border)" }}
           >
             {[
@@ -153,7 +153,7 @@ export function Hero() {
         </div>
 
         {/* Right column — CV card */}
-        <div className="relative max-w-[360px] lg:max-w-none">
+        <div className="relative mx-auto max-w-[360px] md:mx-0 md:max-w-none">
           {/* Floating chip: PDF downloaded */}
           <div
             className="absolute right-[-16px] top-7 z-[3] flex items-center gap-2 rounded-xl px-3.5 py-2.5"

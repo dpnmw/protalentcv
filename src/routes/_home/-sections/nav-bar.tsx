@@ -56,7 +56,7 @@ export function NavBar() {
 
   return (
     <nav
-      className="fixed inset-x-0 top-0 z-50 flex h-16 items-center justify-between border-b px-5 backdrop-blur-[14px] transition-[background,border-color] duration-300 lg:grid lg:grid-cols-[1fr_auto_1fr] lg:px-12"
+      className="fixed inset-x-0 top-0 z-50 flex h-16 items-center justify-between border-b px-5 backdrop-blur-[14px] transition-[background,border-color] duration-300 md:px-8 lg:grid lg:grid-cols-[1fr_auto_1fr] lg:px-12"
       style={{
         background: "var(--cvp-nav-bg)",
         borderColor: "var(--cvp-border)",
@@ -72,7 +72,7 @@ export function NavBar() {
       </Link>
 
       {/* Desktop links */}
-      <div className="hidden items-center gap-6 lg:flex">
+      <div className="hidden items-center gap-4 md:flex lg:gap-6">
         {navLinks.map((link) => (
           <a
             key={link.href}
@@ -85,7 +85,7 @@ export function NavBar() {
             <span className="material-symbols-outlined" style={{ fontSize: "18px" }}>
               {link.icon}
             </span>
-            {link.label}
+            <span className="hidden lg:inline">{link.label}</span>
           </a>
         ))}
       </div>
