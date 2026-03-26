@@ -5,7 +5,7 @@ import { ThemeToggleButton } from "@/components/theme/toggle-button";
 
 const navLinks = [
   { href: "#how", label: "How it works?", icon: "play_circle" },
-  { href: "#why", label: "Why use ProTalent CV?", icon: "star" },
+  { href: "#why", label: "Why use it?", icon: "star" },
   { href: "#audience", label: "Who's it for?", icon: "group" },
   { href: "#pricing", label: "What's the cost?", icon: "payments" },
 ];
@@ -56,7 +56,7 @@ export function NavBar() {
 
   return (
     <nav
-      className="fixed inset-x-0 top-0 z-50 flex h-16 items-center justify-between border-b px-5 backdrop-blur-[14px] transition-[background,border-color] duration-300 md:grid md:grid-cols-[1fr_auto_1fr] md:px-12"
+      className="fixed inset-x-0 top-0 z-50 flex h-16 items-center justify-between border-b px-5 backdrop-blur-[14px] transition-[background,border-color] duration-300 lg:grid lg:grid-cols-[1fr_auto_1fr] lg:px-12"
       style={{
         background: "var(--cvp-nav-bg)",
         borderColor: "var(--cvp-border)",
@@ -72,7 +72,7 @@ export function NavBar() {
       </Link>
 
       {/* Desktop links */}
-      <div className="hidden items-center gap-8 md:flex">
+      <div className="hidden items-center gap-6 lg:flex">
         {navLinks.map((link) => (
           <a
             key={link.href}
@@ -102,7 +102,7 @@ export function NavBar() {
 
         <Link
           to="/dashboard"
-          className="inline-flex cursor-pointer items-center gap-1.5 whitespace-nowrap rounded-full border-none px-5 py-2 text-[13px] font-medium transition-[background,transform] duration-200 hover:-translate-y-px"
+          className="inline-flex shrink-0 cursor-pointer items-center gap-1.5 whitespace-nowrap rounded-full border-none px-4 py-2 text-[13px] font-medium transition-[background,transform] duration-200 hover:-translate-y-px"
           style={{
             fontFamily: "var(--font-body)",
             background: "var(--cvp-accent)",
@@ -112,7 +112,7 @@ export function NavBar() {
           <span className="material-symbols-outlined" style={{ fontSize: "16px" }}>
             login
           </span>
-          Login Here
+          Login
         </Link>
       </div>
     </nav>

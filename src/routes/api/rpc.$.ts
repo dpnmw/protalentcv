@@ -10,6 +10,7 @@ const rpcHandler = new RPCHandler(router, {
   plugins: [new BatchHandlerPlugin(), new RequestHeadersPlugin(), new StrictGetMethodPlugin()],
   interceptors: [
     onError((error) => {
+      if ("status" in error && (error.status === 404 || error.status === 401)) return;
       console.error("[oRPC Server]", error);
     }),
   ],
