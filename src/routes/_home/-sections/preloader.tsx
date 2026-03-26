@@ -2,27 +2,57 @@ import { useEffect, useRef, useState } from "react";
 
 export function Preloader() {
   const [percent, setPercent] = useState(0);
+  const [fading, setFading] = useState(false);
   const [done, setDone] = useState(false);
-  const percentRef = useRef(0);
-  const rafRef = useRef<number>(0);
+  const currentRef = useRef(0);
 
   useEffect(() => {
-    // Increment by small steps — slows down as it approaches 90, then jumps to 100 on load
-    const tick = () => {
-      percentRef.current = Math.min(
-        percentRef.current + (90 - percentRef.current) * 0.035,
-        89,
-      );
-      setPercent(Math.round(percentRef.current));
-      rafRef.current = requestAnimationFrame(tick);
-    };
+    const resources = [
+      ...document.querySelectorAll<HTMLImageElement | HTMLLinkElement>(
+        'img, link[rel="stylesheet"]',
+      ),
+    ];
+    const total = Math.max(resources.length, 1);
+    let loaded = 0;
 
-    rafRef.current = requestAnimationFrame(tick);
+    function updatePct(target: number) {
+      if (target <= currentRef.current) return;
+      const step = () => {
+        if (currentRef.current < target) {
+          currentRef.current++;
+          setPercent(currentRef.current);
+          requestAnimationFrame(step);
+        }
+      };
+      requestAnimationFrame(step);
+    }
+
+    resources.forEach((r) => {
+      if (
+        (r as HTMLImageElement).complete ||
+        (r as HTMLLinkElement).sheet
+      ) {
+        loaded++;
+      } else {
+        r.addEventListener("load", () => {
+          loaded++;
+          updatePct(Math.round((loaded / total) * 100));
+        });
+        r.addEventListener("error", () => {
+          loaded++;
+          updatePct(Math.round((loaded / total) * 100));
+        });
+      }
+    });
+
+    updatePct(Math.round((loaded / total) * 100));
 
     const finish = () => {
-      cancelAnimationFrame(rafRef.current);
-      setPercent(100);
-      setTimeout(() => setDone(true), 400);
+      updatePct(100);
+      setTimeout(() => {
+        setFading(true);
+        setTimeout(() => setDone(true), 400);
+      }, 200);
     };
 
     if (document.readyState === "complete") {
@@ -32,7 +62,6 @@ export function Preloader() {
     }
 
     return () => {
-      cancelAnimationFrame(rafRef.current);
       window.removeEventListener("load", finish);
     };
   }, []);
@@ -40,16 +69,12 @@ export function Preloader() {
   if (done) return null;
 
   return (
-    <div className="cvp-preloader" style={{ animationDelay: `${2}s` }}>
-      <div
-        className="text-[22px] tracking-tight"
-        style={{ fontFamily: "var(--font-serif)", color: "var(--cvp-ink)" }}
-      >
-        ProTalent<span style={{ color: "var(--cvp-accent)" }}> CV</span>
-      </div>
+    <div className={`cvp-preloader${fading ? " done" : ""}`}>
+      <img src="/logo/light.svg" alt="ProTalent CV" className="h-8 w-auto dark:hidden" />
+      <img src="/logo/dark.svg" alt="ProTalent CV" className="hidden h-8 w-auto dark:block" />
 
       <div className="cvp-preloader-bar">
-        <div className="cvp-preloader-bar-fill" />
+        <div className="cvp-preloader-bar-fill" style={{ width: `${percent}%` }} />
       </div>
 
       <div className="cvp-preloader-percent">{percent}%</div>

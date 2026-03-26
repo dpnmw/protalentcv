@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "@tanstack/react-router";
 
-import { BrandIcon } from "@/components/ui/brand-icon";
 import { ThemeToggleButton } from "@/components/theme/toggle-button";
 
 const navLinks = [
@@ -64,8 +63,12 @@ export function NavBar() {
       }}
     >
       <Link to="/" className="flex items-center">
-        <BrandIcon variant="icon" className="size-8 sm:hidden" />
-        <BrandIcon variant="logo" className="hidden h-8 w-auto sm:block" />
+        {/* Mobile: icon only */}
+        <img src="/icon/light.svg" alt="ProTalent CV" className="size-8 dark:hidden sm:hidden" />
+        <img src="/icon/dark.svg" alt="ProTalent CV" className="hidden size-8 dark:block dark:sm:hidden" />
+        {/* sm+: full logo */}
+        <img src="/logo/light.svg" alt="ProTalent CV" className="hidden h-8 w-auto dark:hidden sm:block" />
+        <img src="/logo/dark.svg" alt="ProTalent CV" className="hidden h-8 w-auto dark:sm:block" />
       </Link>
 
       {/* Desktop links */}
