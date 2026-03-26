@@ -80,5 +80,8 @@ export const env = createEnv({
     TERMS_URL: z.url({ protocol: /https?/ }).optional(),
     PRIVACY_URL: z.url({ protocol: /https?/ }).optional(),
 
+    // Demo video (YouTube URL)
+    DEMO_VIDEO_URL: z.url({ protocol: /https?/ }).optional(),
+
   },
 });

@@ -71,7 +71,7 @@ export function Templates() {
   return (
     <section
       id="templates"
-      className="overflow-hidden px-5 py-24 md:px-12"
+      className="overflow-hidden px-5 py-14 md:px-12 md:py-20 lg:py-24"
       style={{ fontFamily: "var(--font-body)", background: "var(--cvp-bg)" }}
     >
       <div className="mx-auto mb-[52px] max-w-[1100px]">

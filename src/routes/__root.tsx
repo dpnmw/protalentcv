@@ -10,7 +10,7 @@ import type { QueryClient } from "@tanstack/react-query";
 import { i18n } from "@lingui/core";
 import { I18nProvider } from "@lingui/react";
 import { IconContext } from "@phosphor-icons/react";
-import { createRootRouteWithContext, HeadContent, Scripts } from "@tanstack/react-router";
+import { createRootRouteWithContext, HeadContent, Scripts, useRouter } from "@tanstack/react-router";
 import { MotionConfig } from "motion/react";
 
 import type { AuthSession } from "@/integrations/auth/types";
@@ -41,6 +41,7 @@ type RouterContext = {
   planConfig: PlanConfig;
 };
 
+import { BrandIcon } from "@/components/ui/brand-icon";
 import { branding } from "@/config/branding";
 
 const appName = branding.appName;
@@ -52,6 +53,7 @@ await loadLocale(await getLocale());
 
 export const Route = createRootRouteWithContext<RouterContext>()({
   shellComponent: RootDocument,
+  errorComponent: RootErrorScreen,
   head: () => {
     const appUrl = branding.appUrl;
 
@@ -110,6 +112,34 @@ export const Route = createRootRouteWithContext<RouterContext>()({
     return { theme, locale, session, flags, planConfig };
   },
 });
+
+function RootErrorScreen() {
+  const router = useRouter();
+
+  return (
+    <div className="flex min-h-svh flex-col items-center justify-center gap-6 bg-background px-4">
+      <BrandIcon className="h-10 w-auto" />
+      <div className="flex flex-col items-center gap-2 text-center">
+        <p className="text-base font-medium text-foreground">An error occurred while loading the page.</p>
+        <p className="text-sm text-muted-foreground">This may be a temporary issue. Please try again.</p>
+      </div>
+      <div className="flex gap-3">
+        <button
+          onClick={() => router.history.back()}
+          className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+        >
+          Go Back
+        </button>
+        <button
+          onClick={() => router.invalidate()}
+          className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-5 py-2 text-sm font-medium text-foreground transition-opacity hover:opacity-80"
+        >
+          Try Again
+        </button>
+      </div>
+    </div>
+  );
+}
 
 type Props = {
   children: React.ReactNode;

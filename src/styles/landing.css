@@ -158,3 +158,41 @@ html {
 .cvp-nav-link[data-active="true"] {
   color: var(--cvp-accent) !important;
 }
+
+/* Play button pulse */
+@keyframes cvp-play-pulse {
+  0% {
+    box-shadow: 0 8px 32px rgba(37, 99, 235, 0.35), 0 0 0 0 rgba(37, 99, 235, 0.4);
+  }
+  70% {
+    box-shadow: 0 8px 32px rgba(37, 99, 235, 0.2), 0 0 0 14px rgba(37, 99, 235, 0);
+  }
+  100% {
+    box-shadow: 0 8px 32px rgba(37, 99, 235, 0.35), 0 0 0 0 rgba(37, 99, 235, 0);
+  }
+}
+
+.dark .cvp-play-btn {
+  --_play-glow: rgba(96, 165, 250, 0.45);
+}
+
+@keyframes cvp-play-pulse-dark {
+  0% {
+    box-shadow: 0 8px 32px rgba(96, 165, 250, 0.35), 0 0 0 0 rgba(96, 165, 250, 0.4);
+  }
+  70% {
+    box-shadow: 0 8px 32px rgba(96, 165, 250, 0.2), 0 0 0 14px rgba(96, 165, 250, 0);
+  }
+  100% {
+    box-shadow: 0 8px 32px rgba(96, 165, 250, 0.35), 0 0 0 0 rgba(96, 165, 250, 0);
+  }
+}
+
+.cvp-play-btn {
+  animation: cvp-play-pulse 2s infinite;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dark .cvp-play-btn {
+  animation: cvp-play-pulse-dark 2s infinite;
+}

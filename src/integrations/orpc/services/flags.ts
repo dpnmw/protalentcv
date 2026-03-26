@@ -12,6 +12,7 @@ export type PlanConfig = {
   upgradeUrl: string | null;
   termsUrl: string | null;
   privacyUrl: string | null;
+  demoVideoUrl: string | null;
 };
 
 export const flagsService = {
@@ -27,5 +28,6 @@ export const flagsService = {
     upgradeUrl: env.UPGRADE_URL ?? null,
     termsUrl: env.TERMS_URL ?? null,
     privacyUrl: env.PRIVACY_URL ?? null,
+    demoVideoUrl: env.DEMO_VIDEO_URL ?? null,
   }),
 };

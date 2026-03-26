@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "@tanstack/react-router";
+import { useQuery } from "@tanstack/react-query";
+import { orpc } from "@/integrations/orpc/client";
 
 function AnimatedCounter({ end, suffix = "", duration = 2000 }: { end: number; suffix?: string; duration?: number }) {
   const [count, setCount] = useState(0);
@@ -39,7 +41,65 @@ function AnimatedCounter({ end, suffix = "", duration = 2000 }: { end: number; s
   );
 }
 
+function getYouTubeId(url: string): string | null {
+  try {
+    const u = new URL(url);
+    if (u.hostname.includes("youtu.be")) return u.pathname.slice(1);
+    return u.searchParams.get("v");
+  } catch {
+    return null;
+  }
+}
+
+function VideoLightbox({ url, onClose }: { url: string; onClose: () => void }) {
+  const videoId = getYouTubeId(url);
+
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") onClose(); };
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [onClose]);
+
+  return (
+    <div
+      className="fixed inset-0 z-[9998] flex items-center justify-center bg-black/80 px-4 backdrop-blur-sm"
+      onClick={onClose}
+    >
+      <div
+        className="relative w-full max-w-3xl"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <button
+          onClick={onClose}
+          className="absolute -right-3 -top-3 z-10 flex size-8 items-center justify-center rounded-full bg-white/10 text-white transition-colors hover:bg-white/20"
+          aria-label="Close video"
+        >
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <path d="M1 1l12 12M13 1L1 13" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+          </svg>
+        </button>
+        <div className="aspect-video w-full overflow-hidden rounded-2xl bg-black">
+          {videoId ? (
+            <iframe
+              src={`https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`}
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+              className="h-full w-full"
+            />
+          ) : (
+            <video src={url} autoPlay controls className="h-full w-full" />
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export function Hero() {
+  const [videoOpen, setVideoOpen] = useState(false);
+  const { data: planConfig } = useQuery(orpc.flags.getConfig.queryOptions());
+  const demoVideoUrl = planConfig?.demoVideoUrl ?? null;
+
   return (
     <div
       className="relative flex min-h-screen items-center overflow-hidden px-5 pb-24 pt-28 md:px-12"
@@ -72,20 +132,38 @@ export function Hero() {
             100% Free · No payment required to start
           </div>
 
-          <h1
-            className="mb-5 leading-[1.08] tracking-[-0.02em]"
-            style={{
-              fontFamily: "var(--font-serif)",
-              fontSize: "clamp(40px, 5.5vw, 68px)",
-              color: "var(--cvp-ink)",
-            }}
-          >
-            Your CV,
-            <br />
-            <em style={{ fontStyle: "italic", color: "var(--cvp-accent)" }}>ready in</em>
-            <br />
-            minutes.
-          </h1>
+          <div className="mb-5 flex items-start gap-4">
+            <h1
+              className="leading-[1.08] tracking-[-0.02em]"
+              style={{
+                fontFamily: "var(--font-serif)",
+                fontSize: "clamp(40px, 5.5vw, 68px)",
+                color: "var(--cvp-ink)",
+              }}
+            >
+              Your CV,
+              <br />
+              <em style={{ fontStyle: "italic", color: "var(--cvp-accent)" }}>ready in</em>
+              <br />
+              minutes.
+            </h1>
+
+            {demoVideoUrl && (
+              <button
+                onClick={() => setVideoOpen(true)}
+                className="cvp-play-btn mt-3 flex shrink-0 size-12 items-center justify-center rounded-full"
+                style={{
+                  background: "var(--cvp-accent)",
+                  color: "var(--cvp-btn-fg)",
+                }}
+                aria-label="Watch demo video"
+              >
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor">
+                  <path d="M6 4.5l8 4.5-8 4.5V4.5z" />
+                </svg>
+              </button>
+            )}
+          </div>
 
           <p
             className="mb-8 max-w-[420px] text-lg font-light leading-[1.75]"
@@ -151,6 +229,10 @@ export function Hero() {
             ))}
           </div>
         </div>
+
+        {videoOpen && demoVideoUrl && (
+          <VideoLightbox url={demoVideoUrl} onClose={() => setVideoOpen(false)} />
+        )}
 
         {/* Right column — CV card */}
         <div className="relative mx-auto max-w-[360px] md:mx-0 md:max-w-none">

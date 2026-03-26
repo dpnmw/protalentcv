@@ -29,7 +29,7 @@ export function Audience() {
   return (
     <section
       id="audience"
-      className="px-5 py-24 md:px-12"
+      className="px-5 py-14 md:px-12 md:py-20 lg:py-24"
       style={{ fontFamily: "var(--font-body)", background: "var(--cvp-bg-sub)" }}
     >
       <div className="mx-auto max-w-[1100px]">

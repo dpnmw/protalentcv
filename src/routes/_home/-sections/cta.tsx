@@ -1,7 +1,7 @@
 export function CTA() {
   return (
     <section
-      className="relative overflow-hidden px-5 py-28 md:px-12"
+      className="relative overflow-hidden px-5 py-14 md:px-12 md:py-20 lg:py-28"
       style={{ fontFamily: "var(--font-body)", background: "var(--cvp-footer-bg)" }}
     >
       {/* Background glow */}
