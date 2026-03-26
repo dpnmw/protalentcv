@@ -88,11 +88,11 @@ export function Hero() {
           </h1>
 
           <p
-            className="mb-10 max-w-[480px] text-lg font-light leading-[1.75]"
+            className="mb-8 max-w-[420px] text-lg font-light leading-[1.75]"
             style={{ color: "var(--cvp-ink-mid)" }}
           >
-            Build a polished, professional CV or résumé completely free. No design skills, no
-            technical knowledge needed — just you and your story.
+            Build a polished, professional CV completely free. No design skills or technical
+            knowledge needed — just you and your story.
           </p>
 
           <div className="flex flex-wrap items-center gap-3">
@@ -120,7 +120,7 @@ export function Hero() {
           </div>
 
           <div
-            className="mt-7 grid grid-cols-3 gap-6 border-t pt-7"
+            className="mt-5 grid grid-cols-3 gap-6 border-t pt-5"
             style={{ borderColor: "var(--cvp-border)" }}
           >
             {[
