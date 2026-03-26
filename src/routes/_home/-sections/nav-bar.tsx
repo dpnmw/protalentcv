@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "@tanstack/react-router";
 
+import { BrandIcon } from "@/components/ui/brand-icon";
 import { ThemeToggleButton } from "@/components/theme/toggle-button";
 
 const navLinks = [
@@ -62,12 +63,9 @@ export function NavBar() {
         borderColor: "var(--cvp-border)",
       }}
     >
-      <Link
-        to="/"
-        className="font-[var(--font-serif)] text-xl tracking-tight"
-        style={{ fontFamily: "var(--font-serif)", color: "var(--cvp-ink)" }}
-      >
-        CV<span style={{ color: "var(--cvp-accent)" }}> Pro</span>
+      <Link to="/" className="flex items-center">
+        <BrandIcon variant="icon" className="size-8 sm:hidden" />
+        <BrandIcon variant="logo" className="hidden h-8 w-auto sm:block" />
       </Link>
 
       {/* Desktop links */}

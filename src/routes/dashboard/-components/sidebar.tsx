@@ -134,7 +134,11 @@ export function DashboardSidebar() {
               className="h-auto justify-center"
               render={
                 <Link to="/">
-                  <BrandIcon variant="icon" className="size-6" />
+                  {state === "expanded" ? (
+                    <BrandIcon variant="logo" className="h-6 w-auto" />
+                  ) : (
+                    <BrandIcon variant="icon" className="size-6" />
+                  )}
                   <h1 className="sr-only">ProTalent CV</h1>
                 </Link>
               }
