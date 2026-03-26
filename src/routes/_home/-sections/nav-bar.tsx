@@ -85,7 +85,7 @@ export function NavBar() {
             <span className="material-symbols-outlined" style={{ fontSize: "18px" }}>
               {link.icon}
             </span>
-            <span className="hidden lg:inline">{link.label}</span>
+            <span>{link.label}</span>
           </a>
         ))}
       </div>
