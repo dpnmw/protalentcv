@@ -101,33 +101,25 @@ export function WhyCVPro() {
               and completely focused on getting you hired.
             </p>
 
-            {/* 2026 Micro-UI: Magnetic Card Row (2x2 Grid) */}
-            <div className="mt-12 max-w-[400px]">
-              <div className="grid grid-cols-2 gap-4">
+            {/* 2026 Micro-UI: Magnetic Glass Grid (2 per row on Desktop) */}
+            <div className="mt-12 space-y-12">
+              <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:max-w-[500px]">
                 {[
                   { label: "Basics", color: "#8B5CF6" },
                   { label: "Summary", color: "#F97316" },
                   { label: "Profile Links", color: "#10B981" },
                   { label: "Interests", color: "#F59E0B" },
                 ].map((layer, i) => (
-                  <motion.div
+                  <div
                     key={layer.label}
-                    initial={{ opacity: 0, x: -20, y: 10 }}
-                    whileInView={{ opacity: 1, x: 0, y: 0 }}
-                    transition={{
-                      type: "spring",
-                      damping: 18,
-                      stiffness: 120,
-                      delay: i * 0.15,
-                    }}
-                    className="flex h-[56px] min-w-[170px] items-center gap-3 rounded-xl border border-white/20 bg-white/5 px-4 shadow-xl backdrop-blur-md transition-all duration-300 hover:bg-white/10"
-                    style={{ borderColor: `${layer.color}40`, backgroundColor: `${layer.color}08` }}
+                    className="flex h-[60px] cursor-default items-center gap-3 rounded-xl border border-white/30 bg-white/10 px-4 shadow-xl backdrop-blur-xl transition-all duration-300 hover:scale-[1.02] hover:border-white/50 hover:bg-white/25"
+                    style={{ borderLeft: `3px solid ${layer.color}` }}
                   >
                     <div className="size-2 rounded-full" style={{ backgroundColor: layer.color }} />
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-ink">
+                    <span className="text-[11px] font-bold uppercase tracking-wider text-ink">
                       {layer.label}
                     </span>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
 
@@ -172,11 +164,9 @@ export function WhyCVPro() {
                 background: "var(--cvp-bg-card)",
               }}
             >
-              <div className="mb-3 flex items-center gap-3">
-                <span className="shrink-0 text-[28px] leading-none">{feature.icon}</span>
-                <div className="text-base font-semibold" style={{ color: "var(--cvp-ink)" }}>
-                  {feature.title}
-                </div>
+              <span className="mb-3.5 block text-[28px] leading-none">{feature.icon}</span>
+              <div className="mb-2 text-base font-semibold" style={{ color: "var(--cvp-ink)" }}>
+                {feature.title}
               </div>
               <div
                 className="text-sm font-light leading-[1.7]"

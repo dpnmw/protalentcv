@@ -49,20 +49,30 @@ export function Struggle() {
               what matters: your next opportunity.
             </p>
 
-            {/* 2026 Micro-UI: The Growth Path (2x2 Grid) */}
-            <div className="mt-12 max-w-[400px]">
-              <div className="grid grid-cols-2 gap-x-12 gap-y-8">
+            {/* 2026 Micro-UI: The Growth Path (4 Items) */}
+            <div className="mt-12 max-w-[600px] space-y-10">
+              <div className="relative flex items-center justify-between px-2">
+                {/* Background Connecting Line */}
+                <div className="absolute left-6 right-6 top-[18px] h-[2px] bg-ink/5" />
+                {/* Animated Glowing Path */}
+                <motion.div
+                  initial={{ width: 0 }}
+                  whileInView={{ width: "100%" }}
+                  transition={{ duration: 1.5, ease: "circInOut", delay: 0.2 }}
+                  className="absolute left-6 top-[18px] h-[2px] origin-left bg-gradient-to-r from-[#10B981] via-[#F59E0B] via-[#EF4444] to-[#8B5CF6]"
+                />
+ 
                 {[
                   { label: "Graduation", color: "#10B981" },
                   { label: "First Project", color: "#F59E0B" },
                   { label: "Internship", color: "#8B5CF6" },
                   { label: "First Award", color: "#EF4444" },
                 ].map((item, i) => (
-                  <div key={item.label} className="flex flex-col items-center">
+                  <div key={item.label} className="relative z-10 flex flex-col items-center">
                     <motion.div
                       initial={{ scale: 0 }}
                       whileInView={{ scale: 1 }}
-                      transition={{ delay: i * 0.2 + 0.3, type: "spring" }}
+                      transition={{ delay: i * 0.4 + 0.5, type: "spring" }}
                       className="flex size-9 items-center justify-center rounded-full shadow-lg"
                       style={{ backgroundColor: item.color }}
                     >
@@ -71,7 +81,7 @@ export function Struggle() {
                     <motion.span
                       initial={{ opacity: 0, y: 10 }}
                       whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ delay: i * 0.2 + 0.5 }}
+                      transition={{ delay: i * 0.4 + 0.7 }}
                       className="mt-3 text-[9px] font-bold uppercase tracking-widest text-ink/40"
                     >
                       {item.label}

@@ -60,9 +60,9 @@ export function HowItWorks() {
               go.
             </p>
 
-            {/* 2026 Micro-UI: Radial Analytics Rings (2x2 Grid) */}
+            {/* 2026 Micro-UI: Radial Analytics Rings */}
             <div className="mt-12 space-y-10">
-              <div className="grid max-w-[340px] grid-cols-2 gap-8">
+              <div className="flex gap-10">
                 {[
                   { label: "Design", level: 100, color: "#10B981" },
                   { label: "Content", level: 85, color: "#EF4444" },
