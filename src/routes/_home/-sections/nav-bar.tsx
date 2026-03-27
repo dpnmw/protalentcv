@@ -4,10 +4,12 @@ import { Link } from "@tanstack/react-router";
 import { ThemeToggleButton } from "@/components/theme/toggle-button";
 
 const navLinks = [
-  { href: "#how", label: "How it works?", icon: "play_circle" },
-  { href: "#why", label: "Why use it?", icon: "star" },
-  { href: "#audience", label: "Who's it for?", icon: "group" },
-  { href: "#pricing", label: "What's the cost?", icon: "payments" },
+  { href: "#struggle", label: "Overview", icon: "home" },
+  { href: "#how", label: "Starting", icon: "play_circle" },
+  { href: "#why", label: "Features", icon: "star" },
+  { href: "#audience", label: "Audience", icon: "group" },
+  { href: "#pricing", label: "Pricing", icon: "payments" },
+  { href: "#contact", label: "Contact", icon: "mail" },
 ];
 
 export function NavBar() {

@@ -1,7 +1,8 @@
 export function CTA() {
   return (
     <section
-      className="relative overflow-hidden px-5 py-14 md:px-12 md:py-20 lg:py-28"
+      id="contact"
+      className="relative overflow-hidden px-5 py-16 md:px-12 md:py-24"
       style={{ fontFamily: "var(--font-body)", background: "var(--cvp-footer-bg)" }}
     >
       {/* Background glow */}
@@ -10,43 +11,119 @@ export function CTA() {
         style={{ background: "rgba(37,99,235,.1)", filter: "blur(80px)" }}
       />
 
-      <div className="relative z-[1] mx-auto max-w-[700px] text-center">
-        <h2
-          className="mb-4 leading-[1.1] tracking-[-0.01em] text-white"
-          style={{
-            fontFamily: "var(--font-serif)",
-            fontSize: "clamp(32px, 5vw, 54px)",
-          }}
-        >
-          Your next opportunity
-          <br />
-          <em style={{ fontStyle: "italic", color: "var(--cvp-b300)" }}>
-            starts with a great CV.
-          </em>
-        </h2>
+      <div className="relative z-[1] mx-auto max-w-[900px]">
+        {/* Header */}
+        <div className="mb-12 text-center">
+          <div
+            className="mb-4 inline-flex items-center gap-2 text-xs font-medium uppercase tracking-[0.1em]"
+            style={{ color: "var(--cvp-b300)" }}
+          >
+            <span className="block h-[1.5px] w-5" style={{ background: "var(--cvp-b300)" }} />
+            Get in touch
+          </div>
+          <h2
+            className="mb-4 leading-[1.1] tracking-[-0.01em] text-white"
+            style={{
+              fontFamily: "var(--font-serif)",
+              fontSize: "clamp(32px, 5vw, 54px)",
+            }}
+          >
+            Your next opportunity
+            <br />
+            <em style={{ fontStyle: "italic", color: "var(--cvp-b300)" }}>
+              starts with a great CV.
+            </em>
+          </h2>
+          <p className="mx-auto max-w-[500px] text-[17px] font-light leading-[1.75] text-white/50">
+            It takes less than five minutes to build something you're genuinely proud to send.
+            No debit card, no commitment.
+          </p>
+          <p className="mt-3 text-[15px] font-light text-white/35">
+            Have a question or feedback? We'd love to hear from you.
+          </p>
+        </div>
 
-        <p className="mb-10 text-[17px] font-light leading-[1.75] text-white/[0.48]">
-          It takes less than five minutes to build something you're genuinely proud to send.
-          <br />
-          No debit card, no commitment.
+        {/* Contact grid */}
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+          {/* Email */}
+          <a
+            href="mailto:dpnmediaworks@gmail.com"
+            className="group flex flex-col items-center gap-3 rounded-[20px] px-6 py-8 text-center transition-transform duration-200 hover:-translate-y-1"
+            style={{
+              background: "rgba(255,255,255,.05)",
+              border: "1px solid rgba(255,255,255,.08)",
+            }}
+          >
+            <div
+              className="flex size-12 items-center justify-center rounded-full"
+              style={{ background: "rgba(37,99,235,.25)" }}
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="#93c5fd" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M22 6l-10 7L2 6" stroke="#93c5fd" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </div>
+            <div>
+              <div className="mb-1 text-sm font-semibold text-white">Email us</div>
+              <div className="text-xs text-white/50">dpnmediaworks@gmail.com</div>
+            </div>
+          </a>
+
+          {/* Instagram / Social */}
+          <a
+            href="https://instagram.com/dpnmediaworks"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex flex-col items-center gap-3 rounded-[20px] px-6 py-8 text-center transition-transform duration-200 hover:-translate-y-1"
+            style={{
+              background: "rgba(255,255,255,.05)",
+              border: "1px solid rgba(255,255,255,.08)",
+            }}
+          >
+            <div
+              className="flex size-12 items-center justify-center rounded-full"
+              style={{ background: "rgba(236,72,153,.2)" }}
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <rect x="2" y="2" width="20" height="20" rx="5" stroke="#f9a8d4" strokeWidth="1.8"/>
+                <circle cx="12" cy="12" r="4" stroke="#f9a8d4" strokeWidth="1.8"/>
+                <circle cx="17.5" cy="6.5" r="1" fill="#f9a8d4"/>
+              </svg>
+            </div>
+            <div>
+              <div className="mb-1 text-sm font-semibold text-white">Instagram</div>
+              <div className="text-xs text-white/50">@dpnmediaworks</div>
+            </div>
+          </a>
+
+          {/* Start building CTA */}
+          <a
+            href="/dashboard"
+            className="group flex flex-col items-center gap-3 rounded-[20px] px-6 py-8 text-center transition-transform duration-200 hover:-translate-y-1"
+            style={{
+              background: "rgba(37,99,235,.15)",
+              border: "1px solid rgba(37,99,235,.3)",
+            }}
+          >
+            <div
+              className="flex size-12 items-center justify-center rounded-full"
+              style={{ background: "rgba(37,99,235,.35)" }}
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M12 5v14M5 12h14" stroke="#93c5fd" strokeWidth="2" strokeLinecap="round"/>
+              </svg>
+            </div>
+            <div>
+              <div className="mb-1 text-sm font-semibold text-white">Start building</div>
+              <div className="text-xs text-white/50">Free, no card required</div>
+            </div>
+          </a>
+        </div>
+
+        {/* Bottom note */}
+        <p className="mt-10 text-center text-[13px] text-white/30">
+          We typically respond within 24 hours · ProTalent CV by DPN Media Works
         </p>
-
-        <a
-          href="mailto:dpnmediaworks@gmail.com"
-          className="inline-flex items-center gap-2 rounded-full border-none px-9 py-4 text-[15px] font-medium transition-[transform,background,box-shadow] duration-200 hover:-translate-y-0.5 hover:shadow-2xl"
-          style={{
-            fontFamily: "var(--font-body)",
-            background: "#fff",
-            color: "var(--cvp-b950)",
-            boxShadow: "0 4px 24px rgba(0,0,0,.22)",
-          }}
-          onMouseEnter={(e) => (e.currentTarget.style.background = "#f0f4ff")}
-          onMouseLeave={(e) => (e.currentTarget.style.background = "#fff")}
-        >
-          <span className="material-symbols-outlined" style={{ fontSize: "18px" }}>mail</span>
-          Get in touch
-        </a>
-
       </div>
     </section>
   );

@@ -101,33 +101,31 @@ export function WhyCVPro() {
               and completely focused on getting you hired.
             </p>
 
-            {/* Dynamic Micro-UI */}
-            <div className="mt-10 space-y-8">
-              <div className="flex gap-4">
+            {/* 2026 Micro-UI: Magnetic Layer Stack */}
+            <div className="mt-12 space-y-12">
+              <div className="relative h-[120px] w-full max-w-[340px]">
                 {[
-                  { label: "LinkedIn", color: "#EF4444" },
-                  { label: "GitHub", color: "#8B5CF6" },
-                  { label: "Portfolio", color: "#F59E0B" },
-                ].map((p, i) => (
+                  { label: "Basics", color: "#8B5CF6", offset: 0 },
+                  { label: "Summary", color: "#F97316", offset: 12 },
+                  { label: "Profile Links", color: "#10B981", offset: 24 },
+                ].map((layer, i) => (
                   <motion.div
-                    key={p.label}
-                    initial={{ scale: 0.8, opacity: 0 }}
-                    whileInView={{ scale: 1, opacity: 1 }}
-                    animate={{ y: [0, -4, 0] }}
+                    key={layer.label}
+                    initial={{ opacity: 0, x: -40, y: layer.offset }}
+                    whileInView={{ opacity: 1, x: layer.offset * 2.5, y: layer.offset }}
                     transition={{
-                      scale: { delay: i * 0.1 },
-                      y: { duration: 3, repeat: Infinity, ease: "easeInOut", delay: i * 0.5 },
+                      type: "spring",
+                      damping: 15,
+                      stiffness: 100,
+                      delay: i * 0.2,
                     }}
-                    className="flex flex-col items-center gap-2"
+                    whileHover={{ scale: 1.02, zIndex: 50 }}
+                    className="absolute left-0 top-0 flex h-[60px] w-[220px] items-center gap-3 rounded-xl border border-white/10 px-4 shadow-2xl backdrop-blur-md"
+                    style={{ backgroundColor: `${layer.color}15`, borderColor: `${layer.color}40` }}
                   >
-                    <div
-                      className="flex size-12 items-center justify-center rounded-2xl shadow-lg"
-                      style={{ backgroundColor: p.color, color: "white" }}
-                    >
-                      <Globe size={24} weight="bold" />
-                    </div>
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-ink/40">
-                      {p.label}
+                    <div className="size-2 rounded-full" style={{ backgroundColor: layer.color }} />
+                    <span className="text-[11px] font-bold uppercase tracking-wider text-ink/80">
+                      {layer.label}
                     </span>
                   </motion.div>
                 ))}
@@ -135,19 +133,25 @@ export function WhyCVPro() {
 
               <div>
                 <div className="mb-4 text-[11px] font-bold uppercase tracking-widest text-ink/30">
-                  Infinite customization:
+                  Personal Branding Blocks:
                 </div>
-                <div className="flex flex-wrap gap-2">
-                  {["Profile Links", "Languages", "Interests", "Custom Sections"].map((item, i) => (
+                <div className="flex flex-wrap gap-2.5">
+                  {[
+                    { s: "Profile Links", c: "#8B5CF6", bg: "rgba(139, 92, 246, 0.08)" },
+                    { s: "Languages", c: "#10B981", bg: "rgba(16, 185, 129, 0.08)" },
+                    { s: "Interests", c: "#F59E0B", bg: "rgba(245, 158, 11, 0.08)" },
+                    { s: "Custom Field", c: "#EF4444", bg: "rgba(239, 68, 68, 0.08)" },
+                  ].map((item, i) => (
                     <motion.span
-                      key={item}
+                      key={item.s}
                       initial={{ opacity: 0, scale: 0.9 }}
                       whileInView={{ opacity: 1, scale: 1 }}
-                      transition={{ delay: i * 0.1 }}
-                      className="rounded-lg border border-ink/10 bg-error-sub px-3.5 py-2 text-xs font-medium transition-colors hover:border-[#EF4444] hover:bg-white"
-                      style={{ color: "var(--cvp-ink)" }}
+                      transition={{ delay: i * 0.1 + 0.8 }}
+                      whileHover={{ scale: 1.05 }}
+                      className="rounded-lg border border-transparent px-4 py-2.5 text-xs font-semibold transition-all hover:border-current shadow-sm"
+                      style={{ color: item.c, backgroundColor: item.bg }}
                     >
-                      {item}
+                      {item.s}
                     </motion.span>
                   ))}
                 </div>

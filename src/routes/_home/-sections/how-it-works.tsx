@@ -60,49 +60,71 @@ export function HowItWorks() {
               go.
             </p>
 
-            {/* Dynamic Micro-UI */}
-            <div className="mt-10 space-y-8">
-              <div className="flex flex-wrap gap-8">
+            {/* 2026 Micro-UI: Radial Analytics Rings */}
+            <div className="mt-12 space-y-10">
+              <div className="flex gap-10">
                 {[
-                  { label: "English", level: 5 },
-                  { label: "French", level: 3 },
-                ].map((l, i) => (
-                  <div key={l.label} className="flex flex-col gap-2">
-                    <div className="text-[11px] font-bold uppercase tracking-widest text-[#F59E0B]">
-                      {l.label}
-                    </div>
-                    <div className="flex gap-1.5">
-                      {[1, 2, 3, 4, 5].map((dot) => (
-                        <motion.div
-                          key={dot}
-                          initial={{ scale: 0 }}
-                          whileInView={{ scale: 1 }}
-                          transition={{ delay: i * 0.2 + dot * 0.1, type: "spring" }}
-                          className={`size-2.5 rounded-full ${
-                            dot <= l.level ? "bg-[#F59E0B]" : "bg-ink/10"
-                          }`}
+                  { label: "Design", level: 100, color: "#FCD34D" },
+                  { label: "Content", level: 85, color: "#FB923C" },
+                  { label: "Optimization", level: 70, color: "#F43F5E" },
+                ].map((ring, i) => (
+                  <div key={ring.label} className="flex flex-col items-center gap-3">
+                    <div className="relative size-16">
+                      <svg className="size-full" viewBox="0 0 36 36">
+                        <circle
+                          cx="18"
+                          cy="18"
+                          r="16"
+                          fill="none"
+                          className="stroke-ink/5"
+                          strokeWidth="3"
                         />
-                      ))}
+                        <motion.circle
+                          cx="18"
+                          cy="18"
+                          r="16"
+                          fill="none"
+                          stroke={ring.color}
+                          strokeWidth="3"
+                          strokeDasharray="100, 100"
+                          initial={{ strokeDashoffset: 100 }}
+                          whileInView={{ strokeDashoffset: 100 - ring.level }}
+                          transition={{ duration: 1.5, delay: i * 0.3, ease: "circOut" }}
+                          strokeLinecap="round"
+                        />
+                      </svg>
+                      <div className="absolute inset-0 flex items-center justify-center text-[10px] font-bold">
+                        {ring.level}%
+                      </div>
                     </div>
+                    <span className="text-[10px] font-bold uppercase tracking-widest text-ink/40">
+                      {ring.label}
+                    </span>
                   </div>
                 ))}
               </div>
 
               <div>
                 <div className="mb-4 text-[11px] font-bold uppercase tracking-widest text-ink/30">
-                  Ready to drag-and-drop:
+                  Professional Journey blocks:
                 </div>
-                <div className="flex flex-wrap gap-2">
-                  {["Experience", "Summary", "Certifications", "Volunteer Work"].map((item, i) => (
+                <div className="flex flex-wrap gap-2.5">
+                  {[
+                    { s: "Experience", c: "#FCD34D", bg: "rgba(252, 211, 77, 0.08)" },
+                    { s: "Summary", c: "#FB923C", bg: "rgba(251, 146, 60, 0.08)" },
+                    { s: "Certifications", c: "#F43F5E", bg: "rgba(244, 63, 94, 0.08)" },
+                    { s: "Volunteer Work", c: "#22C55E", bg: "rgba(34, 197, 94, 0.08)" },
+                  ].map((item, i) => (
                     <motion.span
-                      key={item}
+                      key={item.s}
                       initial={{ opacity: 0, x: -10 }}
                       whileInView={{ opacity: 1, x: 0 }}
-                      transition={{ delay: i * 0.1 }}
-                      className="rounded-lg border border-ink/10 bg-warning-sub px-3.5 py-2 text-xs font-medium transition-colors hover:border-[#F59E0B] hover:bg-white"
-                      style={{ color: "var(--cvp-ink)" }}
+                      transition={{ delay: i * 0.1 + 1.2 }}
+                      whileHover={{ scale: 1.05 }}
+                      className="rounded-lg border border-transparent px-4 py-2.5 text-xs font-semibold transition-all hover:border-current shadow-sm"
+                      style={{ color: item.c, backgroundColor: item.bg }}
                     >
-                      {item}
+                      {item.s}
                     </motion.span>
                   ))}
                 </div>

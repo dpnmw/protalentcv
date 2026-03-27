@@ -132,20 +132,35 @@ export function Hero() {
             100% Free · No payment required to start
           </div>
 
-          <h1
-            className="mb-5 leading-[1.08] tracking-[-0.02em]"
-            style={{
-              fontFamily: "var(--font-serif)",
-              fontSize: "clamp(40px, 5.5vw, 68px)",
-              color: "var(--cvp-ink)",
-            }}
-          >
-            Your CV,
-            <br />
-            <em style={{ fontStyle: "italic", color: "var(--cvp-accent)" }}>ready in</em>
-            <br />
-            minutes.
-          </h1>
+          <div className="mb-5 flex items-center gap-5">
+            <h1
+              className="leading-[1.08] tracking-[-0.02em]"
+              style={{
+                fontFamily: "var(--font-serif)",
+                fontSize: "clamp(40px, 5.5vw, 68px)",
+                color: "var(--cvp-ink)",
+              }}
+            >
+              Your CV,
+              <br />
+              <em style={{ fontStyle: "italic", color: "var(--cvp-accent)" }}>ready in</em>
+              <br />
+              minutes.
+            </h1>
+
+            {demoVideoUrl && (
+              <button
+                onClick={() => setVideoOpen(true)}
+                className="cvp-play-btn flex shrink-0 size-[60px] items-center justify-center rounded-full transition-opacity hover:opacity-80"
+                style={{ background: "#dc2626", color: "#ffffff" }}
+                aria-label="Watch demo video"
+              >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 6l10 6-10 6V6z" />
+                </svg>
+              </button>
+            )}
+          </div>
 
           <p
             className="mb-8 max-w-[420px] text-lg font-light leading-[1.75]"
@@ -158,12 +173,11 @@ export function Hero() {
           <div className="flex flex-wrap items-center gap-4">
             <Link
               to="/dashboard"
-              className="inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-[15px] font-medium transition-[background,transform] duration-200 hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-[15px] font-medium transition-[background,transform] duration-200 hover:-translate-y-0.5 hover:!bg-[#dc2626] active:!bg-[#b91c1c]"
               style={{
                 fontFamily: "var(--font-body)",
-                background: "var(--cvp-accent)",
-                color: "var(--cvp-btn-fg)",
-                boxShadow: "0 4px 20px rgba(37,99,235,.28)",
+                background: "#047857",
+                color: "#ffffff",
               }}
             >
               Start building for free
@@ -178,27 +192,6 @@ export function Hero() {
               </svg>
             </Link>
 
-            {demoVideoUrl && (
-              <button
-                onClick={() => setVideoOpen(true)}
-                className="cvp-play-btn inline-flex items-center gap-2.5 text-[14px] font-medium transition-opacity hover:opacity-80"
-                style={{ color: "var(--cvp-ink-mid)" }}
-                aria-label="Watch demo video"
-              >
-                <span
-                  className="flex size-[52px] shrink-0 items-center justify-center rounded-full"
-                  style={{
-                    background: "#dc2626",
-                    color: "#ffffff",
-                  }}
-                >
-                  <svg width="22" height="22" viewBox="0 0 22 22" fill="currentColor">
-                    <path d="M8 5.5l10 5.5-10 5.5V5.5z" />
-                  </svg>
-                </span>
-                Watch demo
-              </button>
-            )}
           </div>
 
           <div
@@ -250,8 +243,12 @@ export function Hero() {
               animation: "cvp-float 4s ease-in-out infinite",
             }}
           >
-            <div className="flex size-[26px] shrink-0 items-center justify-center rounded-lg bg-[#DCFCE7] text-[13px]">
-              ✓
+            <div className="flex size-[26px] shrink-0 items-center justify-center rounded-lg bg-[#FEE2E2]">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z" stroke="#dc2626" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M14 2v6h6" stroke="#dc2626" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <text x="5" y="19" fontSize="7" fontWeight="700" fill="#dc2626" fontFamily="sans-serif">PDF</text>
+              </svg>
             </div>
             <div>
               <div className="text-xs font-medium" style={{ color: "var(--cvp-ink)" }}>
@@ -274,10 +271,13 @@ export function Hero() {
             }}
           >
             <div
-              className="flex size-[26px] shrink-0 items-center justify-center rounded-lg text-[13px]"
-              style={{ background: "var(--cvp-b100)" }}
+              className="flex size-[26px] shrink-0 items-center justify-center rounded-lg"
+              style={{ background: "#ede9fe" }}
             >
-              🔗
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" stroke="#7c3aed" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" stroke="#7c3aed" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
             </div>
             <div>
               <div className="text-xs font-medium" style={{ color: "var(--cvp-ink)" }}>

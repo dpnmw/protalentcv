@@ -7,6 +7,7 @@ import { Hero } from "./-sections/hero";
 import { HowItWorks } from "./-sections/how-it-works";
 import { Pricing } from "./-sections/pricing";
 import { Struggle } from "./-sections/struggle";
+import { QuoteStrip } from "./-sections/quote-strip";
 import { Templates } from "./-sections/templates";
 import { WhyCVPro } from "./-sections/why-cvpro";
 
@@ -21,6 +22,7 @@ function RouteComponent() {
       <Struggle />
       <HowItWorks />
       <WhyCVPro />
+      <QuoteStrip />
       <Templates />
       <Audience />
       <Pricing />
