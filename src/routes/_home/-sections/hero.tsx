@@ -335,14 +335,14 @@ export function Hero() {
                     background: "rgba(255,255,255,.18)",
                   }}
                 >
-                  P
+                  D
                 </div>
                 <div>
                   <div className="text-lg text-white" style={{ fontFamily: "var(--font-serif)" }}>
-                    Phillip Dennis
+                    Domniq Dennis
                   </div>
                   <div className="text-xs font-light text-white/65">
-                    Director of Communications · Roseau, Dominica
+                    Marketing Manager · Roseau, Dominica
                   </div>
                 </div>
               </div>
@@ -350,15 +350,15 @@ export function Hero() {
 
             {/* Contact info strip */}
             <div
-              className="flex items-center gap-4 border-b px-[26px] py-3"
+              className="flex items-center gap-3 border-b px-[26px] py-3"
               style={{ borderColor: "var(--cvp-border)" }}
             >
               {[
-                { icon: "mail", width: "38%" },
-                { icon: "phone", width: "30%" },
-                { icon: "location_on", width: "34%" },
+                { icon: "mail", width: "52px" },
+                { icon: "smartphone", width: "44px" },
+                { icon: "location_on", width: "48px" },
               ].map((item) => (
-                <div key={item.icon} className="flex items-center gap-1.5">
+                <div key={item.icon} className="flex items-center gap-1">
                   <span
                     className="material-symbols-outlined shrink-0"
                     style={{ fontSize: "11px", color: "var(--cvp-ink-muted)" }}
@@ -368,10 +368,33 @@ export function Hero() {
                   <div className="cvp-shimmer h-[6px] rounded" style={{ width: item.width }} />
                 </div>
               ))}
+              {/* LinkedIn — pushed to far right */}
+              <div className="ml-auto flex items-center gap-1">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none">
+                  <rect x="2" y="2" width="20" height="20" rx="4" fill="#0a66c2"/>
+                  <path d="M7 10v7M7 7v.5" stroke="#fff" strokeWidth="2" strokeLinecap="round"/>
+                  <path d="M11 17v-4c0-1.1.9-2 2-2s2 .9 2 2v4" stroke="#fff" strokeWidth="1.8" strokeLinecap="round"/>
+                  <path d="M11 10v7" stroke="#fff" strokeWidth="1.8" strokeLinecap="round"/>
+                </svg>
+                <div className="cvp-shimmer h-[6px] rounded" style={{ width: "40px" }} />
+              </div>
             </div>
 
             {/* Card body */}
             <div className="space-y-[18px] px-[26px] py-[22px]">
+              {/* Summary */}
+              <div>
+                <div
+                  className="mb-2 text-[9px] font-semibold uppercase tracking-[0.14em]"
+                  style={{ color: "var(--cvp-accent)" }}
+                >
+                  Summary
+                </div>
+                <p className="text-[10.5px] leading-[1.65]" style={{ color: "var(--cvp-ink-mid)" }}>
+                  Results-driven Marketing Manager with 8+ years delivering brand growth, digital campaigns, and cross-functional team leadership.
+                </p>
+              </div>
+
               {/* Skills */}
               <div>
                 <div
@@ -381,9 +404,9 @@ export function Hero() {
                   Skills
                 </div>
                 {[
-                  { name: "Public Relations", width: "90%", color: "#f59e0b" },
-                  { name: "Media Strategy", width: "76%", color: "#8b5cf6" },
-                  { name: "Crisis Comms", width: "63%", color: "#f97316" },
+                  { name: "Brand Strategy", width: "90%", color: "#f59e0b" },
+                  { name: "Digital Marketing", width: "82%", color: "#8b5cf6" },
+                  { name: "Team Leadership", width: "68%", color: "#f97316" },
                 ].map((skill) => (
                   <div key={skill.name} className="mb-1.5 flex items-center gap-2.5">
                     <span
@@ -405,29 +428,28 @@ export function Hero() {
                 ))}
               </div>
 
-              {/* Experience placeholder lines */}
+              {/* Qualifications */}
               <div>
                 <div
                   className="mb-2.5 text-[9px] font-semibold uppercase tracking-[0.14em]"
                   style={{ color: "var(--cvp-accent)" }}
                 >
-                  Experience
+                  Qualifications
                 </div>
-                {["72%", "90%", "55%"].map((w, i) => (
-                  <div key={i} className="cvp-shimmer mb-1.5 h-[7px] rounded" style={{ width: w }} />
-                ))}
-              </div>
-
-              {/* Education placeholder lines */}
-              <div>
-                <div
-                  className="mb-2.5 text-[9px] font-semibold uppercase tracking-[0.14em]"
-                  style={{ color: "var(--cvp-accent)" }}
-                >
-                  Education
-                </div>
-                {["80%", "58%"].map((w, i) => (
-                  <div key={i} className="cvp-shimmer mb-1.5 h-[7px] rounded" style={{ width: w }} />
+                {[
+                  { label: "BSc Information Technology", accent: "#0ea5e9", icon: "verified" },
+                  { label: "BSc Project Management", accent: "#8b5cf6", icon: "verified" },
+                  { label: "MSc Media Communications", accent: "#10b981", icon: "verified" },
+                ].map((item, i) => (
+                  <div key={i} className="mb-1.5 flex items-center gap-2">
+                    <span
+                      className="material-symbols-outlined shrink-0"
+                      style={{ fontSize: "12px", color: item.accent }}
+                    >
+                      {item.icon}
+                    </span>
+                    <span className="text-[10px]" style={{ color: "var(--cvp-ink-mid)" }}>{item.label}</span>
+                  </div>
                 ))}
               </div>
 
@@ -456,29 +478,6 @@ export function Hero() {
                 </div>
               </div>
 
-              {/* Qualifications */}
-              <div>
-                <div
-                  className="mb-2.5 text-[9px] font-semibold uppercase tracking-[0.14em]"
-                  style={{ color: "var(--cvp-accent)" }}
-                >
-                  Qualifications
-                </div>
-                {[
-                  { width: "72%", accent: "#0ea5e9", icon: "school" },
-                  { width: "60%", accent: "#8b5cf6", icon: "verified_user" },
-                ].map((item, i) => (
-                  <div key={i} className="mb-1.5 flex items-center gap-2">
-                    <span
-                      className="material-symbols-outlined shrink-0"
-                      style={{ fontSize: "12px", color: item.accent }}
-                    >
-                      {item.icon}
-                    </span>
-                    <div className="cvp-shimmer h-[6px] rounded" style={{ width: item.width }} />
-                  </div>
-                ))}
-              </div>
             </div>
           </div>
         </div>
