@@ -28,8 +28,8 @@ export const branding = {
   },
   twoFactorIssuer: appName,
   pwa: {
-    name: appName,
-    shortName: appName,
+    name: "ProTalent",
+    shortName: "ProTalent",
     description: `A free CV and resume builder by ${authorName}.`,
     themeColor: "#0F2240",
     backgroundColor: "#0F2240",
