@@ -210,7 +210,7 @@ export function Hero() {
                 <rect x="14" y="12" width="7" height="9" rx="1.5" stroke="currentColor" strokeWidth="1.6"/>
                 <rect x="3" y="16" width="7" height="5" rx="1.5" stroke="currentColor" strokeWidth="1.6"/>
               </svg>
-              Preview CV
+              CV Samples
             </button>
           </div>
 
@@ -437,7 +437,7 @@ export function Hero() {
                   Education
                 </div>
                 {[
-                  { school: "Dominica State College", degree: "BSc Business Administration", year: "2016", accent: "#0ea5e9" },
+                  { school: "Dominica State College", degree: "ASc Business Administration", year: "2016", accent: "#0ea5e9" },
                   { school: "Monroe College, St Lucia", degree: "BSc Marketing Management", year: "2019", accent: "#8b5cf6" },
                 ].map((item, i) => (
                   <div key={i} className="mb-2">
