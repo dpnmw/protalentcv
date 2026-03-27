@@ -49,8 +49,8 @@ export function Struggle() {
               what matters: your next opportunity.
             </p>
 
-            {/* 2026 Micro-UI: The Growth Path */}
-            <div className="mt-12 space-y-10">
+            {/* 2026 Micro-UI: The Growth Path (4 Items) */}
+            <div className="mt-12 max-w-[600px] space-y-10">
               <div className="relative flex items-center justify-between px-2">
                 {/* Background Connecting Line */}
                 <div className="absolute left-6 right-6 top-[18px] h-[2px] bg-ink/5" />
@@ -59,12 +59,13 @@ export function Struggle() {
                   initial={{ width: 0 }}
                   whileInView={{ width: "100%" }}
                   transition={{ duration: 1.5, ease: "circInOut", delay: 0.2 }}
-                  className="absolute left-6 top-[18px] h-[2px] origin-left bg-gradient-to-r from-[#10B981] via-[#F59E0B] to-[#EF4444]"
+                  className="absolute left-6 top-[18px] h-[2px] origin-left bg-gradient-to-r from-[#10B981] via-[#F59E0B] via-[#EF4444] to-[#8B5CF6]"
                 />
-
+ 
                 {[
                   { label: "Graduation", color: "#10B981" },
                   { label: "First Project", color: "#F59E0B" },
+                  { label: "Internship", color: "#8B5CF6" },
                   { label: "First Award", color: "#EF4444" },
                 ].map((item, i) => (
                   <div key={item.label} className="relative z-10 flex flex-col items-center">
@@ -72,16 +73,16 @@ export function Struggle() {
                       initial={{ scale: 0 }}
                       whileInView={{ scale: 1 }}
                       transition={{ delay: i * 0.4 + 0.5, type: "spring" }}
-                      className="flex size-9 items-center justify-center rounded-full shadow-lg"
+                      className="flex size-9 items-center justify-center rounded-full border-2 border-white shadow-lg"
                       style={{ backgroundColor: item.color }}
                     >
-                      <div className="size-2 rounded-full bg-white shadow-[0_0_10px_rgba(255,255,255,0.8)]" />
+                      <div className="size-2 rounded-full bg-white" />
                     </motion.div>
                     <motion.span
                       initial={{ opacity: 0, y: 10 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ delay: i * 0.4 + 0.7 }}
-                      className="mt-3 text-[10px] font-bold uppercase tracking-widest text-ink/40"
+                      className="mt-3 text-[9px] font-bold uppercase tracking-widest text-ink/40"
                     >
                       {item.label}
                     </motion.span>

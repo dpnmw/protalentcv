@@ -64,9 +64,10 @@ export function HowItWorks() {
             <div className="mt-12 space-y-10">
               <div className="flex gap-10">
                 {[
-                  { label: "Design", level: 100, color: "#FCD34D" },
-                  { label: "Content", level: 85, color: "#FB923C" },
-                  { label: "Optimization", level: 70, color: "#F43F5E" },
+                  { label: "Design", level: 100, color: "#10B981" },
+                  { label: "Content", level: 85, color: "#EF4444" },
+                  { label: "Optimization", level: 75, color: "#F59E0B" },
+                  { label: "Formatting", level: 90, color: "#8B5CF6" },
                 ].map((ring, i) => (
                   <div key={ring.label} className="flex flex-col items-center gap-3">
                     <div className="relative size-16">

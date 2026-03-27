@@ -67,35 +67,35 @@ export function Audience() {
               ProTalent CV is the partner you need.
             </p>
 
-            {/* 2026 Micro-UI: Stamps of Approval (Glow-Free) */}
+            {/* 2026 Micro-UI: Credibility Badges (Glow-Free) */}
             <div className="mt-12 space-y-12">
               <div className="flex gap-10">
                 {[
-                  { label: "Publications", color: "#8B5CF6", char: "P" },
-                  { label: "References", color: "#EC4899", char: "R" },
-                  { label: "Verification", color: "#EAB308", char: "V" },
-                ].map((stamp, i) => (
-                  <div key={stamp.label} className="relative flex flex-col items-center gap-4">
+                  { label: "Publications", color: "#8B5CF6" },
+                  { label: "References", color: "#EC4899" },
+                  { label: "Verification", color: "#EAB308" },
+                  { label: "Expertise", color: "#F43F5E" },
+                ].map((item, i) => (
+                  <div key={item.label} className="relative flex flex-col items-center gap-4">
                     <motion.div
-                      initial={{ opacity: 0, scale: 1.4, rotate: -15 }}
-                      whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+                      initial={{ opacity: 0, scale: 0.5 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
                       transition={{ 
                         type: "spring", 
-                        damping: 12, 
-                        stiffness: 250, 
+                        damping: 15, 
+                        stiffness: 200, 
                         delay: i * 0.15 
                       }}
-                      className="flex size-14 items-center justify-center rounded-lg border-2 shadow-sm shadow-black/5"
+                      className="flex size-12 items-center justify-center rounded-full shadow-md"
                       style={{ 
-                        borderColor: stamp.color, 
-                        backgroundColor: "white",
-                        color: stamp.color 
+                        backgroundColor: item.color,
+                        color: "white" 
                       }}
                     >
-                      <span className="text-xl font-black">{stamp.char}</span>
+                      <CheckCircle size={24} weight="bold" />
                     </motion.div>
                     <span className="text-[10px] font-bold uppercase tracking-widest text-ink/30">
-                      {stamp.label}
+                      {item.label}
                     </span>
                   </div>
                 ))}

@@ -101,38 +101,33 @@ export function WhyCVPro() {
               and completely focused on getting you hired.
             </p>
 
-            {/* 2026 Micro-UI: Component Slot System (Glow-Free) */}
+            {/* 2026 Micro-UI: Magnetic Card Row (Updated Layout) */}
             <div className="mt-12 space-y-12">
-              <div className="flex gap-4">
+              <div className="flex flex-wrap gap-4">
                 {[
                   { label: "Basics", color: "#8B5CF6" },
                   { label: "Summary", color: "#F97316" },
                   { label: "Profile Links", color: "#10B981" },
-                ].map((slot, i) => (
-                  <div key={slot.label} className="flex flex-col gap-3">
-                    {/* Slot Compartment */}
-                    <div className="relative h-[80px] w-24 rounded-lg border-2 border-dashed border-ink/10 bg-ink/[0.02]">
-                      <motion.div
-                        initial={{ opacity: 0, y: -40 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ 
-                          type: "spring", 
-                          damping: 15, 
-                          stiffness: 150, 
-                          delay: i * 0.2 
-                        }}
-                        className="absolute inset-x-1 bottom-1 flex h-[50px] items-center justify-center rounded-md text-white shadow-sm"
-                        style={{ backgroundColor: slot.color }}
-                      >
-                        <span className="text-[10px] font-black uppercase tracking-tighter">
-                          {slot.label.split(" ")[0]}
-                        </span>
-                      </motion.div>
-                    </div>
-                    <span className="text-[9px] font-bold uppercase tracking-widest text-ink/20">
-                      Slot {i + 1}
+                  { label: "Interests", color: "#F59E0B" },
+                ].map((layer, i) => (
+                  <motion.div
+                    key={layer.label}
+                    initial={{ opacity: 0, x: -20, y: 10 }}
+                    whileInView={{ opacity: 1, x: 0, y: 0 }}
+                    transition={{
+                      type: "spring",
+                      damping: 18,
+                      stiffness: 120,
+                      delay: i * 0.15,
+                    }}
+                    className="flex h-[54px] min-w-[160px] items-center gap-3 rounded-xl border border-ink/5 bg-ink/[0.03] px-4 shadow-sm backdrop-blur-sm transition-all duration-300"
+                    style={{ borderColor: `${layer.color}40`, background: `${layer.color}08` }}
+                  >
+                    <div className="size-2 rounded-full" style={{ backgroundColor: layer.color }} />
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-ink">
+                      {layer.label}
                     </span>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
 

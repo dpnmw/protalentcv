@@ -173,14 +173,15 @@ export function Hero() {
           <div className="flex flex-wrap items-center justify-center gap-4 md:justify-start">
             <Link
               to="/dashboard"
-              className="inline-flex size-[100px] shrink-0 flex-col items-center justify-center gap-1.5 rounded-full text-[13px] font-semibold transition-[background,transform] duration-200 hover:-translate-y-0.5 hover:!bg-[#dc2626] active:!bg-[#b91c1c]"
+              className="inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-[15px] font-medium transition-[background,transform] duration-200 hover:-translate-y-0.5 hover:!bg-[#dc2626] active:!bg-[#b91c1c]"
               style={{
                 fontFamily: "var(--font-body)",
                 background: "#047857",
                 color: "#ffffff",
               }}
             >
-              <svg width="20" height="20" viewBox="0 0 16 16" fill="none">
+              Get started
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path
                   d="M3 8h10M9 4l4 4-4 4"
                   stroke="currentColor"
@@ -189,7 +190,6 @@ export function Hero() {
                   strokeLinejoin="round"
                 />
               </svg>
-              <span className="leading-tight text-center px-2">Get started</span>
             </Link>
 
           </div>
