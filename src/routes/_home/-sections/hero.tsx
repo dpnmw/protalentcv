@@ -170,10 +170,10 @@ export function Hero() {
             knowledge needed — just you and your story.
           </p>
 
-          <div className="flex flex-wrap items-center gap-4">
+          <div className="flex items-center gap-3">
             <Link
               to="/dashboard"
-              className="inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-[15px] font-medium transition-[background,transform] duration-200 hover:-translate-y-0.5 hover:!bg-[#dc2626] active:!bg-[#b91c1c]"
+              className="inline-flex items-center gap-2 rounded-full px-5 py-3 text-[14px] font-medium transition-[background,transform] duration-200 hover:-translate-y-0.5 hover:!bg-[#dc2626] active:!bg-[#b91c1c]"
               style={{
                 fontFamily: "var(--font-body)",
                 background: "#047857",
@@ -181,7 +181,7 @@ export function Hero() {
               }}
             >
               Get started
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <svg width="15" height="15" viewBox="0 0 16 16" fill="none">
                 <path
                   d="M3 8h10M9 4l4 4-4 4"
                   stroke="currentColor"
@@ -196,7 +196,7 @@ export function Hero() {
               onClick={() => {
                 document.getElementById("templates")?.scrollIntoView({ behavior: "smooth" });
               }}
-              className="inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-[15px] font-medium transition-[background,border-color,transform] duration-200 hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 rounded-full px-5 py-3 text-[14px] font-medium transition-[background,border-color,transform] duration-200 hover:-translate-y-0.5"
               style={{
                 fontFamily: "var(--font-body)",
                 background: "transparent",
@@ -204,15 +204,14 @@ export function Hero() {
                 color: "var(--cvp-ink-mid)",
               }}
             >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
                 <rect x="3" y="3" width="7" height="9" rx="1.5" stroke="currentColor" strokeWidth="1.6"/>
                 <rect x="14" y="3" width="7" height="5" rx="1.5" stroke="currentColor" strokeWidth="1.6"/>
                 <rect x="14" y="12" width="7" height="9" rx="1.5" stroke="currentColor" strokeWidth="1.6"/>
                 <rect x="3" y="16" width="7" height="5" rx="1.5" stroke="currentColor" strokeWidth="1.6"/>
               </svg>
-              View templates
+              Preview CV
             </button>
-
           </div>
 
           <div
@@ -349,6 +348,28 @@ export function Hero() {
               </div>
             </div>
 
+            {/* Contact info strip */}
+            <div
+              className="flex items-center gap-4 border-b px-[26px] py-3"
+              style={{ borderColor: "var(--cvp-border)" }}
+            >
+              {[
+                { icon: "mail", width: "38%" },
+                { icon: "phone", width: "30%" },
+                { icon: "location_on", width: "34%" },
+              ].map((item) => (
+                <div key={item.icon} className="flex items-center gap-1.5">
+                  <span
+                    className="material-symbols-outlined shrink-0"
+                    style={{ fontSize: "11px", color: "var(--cvp-ink-muted)" }}
+                  >
+                    {item.icon}
+                  </span>
+                  <div className="cvp-shimmer h-[6px] rounded" style={{ width: item.width }} />
+                </div>
+              ))}
+            </div>
+
             {/* Card body */}
             <div className="space-y-[18px] px-[26px] py-[22px]">
               {/* Skills */}
@@ -393,11 +414,7 @@ export function Hero() {
                   Experience
                 </div>
                 {["72%", "90%", "55%"].map((w, i) => (
-                  <div
-                    key={i}
-                    className="mb-1.5 h-[7px] rounded"
-                    style={{ width: w, background: "var(--cvp-bg-sub)" }}
-                  />
+                  <div key={i} className="cvp-shimmer mb-1.5 h-[7px] rounded" style={{ width: w }} />
                 ))}
               </div>
 
@@ -410,11 +427,56 @@ export function Hero() {
                   Education
                 </div>
                 {["80%", "58%"].map((w, i) => (
-                  <div
-                    key={i}
-                    className="mb-1.5 h-[7px] rounded"
-                    style={{ width: w, background: "var(--cvp-bg-sub)" }}
-                  />
+                  <div key={i} className="cvp-shimmer mb-1.5 h-[7px] rounded" style={{ width: w }} />
+                ))}
+              </div>
+
+              {/* Languages */}
+              <div>
+                <div
+                  className="mb-2.5 text-[9px] font-semibold uppercase tracking-[0.14em]"
+                  style={{ color: "var(--cvp-accent)" }}
+                >
+                  Languages
+                </div>
+                <div className="flex gap-1.5">
+                  {[
+                    { label: "English", color: "#10b981", bg: "rgba(16,185,129,.12)" },
+                    { label: "French", color: "#6366f1", bg: "rgba(99,102,241,.12)" },
+                    { label: "Spanish", color: "#f59e0b", bg: "rgba(245,158,11,.12)" },
+                  ].map((tag) => (
+                    <span
+                      key={tag.label}
+                      className="rounded-full px-2.5 py-0.5 text-[10px] font-semibold"
+                      style={{ color: tag.color, background: tag.bg }}
+                    >
+                      {tag.label}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Qualifications */}
+              <div>
+                <div
+                  className="mb-2.5 text-[9px] font-semibold uppercase tracking-[0.14em]"
+                  style={{ color: "var(--cvp-accent)" }}
+                >
+                  Qualifications
+                </div>
+                {[
+                  { width: "72%", accent: "#0ea5e9", icon: "school" },
+                  { width: "60%", accent: "#8b5cf6", icon: "verified_user" },
+                ].map((item, i) => (
+                  <div key={i} className="mb-1.5 flex items-center gap-2">
+                    <span
+                      className="material-symbols-outlined shrink-0"
+                      style={{ fontSize: "12px", color: item.accent }}
+                    >
+                      {item.icon}
+                    </span>
+                    <div className="cvp-shimmer h-[6px] rounded" style={{ width: item.width }} />
+                  </div>
                 ))}
               </div>
             </div>

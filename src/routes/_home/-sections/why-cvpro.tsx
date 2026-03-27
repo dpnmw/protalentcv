@@ -164,9 +164,11 @@ export function WhyCVPro() {
                 background: "var(--cvp-bg-card)",
               }}
             >
-              <span className="mb-3.5 block text-[28px] leading-none">{feature.icon}</span>
-              <div className="mb-2 text-base font-semibold" style={{ color: "var(--cvp-ink)" }}>
-                {feature.title}
+              <div className="mb-2 flex items-center gap-3">
+                <span className="shrink-0 text-[28px] leading-none">{feature.icon}</span>
+                <div className="text-base font-semibold" style={{ color: "var(--cvp-ink)" }}>
+                  {feature.title}
+                </div>
               </div>
               <div
                 className="text-sm font-light leading-[1.7]"

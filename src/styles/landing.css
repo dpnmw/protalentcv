@@ -87,6 +87,26 @@ html {
   }
 }
 
+@keyframes cvp-shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.cvp-shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--cvp-bg-sub) 25%,
+    var(--cvp-surface) 50%,
+    var(--cvp-bg-sub) 75%
+  );
+  background-size: 200% 100%;
+  animation: cvp-shimmer 2s ease-in-out infinite;
+}
+
 @keyframes cvp-float {
   0%,
   100% {

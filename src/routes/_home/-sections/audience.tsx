@@ -1,24 +1,24 @@
 const audiences = [
   {
-    emoji: "🎓",
+    icon: "school",
     title: "Students & fresh graduates",
     description:
       "Landing your first job is hard enough. ProTalent CV makes sure your application looks just as polished as anyone else's — even if your experience is just getting started.",
   },
   {
-    emoji: "💻",
+    icon: "laptop_mac",
     title: "Remote workers & freelancers",
     description:
       "Whether you're pitching clients or applying to roles worldwide, a sharp CV builds trust before you even speak. Update it anytime, share it instantly.",
   },
   {
-    emoji: "🌴",
+    icon: "travel_explore",
     title: "Caribbean job seekers",
     description:
       "Local talent, global opportunities. ProTalent CV gives Caribbean professionals the same tools as anyone anywhere — because your work deserves to be seen.",
   },
   {
-    emoji: "🔄",
+    icon: "sync_alt",
     title: "Career changers",
     description:
       "Switching industries or roles? Present your experience with a fresh, modern CV that shows who you're becoming — not just where you've been.",
@@ -152,9 +152,9 @@ export function Audience() {
                 border: "1px solid var(--cvp-border)",
               }}
             >
-              <span className="mb-3.5 block text-[30px]">{a.emoji}</span>
-              <div className="mb-2 text-base font-semibold" style={{ color: "var(--cvp-ink)" }}>
-                {a.title}
+              <div className="mb-2 flex items-center gap-3">
+                <span className="material-symbols-outlined shrink-0" style={{ fontSize: "26px", color: "var(--cvp-accent)" }}>{a.icon}</span>
+                <div className="text-base font-semibold" style={{ color: "var(--cvp-ink)" }}>{a.title}</div>
               </div>
               <div
                 className="text-sm font-light leading-[1.7]"
