@@ -101,33 +101,38 @@ export function WhyCVPro() {
               and completely focused on getting you hired.
             </p>
 
-            {/* 2026 Micro-UI: Magnetic Layer Stack */}
+            {/* 2026 Micro-UI: Component Slot System (Glow-Free) */}
             <div className="mt-12 space-y-12">
-              <div className="relative h-[120px] w-full max-w-[340px]">
+              <div className="flex gap-4">
                 {[
-                  { label: "Basics", color: "#8B5CF6", offset: 0 },
-                  { label: "Summary", color: "#F97316", offset: 12 },
-                  { label: "Profile Links", color: "#10B981", offset: 24 },
-                ].map((layer, i) => (
-                  <motion.div
-                    key={layer.label}
-                    initial={{ opacity: 0, x: -40, y: layer.offset }}
-                    whileInView={{ opacity: 1, x: layer.offset * 2.5, y: layer.offset }}
-                    transition={{
-                      type: "spring",
-                      damping: 15,
-                      stiffness: 100,
-                      delay: i * 0.2,
-                    }}
-                    whileHover={{ scale: 1.02, zIndex: 50 }}
-                    className="absolute left-0 top-0 flex h-[60px] w-[220px] items-center gap-3 rounded-xl border border-white/10 px-4 shadow-2xl backdrop-blur-md"
-                    style={{ backgroundColor: `${layer.color}15`, borderColor: `${layer.color}40` }}
-                  >
-                    <div className="size-2 rounded-full" style={{ backgroundColor: layer.color }} />
-                    <span className="text-[11px] font-bold uppercase tracking-wider text-ink/80">
-                      {layer.label}
+                  { label: "Basics", color: "#8B5CF6" },
+                  { label: "Summary", color: "#F97316" },
+                  { label: "Profile Links", color: "#10B981" },
+                ].map((slot, i) => (
+                  <div key={slot.label} className="flex flex-col gap-3">
+                    {/* Slot Compartment */}
+                    <div className="relative h-[80px] w-24 rounded-lg border-2 border-dashed border-ink/10 bg-ink/[0.02]">
+                      <motion.div
+                        initial={{ opacity: 0, y: -40 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ 
+                          type: "spring", 
+                          damping: 15, 
+                          stiffness: 150, 
+                          delay: i * 0.2 
+                        }}
+                        className="absolute inset-x-1 bottom-1 flex h-[50px] items-center justify-center rounded-md text-white shadow-sm"
+                        style={{ backgroundColor: slot.color }}
+                      >
+                        <span className="text-[10px] font-black uppercase tracking-tighter">
+                          {slot.label.split(" ")[0]}
+                        </span>
+                      </motion.div>
+                    </div>
+                    <span className="text-[9px] font-bold uppercase tracking-widest text-ink/20">
+                      Slot {i + 1}
                     </span>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
 

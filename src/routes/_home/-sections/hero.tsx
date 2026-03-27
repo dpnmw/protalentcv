@@ -113,7 +113,7 @@ export function Hero() {
 
       <div className="relative z-[1] mx-auto grid w-full max-w-[1100px] items-center gap-10 md:grid-cols-[1fr_320px] md:gap-8 lg:grid-cols-[1fr_420px] lg:gap-20">
         {/* Left column — text */}
-        <div>
+        <div className="text-center md:text-left">
           <div
             className="mb-7 inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 text-xs font-medium tracking-[0.06em]"
             style={{
@@ -132,7 +132,7 @@ export function Hero() {
             100% Free · No payment required to start
           </div>
 
-          <div className="mb-5 flex items-center gap-5">
+          <div className="mb-5 flex items-center justify-center gap-5 md:justify-start">
             <h1
               className="leading-[1.08] tracking-[-0.02em]"
               style={{
@@ -151,11 +151,11 @@ export function Hero() {
             {demoVideoUrl && (
               <button
                 onClick={() => setVideoOpen(true)}
-                className="cvp-play-btn flex shrink-0 size-[60px] items-center justify-center rounded-full transition-opacity hover:opacity-80"
+                className="cvp-play-btn flex shrink-0 size-[80px] items-center justify-center rounded-full transition-opacity hover:opacity-80"
                 style={{ background: "#dc2626", color: "#ffffff" }}
                 aria-label="Watch demo video"
               >
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M9 6l10 6-10 6V6z" />
                 </svg>
               </button>
@@ -163,25 +163,24 @@ export function Hero() {
           </div>
 
           <p
-            className="mb-8 max-w-[420px] text-lg font-light leading-[1.75]"
+            className="mb-8 max-w-[420px] text-lg font-light leading-[1.75] mx-auto md:mx-0"
             style={{ color: "var(--cvp-ink-mid)" }}
           >
             Build a polished, professional CV completely free. No design skills or technical
             knowledge needed — just you and your story.
           </p>
 
-          <div className="flex flex-wrap items-center gap-4">
+          <div className="flex flex-wrap items-center justify-center gap-4 md:justify-start">
             <Link
               to="/dashboard"
-              className="inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-[15px] font-medium transition-[background,transform] duration-200 hover:-translate-y-0.5 hover:!bg-[#dc2626] active:!bg-[#b91c1c]"
+              className="inline-flex size-[100px] shrink-0 flex-col items-center justify-center gap-1.5 rounded-full text-[13px] font-semibold transition-[background,transform] duration-200 hover:-translate-y-0.5 hover:!bg-[#dc2626] active:!bg-[#b91c1c]"
               style={{
                 fontFamily: "var(--font-body)",
                 background: "#047857",
                 color: "#ffffff",
               }}
             >
-              Start building for free
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <svg width="20" height="20" viewBox="0 0 16 16" fill="none">
                 <path
                   d="M3 8h10M9 4l4 4-4 4"
                   stroke="currentColor"
@@ -190,6 +189,7 @@ export function Hero() {
                   strokeLinejoin="round"
                 />
               </svg>
+              <span className="leading-tight text-center px-2">Get started</span>
             </Link>
 
           </div>
@@ -243,11 +243,11 @@ export function Hero() {
               animation: "cvp-float 4s ease-in-out infinite",
             }}
           >
-            <div className="flex size-[26px] shrink-0 items-center justify-center rounded-lg bg-[#FEE2E2]">
+            <div className="flex size-[26px] shrink-0 items-center justify-center rounded-lg" style={{ background: "#dc2626" }}>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z" stroke="#dc2626" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M14 2v6h6" stroke="#dc2626" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <text x="5" y="19" fontSize="7" fontWeight="700" fill="#dc2626" fontFamily="sans-serif">PDF</text>
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M14 2v6h6" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <text x="5" y="19" fontSize="7" fontWeight="700" fill="#ffffff" fontFamily="sans-serif">PDF</text>
               </svg>
             </div>
             <div>
@@ -272,11 +272,11 @@ export function Hero() {
           >
             <div
               className="flex size-[26px] shrink-0 items-center justify-center rounded-lg"
-              style={{ background: "#ede9fe" }}
+              style={{ background: "#7c3aed" }}
             >
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" stroke="#7c3aed" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" stroke="#7c3aed" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" stroke="#ffffff" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" stroke="#ffffff" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </div>
             <div>

@@ -67,45 +67,35 @@ export function Audience() {
               ProTalent CV is the partner you need.
             </p>
 
-            {/* 2026 Micro-UI: Pulse of Credibility */}
+            {/* 2026 Micro-UI: Stamps of Approval (Glow-Free) */}
             <div className="mt-12 space-y-12">
-              <div className="flex gap-12">
+              <div className="flex gap-10">
                 {[
-                  { label: "Publications", color: "#8B5CF6" },
-                  { label: "References", color: "#EC4899" },
-                  { label: "Verification", color: "#EAB308" },
-                ].map((pulse, i) => (
-                  <div key={pulse.label} className="flex flex-col items-center gap-4">
-                    <div className="relative flex size-14 items-center justify-center">
-                      {/* Pulse Waves */}
-                      {[1, 2].map((wave) => (
-                        <motion.div
-                          key={wave}
-                          animate={{ scale: [1, 1.8], opacity: [0.5, 0] }}
-                          transition={{
-                            duration: 2,
-                            repeat: Infinity,
-                            delay: i * 0.4 + wave * 1,
-                            ease: "easeOut",
-                          }}
-                          className="absolute inset-0 rounded-full"
-                          style={{ backgroundColor: pulse.color }}
-                        />
-                      ))}
-                      <motion.div
-                        initial={{ scale: 0 }}
-                        whileInView={{ scale: 1 }}
-                        transition={{ delay: i * 0.4, type: "spring" }}
-                        className="relative z-10 size-10 rounded-full shadow-lg"
-                        style={{ backgroundColor: pulse.color }}
-                      >
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <CheckCircle size={20} weight="bold" className="text-white" />
-                        </div>
-                      </motion.div>
-                    </div>
-                    <span className="text-[10px] font-bold uppercase tracking-widest text-ink/40">
-                      {pulse.label}
+                  { label: "Publications", color: "#8B5CF6", char: "P" },
+                  { label: "References", color: "#EC4899", char: "R" },
+                  { label: "Verification", color: "#EAB308", char: "V" },
+                ].map((stamp, i) => (
+                  <div key={stamp.label} className="relative flex flex-col items-center gap-4">
+                    <motion.div
+                      initial={{ opacity: 0, scale: 1.4, rotate: -15 }}
+                      whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+                      transition={{ 
+                        type: "spring", 
+                        damping: 12, 
+                        stiffness: 250, 
+                        delay: i * 0.15 
+                      }}
+                      className="flex size-14 items-center justify-center rounded-lg border-2 shadow-sm shadow-black/5"
+                      style={{ 
+                        borderColor: stamp.color, 
+                        backgroundColor: "white",
+                        color: stamp.color 
+                      }}
+                    >
+                      <span className="text-xl font-black">{stamp.char}</span>
+                    </motion.div>
+                    <span className="text-[10px] font-bold uppercase tracking-widest text-ink/30">
+                      {stamp.label}
                     </span>
                   </div>
                 ))}
@@ -113,7 +103,7 @@ export function Audience() {
 
               <div>
                 <div className="mb-4 text-[11px] font-bold uppercase tracking-widest text-ink/30">
-                  Expertise Verification:
+                  Authority Assets:
                 </div>
                 <div className="flex flex-wrap gap-2.5">
                   {[
@@ -124,12 +114,15 @@ export function Audience() {
                   ].map((item, i) => (
                     <motion.span
                       key={item.s}
-                      initial={{ opacity: 0, x: 10 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      transition={{ delay: i * 0.1 + 1.2 }}
-                      whileHover={{ scale: 1.05 }}
-                      className="rounded-lg border border-transparent px-4 py-2.5 text-xs font-semibold transition-all hover:border-current shadow-sm"
-                      style={{ color: item.c, backgroundColor: item.bg }}
+                      initial={{ opacity: 0, y: 10 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ delay: i * 0.1 + 0.8 }}
+                      className="rounded-lg border-2 px-4 py-2 text-xs font-bold transition-all hover:bg-white"
+                      style={{ 
+                        color: item.c, 
+                        borderColor: "rgba(0,0,0,0.05)",
+                        backgroundColor: item.bg 
+                      }}
                     >
                       {item.s}
                     </motion.span>

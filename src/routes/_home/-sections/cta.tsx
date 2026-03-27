@@ -13,32 +13,15 @@ export function CTA() {
 
       <div className="relative z-[1] mx-auto max-w-[900px]">
         {/* Header */}
-        <div className="mb-12 text-center">
+        <div className="mb-10 text-center">
           <div
-            className="mb-4 inline-flex items-center gap-2 text-xs font-medium uppercase tracking-[0.1em]"
+            className="mb-3 inline-flex items-center gap-2 text-xs font-medium uppercase tracking-[0.1em]"
             style={{ color: "var(--cvp-b300)" }}
           >
             <span className="block h-[1.5px] w-5" style={{ background: "var(--cvp-b300)" }} />
             Get in touch
           </div>
-          <h2
-            className="mb-4 leading-[1.1] tracking-[-0.01em] text-white"
-            style={{
-              fontFamily: "var(--font-serif)",
-              fontSize: "clamp(32px, 5vw, 54px)",
-            }}
-          >
-            Your next opportunity
-            <br />
-            <em style={{ fontStyle: "italic", color: "var(--cvp-b300)" }}>
-              starts with a great CV.
-            </em>
-          </h2>
-          <p className="mx-auto max-w-[500px] text-[17px] font-light leading-[1.75] text-white/50">
-            It takes less than five minutes to build something you're genuinely proud to send.
-            No debit card, no commitment.
-          </p>
-          <p className="mt-3 text-[15px] font-light text-white/35">
+          <p className="text-[17px] font-light leading-[1.75] text-white/50">
             Have a question or feedback? We'd love to hear from you.
           </p>
         </div>
