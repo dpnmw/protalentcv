@@ -335,11 +335,11 @@ export function Hero() {
                     background: "rgba(255,255,255,.18)",
                   }}
                 >
-                  D
+                  M
                 </div>
                 <div>
                   <div className="text-lg text-white" style={{ fontFamily: "var(--font-serif)" }}>
-                    Domniq Dennis
+                    Marie Andrew
                   </div>
                   <div className="text-xs font-light text-white/65">
                     Marketing Manager · Roseau, Dominica
@@ -428,6 +428,28 @@ export function Hero() {
                 ))}
               </div>
 
+              {/* Education */}
+              <div>
+                <div
+                  className="mb-2.5 text-[9px] font-semibold uppercase tracking-[0.14em]"
+                  style={{ color: "var(--cvp-accent)" }}
+                >
+                  Education
+                </div>
+                {[
+                  { school: "Dominica State College", degree: "BSc Business Administration", year: "2016", accent: "#0ea5e9" },
+                  { school: "Monroe College, St Lucia", degree: "BSc Marketing Management", year: "2019", accent: "#8b5cf6" },
+                ].map((item, i) => (
+                  <div key={i} className="mb-2">
+                    <div className="flex items-center justify-between">
+                      <span className="text-[10px] font-semibold" style={{ color: "var(--cvp-ink)" }}>{item.degree}</span>
+                      <span className="text-[9px]" style={{ color: "var(--cvp-ink-muted)" }}>{item.year}</span>
+                    </div>
+                    <div className="text-[9px]" style={{ color: "var(--cvp-ink-muted)" }}>{item.school}</div>
+                  </div>
+                ))}
+              </div>
+
               {/* Qualifications */}
               <div>
                 <div
@@ -437,9 +459,9 @@ export function Hero() {
                   Qualifications
                 </div>
                 {[
-                  { label: "BSc Information Technology", accent: "#0ea5e9", icon: "verified" },
-                  { label: "BSc Project Management", accent: "#8b5cf6", icon: "verified" },
-                  { label: "MSc Media Communications", accent: "#10b981", icon: "verified" },
+                  { label: "Google Digital Marketing Certificate", accent: "#0ea5e9", icon: "verified" },
+                  { label: "HubSpot Marketing Certification", accent: "#8b5cf6", icon: "verified" },
+                  { label: "Meta Blueprint Certification", accent: "#10b981", icon: "verified" },
                 ].map((item, i) => (
                   <div key={i} className="mb-1.5 flex items-center gap-2">
                     <span
