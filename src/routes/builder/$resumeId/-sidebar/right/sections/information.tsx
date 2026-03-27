@@ -15,7 +15,7 @@ export function InformationSectionBuilder() {
         <div className="space-y-2 text-xs leading-normal">
           <p>
             <Trans>
-              ProTalent CV is a free CV and resume builder by DPN Media Works. Build, customize, and
+              ProTalent CV is a free CV and resume builder distributed by DPN MEDIA WORKS. Build, customize, and
               share polished resumes in minutes.
             </Trans>
           </p>
@@ -30,7 +30,7 @@ export function InformationSectionBuilder() {
           nativeButton={false}
           render={
             <a href="https://dpnmw.com" target="_blank" rel="noopener">
-              <Trans>DPN Media Works</Trans>
+              <Trans>DPN MEDIA WORKS</Trans>
             </a>
           }
         />

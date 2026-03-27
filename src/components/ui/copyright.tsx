@@ -6,14 +6,14 @@ export function Copyright({ className, ...props }: Props) {
   return (
     <div className={cn("text-xs leading-relaxed text-muted-foreground/80", className)} {...props}>
       <p>
-        Built by{" "}
+        Distributed by{" "}
         <a
           target="_blank"
           rel="noopener"
           href="https://dpnmw.com"
           className="font-medium underline underline-offset-2"
         >
-          DPN Media Works
+          DPN MEDIA WORKS
         </a>
       </p>
 
