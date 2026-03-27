@@ -328,14 +328,18 @@ export function Hero() {
               <div className="pointer-events-none absolute right-[-50px] top-[-50px] size-[180px] rounded-full bg-white/5" />
               <div className="flex items-center gap-3">
                 <div
-                  className="flex size-14 shrink-0 items-center justify-center rounded-full text-[22px] text-white"
+                  className="flex size-14 shrink-0 items-center justify-center overflow-hidden rounded-full text-[22px] text-white"
                   style={{
                     fontFamily: "var(--font-serif)",
                     border: "2px solid rgba(255,255,255,.4)",
                     background: "rgba(255,255,255,.18)",
                   }}
                 >
-                  M
+                  <img
+                    src="/photos/sample-picture.jpg"
+                    alt="Marie Andrew"
+                    className="h-full w-full object-cover"
+                  />
                 </div>
                 <div>
                   <div className="text-lg text-white" style={{ fontFamily: "var(--font-serif)" }}>
