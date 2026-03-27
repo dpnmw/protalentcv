@@ -1,4 +1,5 @@
 import { EnvelopeIcon, GlobeIcon, MapPinIcon, PhoneIcon } from "@phosphor-icons/react";
+import { useMemo } from "react";
 
 import { cn } from "@/utils/style";
 
@@ -11,41 +12,55 @@ import { PagePicture } from "../shared/page-picture";
 import { useResumeStore } from "../store/resume";
 
 const sectionClassName = cn(
-  // Section Layout
-  "grid grid-cols-5 border-t border-(--page-primary-color) pt-1",
+  // Container
+  "rounded-(--container-border-radius) border border-(--page-text-color)/10 bg-(--page-background-color) p-4",
 
-  // Section Content
-  "[&>.section-content]:col-span-4",
+  // Section Heading
+  "[&>h6]:-mt-(--heading-negative-margin) [&>h6]:max-w-fit [&>h6]:bg-(--page-background-color) [&>h6]:px-4",
+
+  // Push the first section of a page down, to avoid clipping the header
+  "group-data-[layout=main]:first-of-type:mt-4",
 );
 
 /**
- * Template: Bronzor
+ * Template: Lapras
  */
-export function BronzorTemplate({ pageIndex, pageLayout }: TemplateProps) {
+export function KingstownTemplate({ pageIndex, pageLayout }: TemplateProps) {
   const isFirstPage = pageIndex === 0;
   const { main, sidebar, fullWidth } = pageLayout;
 
+  const containerBorderRadius = useResumeStore((state) => Math.min(state.resume.data.picture.borderRadius, 30));
+  const headingNegativeMargin = useResumeStore((state) => state.resume.data.metadata.typography.heading.fontSize + 6);
+
+  const style = useMemo(() => {
+    return {
+      "--container-border-radius": `${containerBorderRadius}pt`,
+      "--heading-negative-margin": `${headingNegativeMargin}pt`,
+    } as React.CSSProperties;
+  }, [containerBorderRadius, headingNegativeMargin]);
+
   return (
-    <div className="template-bronzor page-content space-y-(--page-gap-y) px-(--page-margin-x) pt-(--page-margin-y) print:p-0">
+    <div
+      style={style}
+      className="template-lapras page-content space-y-6 px-(--page-margin-x) pt-(--page-margin-y) print:p-0"
+    >
       {isFirstPage && <Header />}
 
-      <div className="space-y-(--page-gap-y)">
-        <main data-layout="main" className="group page-main space-y-(--page-gap-y)">
-          {main.map((section) => {
+      <main data-layout="main" className="group page-main space-y-6">
+        {main.map((section) => {
+          const Component = getSectionComponent(section, { sectionClassName });
+          return <Component key={section} id={section} />;
+        })}
+      </main>
+
+      {!fullWidth && (
+        <aside data-layout="sidebar" className="group page-sidebar space-y-6">
+          {sidebar.map((section) => {
             const Component = getSectionComponent(section, { sectionClassName });
             return <Component key={section} id={section} />;
           })}
-        </main>
-
-        {!fullWidth && (
-          <aside data-layout="sidebar" className="group page-sidebar space-y-(--page-gap-y)">
-            {sidebar.map((section) => {
-              const Component = getSectionComponent(section, { sectionClassName });
-              return <Component key={section} id={section} />;
-            })}
-          </aside>
-        )}
-      </div>
+        </aside>
+      )}
     </div>
   );
 }
@@ -54,16 +69,21 @@ function Header() {
   const basics = useResumeStore((state) => state.resume.data.basics);
 
   return (
-    <div className="page-header flex flex-col items-center gap-y-2">
+    <div
+      className={cn(
+        "page-header flex items-center gap-x-(--page-margin-x)",
+        "rounded-(--picture-border-radius) border border-(--page-text-color)/10 bg-(--page-background-color) p-4",
+      )}
+    >
       <PagePicture />
 
-      <div className="page-basics space-y-2 text-center">
-        <div className="basics-header">
+      <div className="page-basics space-y-(--page-gap-y)">
+        <div>
           <h2 className="basics-name">{basics.name}</h2>
           <p className="basics-headline">{basics.headline}</p>
         </div>
 
-        <div className="basics-items flex flex-wrap justify-center gap-x-3 gap-y-1 text-center *:flex *:items-center *:gap-x-1.5">
+        <div className="basics-items flex flex-wrap gap-x-2 gap-y-0.5 *:flex *:items-center *:gap-x-1.5 *:border-e *:border-(--page-primary-color) *:py-0.5 *:pe-2 *:last:border-e-0">
           {basics.email && (
             <div className="basics-item-email">
               <EnvelopeIcon />

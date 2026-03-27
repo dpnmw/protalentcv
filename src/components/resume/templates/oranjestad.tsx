@@ -8,7 +8,6 @@ import { getSectionComponent } from "../shared/get-section-component";
 import { PageIcon } from "../shared/page-icon";
 import { PageLink } from "../shared/page-link";
 import { PagePicture } from "../shared/page-picture";
-import { PageSummary } from "../shared/page-summary";
 import { useResumeStore } from "../store/resume";
 
 const sectionClassName = cn(
@@ -17,40 +16,31 @@ const sectionClassName = cn(
 );
 
 /**
- * Template: Leafish
+ * Template: Rhyhorn
  */
-export function LeafishTemplate({ pageIndex, pageLayout }: TemplateProps) {
+export function OranjestatTemplate({ pageIndex, pageLayout }: TemplateProps) {
   const isFirstPage = pageIndex === 0;
   const { main, sidebar, fullWidth } = pageLayout;
 
   return (
-    <div className="template-leafish page-content">
+    <div className="template-rhyhorn page-content space-y-(--page-gap-y) px-(--page-margin-x) pt-(--page-margin-y) print:p-0">
       {isFirstPage && <Header />}
 
-      <div className="flex gap-x-(--page-margin-x) px-(--page-margin-x) pt-(--page-margin-y)">
-        <main data-layout="main" className="group page-main space-y-(--page-gap-y)">
-          {main
-            .filter((section) => section !== "summary")
-            .map((section) => {
-              const Component = getSectionComponent(section, { sectionClassName });
-              return <Component key={section} id={section} />;
-            })}
-        </main>
+      <main data-layout="main" className="group page-main space-y-(--page-gap-y)">
+        {main.map((section) => {
+          const Component = getSectionComponent(section, { sectionClassName });
+          return <Component key={section} id={section} />;
+        })}
+      </main>
 
-        {!fullWidth && (
-          <aside
-            data-layout="sidebar"
-            className="group page-sidebar w-(--page-sidebar-width) shrink-0 space-y-(--page-gap-y)"
-          >
-            {sidebar
-              .filter((section) => section !== "summary")
-              .map((section) => {
-                const Component = getSectionComponent(section, { sectionClassName });
-                return <Component key={section} id={section} />;
-              })}
-          </aside>
-        )}
-      </div>
+      {!fullWidth && (
+        <aside data-layout="sidebar" className="group page-sidebar space-y-(--page-gap-y)">
+          {sidebar.map((section) => {
+            const Component = getSectionComponent(section, { sectionClassName });
+            return <Component key={section} id={section} />;
+          })}
+        </aside>
+      )}
     </div>
   );
 }
@@ -59,22 +49,14 @@ function Header() {
   const basics = useResumeStore((state) => state.resume.data.basics);
 
   return (
-    <div className="page-header bg-(--page-primary-color)/10">
-      <div className="flex items-center gap-x-(--page-margin-x) px-(--page-margin-x) py-(--page-margin-y)">
-        <PagePicture />
-
-        <div className="space-y-(--page-gap-y)">
-          <div>
-            <h2 className="basics-name">{basics.name}</h2>
-            <p className="basics-headline">{basics.headline}</p>
-          </div>
-
-          <PageSummary className="[&>h6]:hidden" />
+    <div className="page-header flex items-center gap-x-(--page-gap-x)">
+      <div className="page-basics grow space-y-(--page-gap-y)">
+        <div>
+          <h2 className="basics-name">{basics.name}</h2>
+          <p className="basics-headline">{basics.headline}</p>
         </div>
-      </div>
 
-      <div className="page-basics bg-(--page-primary-color)/10 px-(--page-margin-x) py-(--page-margin-y)">
-        <div className="basics-items flex flex-wrap gap-x-4 gap-y-1 *:flex *:items-center *:gap-x-1.5">
+        <div className="basics-items flex flex-wrap gap-x-2 gap-y-0.5 *:flex *:items-center *:gap-x-1.5 *:border-e *:border-(--page-primary-color) *:py-0.5 *:pe-2 *:last:border-e-0">
           {basics.email && (
             <div className="basics-item-email">
               <EnvelopeIcon />
@@ -111,6 +93,8 @@ function Header() {
           ))}
         </div>
       </div>
+
+      <PagePicture />
     </div>
   );
 }

@@ -13,94 +13,94 @@ export type TemplateMetadata = {
 };
 
 export const templates = {
-  azurill: {
-    name: "Azurill",
+  roseau: {
+    name: "Roseau",
     description: msg`Two-column with a bold colored sidebar and skill bars; great for creative or tech roles where visual flair is welcome.`,
-    imageUrl: "/templates/jpg/azurill.jpg",
+    imageUrl: "/templates/jpg/roseau.jpg",
     tags: ["Two-column", "Creative", "Tech", "Visual flair"],
     sidebarPosition: "left",
   },
-  bronzor: {
-    name: "Bronzor",
+  bridgetown: {
+    name: "Bridgetown",
     description: msg`Two-column, clean and professional with subtle section dividers; suits corporate, finance, or consulting positions.`,
-    imageUrl: "/templates/jpg/bronzor.jpg",
+    imageUrl: "/templates/jpg/bridgetown.jpg",
     tags: ["Two-column", "Clean", "Professional", "Corporate", "Finance", "Consulting"],
     sidebarPosition: "none",
   },
-  chikorita: {
-    name: "Chikorita",
+  castries: {
+    name: "Castries",
     description: msg`Two-column with a soft header accent and circular profile photo; ideal for marketing, HR, or client-facing roles.`,
-    imageUrl: "/templates/jpg/chikorita.jpg",
+    imageUrl: "/templates/jpg/castries.jpg",
     tags: ["Two-column", "Soft accent", "Marketing", "HR", "Client-facing"],
     sidebarPosition: "right",
   },
-  ditgar: {
-    name: "Ditgar",
+  "port-of-spain": {
+    name: "Port of Spain",
     description: msg`Two-column with a dark teal sidebar and skills grid; modern feel for developers, data scientists, or technical PMs.`,
-    imageUrl: "/templates/jpg/ditgar.jpg",
+    imageUrl: "/templates/jpg/port-of-spain.jpg",
     tags: ["Two-column", "Modern", "Developer", "Data science", "Technical PM", "Dark sidebar"],
     sidebarPosition: "left",
   },
-  ditto: {
-    name: "Ditto",
+  nassau: {
+    name: "Nassau",
     description: msg`Two-column, minimal and text-dense with no decorative elements; perfect for traditional industries or ATS-heavy applications.`,
-    imageUrl: "/templates/jpg/ditto.jpg",
+    imageUrl: "/templates/jpg/nassau.jpg",
     tags: ["Two-column", "ATS friendly", "Minimal", "Text-dense", "Traditional", "No decoration"],
     sidebarPosition: "left",
   },
-  gengar: {
-    name: "Gengar",
+  kingston: {
+    name: "Kingston",
     description: msg`Two-column with accent colors and clean typography; balanced choice for business analysts or operations roles.`,
-    imageUrl: "/templates/jpg/gengar.jpg",
+    imageUrl: "/templates/jpg/kingston.jpg",
     tags: ["Two-column", "Accent colors", "Clean typography", "Business analyst", "Operations"],
     sidebarPosition: "left",
   },
-  glalie: {
-    name: "Glalie",
+  basseterre: {
+    name: "Basseterre",
     description: msg`Two-column, minimal with light gray sidebar and subtle icons; professional and understated for legal, finance, or executive roles.`,
-    imageUrl: "/templates/jpg/glalie.jpg",
+    imageUrl: "/templates/jpg/basseterre.jpg",
     tags: ["Two-column", "Minimal", "Professional", "Legal", "Finance", "Executive", "Understated"],
     sidebarPosition: "left",
   },
-  kakuna: {
-    name: "Kakuna",
+  "st-georges": {
+    name: "St George's",
     description: msg`Single-column with a magenta left border accent; compact and efficient for entry-level or internship applications.`,
-    imageUrl: "/templates/jpg/kakuna.jpg",
+    imageUrl: "/templates/jpg/st-georges.jpg",
     tags: ["Single-column", "ATS friendly", "Compact", "Efficient", "Entry level", "Internship", "Magenta accent"],
     sidebarPosition: "none",
   },
-  lapras: {
-    name: "Lapras",
+  kingstown: {
+    name: "Kingstown",
     description: msg`Single-column; polished and serious for senior or enterprise-level positions.`,
-    imageUrl: "/templates/jpg/lapras.jpg",
+    imageUrl: "/templates/jpg/kingstown.jpg",
     tags: ["Single-column", "ATS friendly", "Polished", "Senior", "Enterprise"],
     sidebarPosition: "none",
   },
-  leafish: {
-    name: "Leafish",
+  "st-johns": {
+    name: "St John's",
     description: msg`Two-column with a muted color sidebar; earthy and calm, suits sustainability, healthcare, or nonprofit sectors.`,
-    imageUrl: "/templates/jpg/leafish.jpg",
+    imageUrl: "/templates/jpg/st-johns.jpg",
     tags: ["Two-column", "Muted sidebar", "Earthy", "Calm", "Sustainability", "Healthcare", "Nonprofit"],
     sidebarPosition: "right",
   },
-  onyx: {
-    name: "Onyx",
+  havana: {
+    name: "Havana",
     description: msg`Single-column with a sidebar and clean grid layout; versatile for any professional or technical role.`,
-    imageUrl: "/templates/jpg/onyx.jpg",
+    imageUrl: "/templates/jpg/havana.jpg",
     tags: ["Single-column", "ATS friendly", "Sidebar", "Grid layout", "Versatile", "Professional", "Technical"],
     sidebarPosition: "none",
   },
-  pikachu: {
-    name: "Pikachu",
+  plymouth: {
+    name: "Plymouth",
     description: msg`Two-column with a left margin color; simple and approachable for creative, editorial, or junior roles.`,
-    imageUrl: "/templates/jpg/pikachu.jpg",
+    imageUrl: "/templates/jpg/plymouth.jpg",
     tags: ["Two-column", "Simple", "Creative", "Editorial", "Junior", "Accent colors"],
     sidebarPosition: "left",
   },
-  rhyhorn: {
-    name: "Rhyhorn",
+  oranjestad: {
+    name: "Oranjestad",
     description: msg`Single-column with a minimal top header and lots of whitespace; clean and modern for designers or content creators.`,
-    imageUrl: "/templates/jpg/rhyhorn.jpg",
+    imageUrl: "/templates/jpg/oranjestad.jpg",
     tags: ["Single-column", "ATS friendly", "Minimal", "Clean", "Modern", "Designer", "Content creator", "Whitespace"],
     sidebarPosition: "none",
   },

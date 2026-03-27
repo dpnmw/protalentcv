@@ -27,7 +27,7 @@ const sectionClassName = cn(
 /**
  * Template: Ditgar
  */
-export function DitgarTemplate({ pageIndex, pageLayout }: TemplateProps) {
+export function PortOfSpainTemplate({ pageIndex, pageLayout }: TemplateProps) {
   const isFirstPage = pageIndex === 0;
   const { main, sidebar, fullWidth } = pageLayout;
 

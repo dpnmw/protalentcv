@@ -18,19 +18,19 @@ import { useCSSVariables } from "./hooks/use-css-variables";
 import { useWebfonts } from "./hooks/use-webfonts";
 import styles from "./preview.module.css";
 import { useResumeStore } from "./store/resume";
-import { AzurillTemplate } from "./templates/azurill";
-import { BronzorTemplate } from "./templates/bronzor";
-import { ChikoritaTemplate } from "./templates/chikorita";
-import { DitgarTemplate } from "./templates/ditgar";
-import { DittoTemplate } from "./templates/ditto";
-import { GengarTemplate } from "./templates/gengar";
-import { GlalieTemplate } from "./templates/glalie";
-import { KakunaTemplate } from "./templates/kakuna";
-import { LaprasTemplate } from "./templates/lapras";
-import { LeafishTemplate } from "./templates/leafish";
-import { OnyxTemplate } from "./templates/onyx";
-import { PikachuTemplate } from "./templates/pikachu";
-import { RhyhornTemplate } from "./templates/rhyhorn";
+import { RoseauTemplate } from "./templates/roseau";
+import { BridgetownTemplate } from "./templates/bridgetown";
+import { CastriesTemplate } from "./templates/castries";
+import { PortOfSpainTemplate } from "./templates/port-of-spain";
+import { NassauTemplate } from "./templates/nassau";
+import { KingstonTemplate } from "./templates/kingston";
+import { BasseterreTemplate } from "./templates/basseterre";
+import { StGeorgesTemplate } from "./templates/st-georges";
+import { KingstownTemplate } from "./templates/kingstown";
+import { StJohnsTemplate } from "./templates/st-johns";
+import { HavanaTemplate } from "./templates/havana";
+import { PlymouthTemplate } from "./templates/plymouth";
+import { OranjestatTemplate } from "./templates/oranjestad";
 
 export type ExtendedIconProps = IconProps & {
   hidden?: boolean;
@@ -41,19 +41,19 @@ const CSS_SELECTOR_PATTERN = /^([^{]+)(\{)/;
 
 function getTemplateComponent(template: Template) {
   return match(template)
-    .with("azurill", () => AzurillTemplate)
-    .with("bronzor", () => BronzorTemplate)
-    .with("chikorita", () => ChikoritaTemplate)
-    .with("ditto", () => DittoTemplate)
-    .with("ditgar", () => DitgarTemplate)
-    .with("gengar", () => GengarTemplate)
-    .with("glalie", () => GlalieTemplate)
-    .with("kakuna", () => KakunaTemplate)
-    .with("lapras", () => LaprasTemplate)
-    .with("leafish", () => LeafishTemplate)
-    .with("onyx", () => OnyxTemplate)
-    .with("pikachu", () => PikachuTemplate)
-    .with("rhyhorn", () => RhyhornTemplate)
+    .with("roseau", () => RoseauTemplate)
+    .with("bridgetown", () => BridgetownTemplate)
+    .with("castries", () => CastriesTemplate)
+    .with("port-of-spain", () => PortOfSpainTemplate)
+    .with("nassau", () => NassauTemplate)
+    .with("kingston", () => KingstonTemplate)
+    .with("basseterre", () => BasseterreTemplate)
+    .with("st-georges", () => StGeorgesTemplate)
+    .with("kingstown", () => KingstownTemplate)
+    .with("st-johns", () => StJohnsTemplate)
+    .with("havana", () => HavanaTemplate)
+    .with("plymouth", () => PlymouthTemplate)
+    .with("oranjestad", () => OranjestatTemplate)
     .exhaustive();
 }
 

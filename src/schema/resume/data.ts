@@ -490,7 +490,7 @@ export const typographySchema = z.object({
 
 export const metadataSchema = z.object({
   template: templateSchema
-    .catch("onyx")
+    .catch("havana")
     .describe("The template to use for the resume. Determines the overall design and appearance of the resume."),
   layout: layoutSchema.describe(
     "The layout of the resume. Determines the structure and arrangement of the sections on the resume.",
@@ -635,7 +635,7 @@ export const defaultResumeData: ResumeData = {
   },
   customSections: [],
   metadata: {
-    template: "onyx",
+    template: "havana",
     layout: {
       sidebarWidth: 35,
       pages: [

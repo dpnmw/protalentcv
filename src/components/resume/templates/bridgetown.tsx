@@ -11,55 +11,40 @@ import { PagePicture } from "../shared/page-picture";
 import { useResumeStore } from "../store/resume";
 
 const sectionClassName = cn(
-  // Section Heading
-  "[&>h6]:border-b [&>h6]:border-(--page-primary-color)",
+  // Section Layout
+  "grid grid-cols-5 border-t border-(--page-primary-color) pt-1",
 
-  // Section Item Header in Sidebar Layout
-  "group-data-[layout=sidebar]:[&_.section-item-header>div]:flex-col",
-  "group-data-[layout=sidebar]:[&_.section-item-header>div]:items-start",
+  // Section Content
+  "[&>.section-content]:col-span-4",
 );
 
 /**
- * Template: Glalie
+ * Template: Bronzor
  */
-export function GlalieTemplate({ pageIndex, pageLayout }: TemplateProps) {
+export function BridgetownTemplate({ pageIndex, pageLayout }: TemplateProps) {
   const isFirstPage = pageIndex === 0;
   const { main, sidebar, fullWidth } = pageLayout;
 
   return (
-    <div className="template-glalie page-content">
-      {/* Sidebar Background */}
-      {(!fullWidth || isFirstPage) && (
-        <div className="page-sidebar-background pointer-events-none absolute inset-y-0 z-0 w-(--page-sidebar-width) shrink-0 bg-(--page-primary-color)/20 ltr:inset-s-0 rtl:inset-e-0" />
-      )}
+    <div className="template-bronzor page-content space-y-(--page-gap-y) px-(--page-margin-x) pt-(--page-margin-y) print:p-0">
+      {isFirstPage && <Header />}
 
-      <div className="flex">
-        {(!fullWidth || isFirstPage) && (
-          <aside
-            data-layout="sidebar"
-            className="group page-sidebar z-10 flex w-(--page-sidebar-width) shrink-0 flex-col space-y-4 px-(--page-margin-x) pt-(--page-margin-y)"
-          >
-            {isFirstPage && <Header />}
+      <div className="space-y-(--page-gap-y)">
+        <main data-layout="main" className="group page-main space-y-(--page-gap-y)">
+          {main.map((section) => {
+            const Component = getSectionComponent(section, { sectionClassName });
+            return <Component key={section} id={section} />;
+          })}
+        </main>
 
-            {!fullWidth && (
-              <div className="shrink-0 space-y-4 overflow-x-hidden">
-                {sidebar.map((section) => {
-                  const Component = getSectionComponent(section, { sectionClassName });
-                  return <Component key={section} id={section} />;
-                })}
-              </div>
-            )}
-          </aside>
-        )}
-
-        <main data-layout="main" className="group page-main z-10">
-          <div className="space-y-4 px-(--page-margin-x) pt-(--page-margin-y)">
-            {main.map((section) => {
+        {!fullWidth && (
+          <aside data-layout="sidebar" className="group page-sidebar space-y-(--page-gap-y)">
+            {sidebar.map((section) => {
               const Component = getSectionComponent(section, { sectionClassName });
               return <Component key={section} id={section} />;
             })}
-          </div>
-        </main>
+          </aside>
+        )}
       </div>
     </div>
   );
@@ -69,19 +54,16 @@ function Header() {
   const basics = useResumeStore((state) => state.resume.data.basics);
 
   return (
-    <div className="page-header relative flex">
-      <div className="flex w-full shrink-0 flex-col items-center justify-center gap-y-3">
-        <PagePicture />
+    <div className="page-header flex flex-col items-center gap-y-2">
+      <PagePicture />
 
-        <div className="text-center">
+      <div className="page-basics space-y-2 text-center">
+        <div className="basics-header">
           <h2 className="basics-name">{basics.name}</h2>
           <p className="basics-headline">{basics.headline}</p>
         </div>
 
-        <div
-          style={{ "--box-radius": "calc(var(--picture-border-radius) / 4)" } as React.CSSProperties}
-          className="basics-items flex w-full flex-col gap-y-1 rounded-(--box-radius) border border-(--page-primary-color) p-3 *:flex *:items-center *:gap-x-1.5"
-        >
+        <div className="basics-items flex flex-wrap justify-center gap-x-3 gap-y-1 text-center *:flex *:items-center *:gap-x-1.5">
           {basics.email && (
             <div className="basics-item-email">
               <EnvelopeIcon />

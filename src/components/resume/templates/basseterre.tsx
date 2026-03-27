@@ -1,3 +1,5 @@
+import { EnvelopeIcon, GlobeIcon, MapPinIcon, PhoneIcon } from "@phosphor-icons/react";
+
 import { cn } from "@/utils/style";
 
 import type { TemplateProps } from "./types";
@@ -6,7 +8,6 @@ import { getSectionComponent } from "../shared/get-section-component";
 import { PageIcon } from "../shared/page-icon";
 import { PageLink } from "../shared/page-link";
 import { PagePicture } from "../shared/page-picture";
-import { PageSummary } from "../shared/page-summary";
 import { useResumeStore } from "../store/resume";
 
 const sectionClassName = cn(
@@ -19,14 +20,14 @@ const sectionClassName = cn(
 );
 
 /**
- * Template: Gengar
+ * Template: Glalie
  */
-export function GengarTemplate({ pageIndex, pageLayout }: TemplateProps) {
+export function BasseterreTemplate({ pageIndex, pageLayout }: TemplateProps) {
   const isFirstPage = pageIndex === 0;
   const { main, sidebar, fullWidth } = pageLayout;
 
   return (
-    <div className="template-gengar page-content">
+    <div className="template-glalie page-content">
       {/* Sidebar Background */}
       {(!fullWidth || isFirstPage) && (
         <div className="page-sidebar-background pointer-events-none absolute inset-y-0 z-0 w-(--page-sidebar-width) shrink-0 bg-(--page-primary-color)/20 ltr:inset-s-0 rtl:inset-e-0" />
@@ -36,40 +37,27 @@ export function GengarTemplate({ pageIndex, pageLayout }: TemplateProps) {
         {(!fullWidth || isFirstPage) && (
           <aside
             data-layout="sidebar"
-            className="group page-sidebar z-10 flex w-(--page-sidebar-width) shrink-0 flex-col"
+            className="group page-sidebar z-10 flex w-(--page-sidebar-width) shrink-0 flex-col space-y-4 px-(--page-margin-x) pt-(--page-margin-y)"
           >
             {isFirstPage && <Header />}
 
             {!fullWidth && (
-              <div className="shrink-0 space-y-4 overflow-x-hidden px-(--page-margin-x) pt-(--page-margin-y)">
-                {sidebar
-                  .filter((section) => section !== "summary")
-                  .map((section) => {
-                    const Component = getSectionComponent(section, { sectionClassName });
-                    return <Component key={section} id={section} />;
-                  })}
+              <div className="shrink-0 space-y-4 overflow-x-hidden">
+                {sidebar.map((section) => {
+                  const Component = getSectionComponent(section, { sectionClassName });
+                  return <Component key={section} id={section} />;
+                })}
               </div>
             )}
           </aside>
         )}
 
         <main data-layout="main" className="group page-main z-10">
-          {isFirstPage && (
-            <PageSummary
-              className={cn(
-                sectionClassName,
-                "bg-(--page-primary-color)/20 px-(--page-margin-x) py-(--page-margin-y) [&>h6]:hidden",
-              )}
-            />
-          )}
-
           <div className="space-y-4 px-(--page-margin-x) pt-(--page-margin-y)">
-            {main
-              .filter((section) => section !== "summary")
-              .map((section) => {
-                const Component = getSectionComponent(section, { sectionClassName });
-                return <Component key={section} id={section} />;
-              })}
+            {main.map((section) => {
+              const Component = getSectionComponent(section, { sectionClassName });
+              return <Component key={section} id={section} />;
+            })}
           </div>
         </main>
       </div>
@@ -82,42 +70,42 @@ function Header() {
 
   return (
     <div className="page-header relative flex">
-      <div className="flex w-full shrink-0 flex-col justify-center gap-y-2 bg-(--page-primary-color) px-(--page-margin-x) py-(--page-margin-y) text-(--page-background-color)">
+      <div className="flex w-full shrink-0 flex-col items-center justify-center gap-y-3">
         <PagePicture />
 
-        <div>
+        <div className="text-center">
           <h2 className="basics-name">{basics.name}</h2>
           <p className="basics-headline">{basics.headline}</p>
         </div>
 
         <div
-          className="basics-items flex flex-col gap-y-1 *:flex *:items-center *:gap-x-1.5"
-          style={{ "--page-primary-color": "var(--page-background-color)" } as React.CSSProperties}
+          style={{ "--box-radius": "calc(var(--picture-border-radius) / 4)" } as React.CSSProperties}
+          className="basics-items flex w-full flex-col gap-y-1 rounded-(--box-radius) border border-(--page-primary-color) p-3 *:flex *:items-center *:gap-x-1.5"
         >
           {basics.email && (
             <div className="basics-item-email">
-              <PageIcon icon="envelope" />
+              <EnvelopeIcon />
               <PageLink url={`mailto:${basics.email}`} label={basics.email} />
             </div>
           )}
 
           {basics.phone && (
             <div className="basics-item-phone">
-              <PageIcon icon="phone" />
+              <PhoneIcon />
               <PageLink url={`tel:${basics.phone}`} label={basics.phone} />
             </div>
           )}
 
           {basics.location && (
             <div className="basics-item-location">
-              <PageIcon icon="map-pin" />
+              <MapPinIcon />
               <span>{basics.location}</span>
             </div>
           )}
 
           {basics.website.url && (
             <div className="basics-item-website">
-              <PageIcon icon="globe" />
+              <GlobeIcon />
               <PageLink {...basics.website} />
             </div>
           )}
