@@ -8,6 +8,8 @@ export function PagePicture({ className, style }: { className?: string; style?: 
 
   if (picture.url === "") return null;
 
+  const src = picture.url.startsWith("/") ? `${window.location.origin}${picture.url}` : picture.url;
+
   return (
     <div
       className={cn("page-picture shrink-0 overflow-hidden", picture.hidden && "hidden", className)}
@@ -23,7 +25,7 @@ export function PagePicture({ className, style }: { className?: string; style?: 
     >
       <img
         alt={name}
-        src={picture.url}
+        src={src}
         className="size-full object-cover"
         style={{ transform: `rotate(${picture.rotation}deg)` }}
       />
