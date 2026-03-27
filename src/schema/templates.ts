@@ -1,19 +1,19 @@
 import z from "zod";
 
 export const templateSchema = z.enum([
-  "roseau",
-  "bridgetown",
-  "castries",
-  "port-of-spain",
-  "nassau",
-  "kingston",
-  "basseterre",
-  "st-georges",
-  "kingstown",
-  "st-johns",
-  "havana",
-  "plymouth",
-  "oranjestad",
+  "monet",
+  "renoir",
+  "degas",
+  "pissarro",
+  "sisley",
+  "cassatt",
+  "morisot",
+  "cezanne",
+  "seurat",
+  "guillaumin",
+  "bazille",
+  "fantin",
+  "signac",
 ]);
 
 export type Template = z.infer<typeof templateSchema>;
@@ -29,11 +29,11 @@ export type Template = z.infer<typeof templateSchema>;
  * close to the page borders, consider including it in the `printMarginTemplates` array below.
  */
 export const printMarginTemplates = [
-  "roseau",
-  "bridgetown",
-  "st-georges",
-  "kingstown",
-  "havana",
-  "plymouth",
-  "oranjestad",
+  "monet",
+  "renoir",
+  "cezanne",
+  "seurat",
+  "bazille",
+  "fantin",
+  "signac",
 ] satisfies Template[] as string[];

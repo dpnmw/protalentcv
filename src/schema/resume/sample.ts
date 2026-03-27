@@ -33,8 +33,8 @@ export const sampleResumeData: ResumeData = {
       {
         id: "019bef5a-93e4-7746-ad39-3a132360f823",
         icon: "instagram-logo",
-        text: "@marieandrew.dm",
-        link: "https://instagram.com/marieandrew.dm",
+        text: "@marieandrew",
+        link: "https://instagram.com/marieandrew",
       },
     ],
   },
@@ -67,10 +67,10 @@ export const sampleResumeData: ResumeData = {
           hidden: false,
           icon: "instagram-logo",
           network: "Instagram",
-          username: "marieandrew.dm",
+          username: "marieandrew",
           website: {
-            url: "https://instagram.com/marieandrew.dm",
-            label: "instagram.com/marieandrew.dm",
+            url: "https://instagram.com/marieandrew",
+            label: "instagram.com/marieandrew",
           },
         },
       ],
@@ -515,7 +515,7 @@ export const sampleResumeData: ResumeData = {
     },
   ],
   metadata: {
-    template: "roseau",
+    template: "monet",
     layout: {
       sidebarWidth: 30,
       pages: [

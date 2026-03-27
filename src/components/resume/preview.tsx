@@ -18,19 +18,19 @@ import { useCSSVariables } from "./hooks/use-css-variables";
 import { useWebfonts } from "./hooks/use-webfonts";
 import styles from "./preview.module.css";
 import { useResumeStore } from "./store/resume";
-import { RoseauTemplate } from "./templates/roseau";
-import { BridgetownTemplate } from "./templates/bridgetown";
-import { CastriesTemplate } from "./templates/castries";
-import { PortOfSpainTemplate } from "./templates/port-of-spain";
-import { NassauTemplate } from "./templates/nassau";
-import { KingstonTemplate } from "./templates/kingston";
-import { BasseterreTemplate } from "./templates/basseterre";
-import { StGeorgesTemplate } from "./templates/st-georges";
-import { KingstownTemplate } from "./templates/kingstown";
-import { StJohnsTemplate } from "./templates/st-johns";
-import { HavanaTemplate } from "./templates/havana";
-import { PlymouthTemplate } from "./templates/plymouth";
-import { OranjestatTemplate } from "./templates/oranjestad";
+import { MonetTemplate } from "./templates/monet";
+import { RenoirTemplate } from "./templates/renoir";
+import { DegasTemplate } from "./templates/degas";
+import { PissarroTemplate } from "./templates/pissarro";
+import { SisleyTemplate } from "./templates/sisley";
+import { CassattTemplate } from "./templates/cassatt";
+import { MorisotTemplate } from "./templates/morisot";
+import { CezanneTemplate } from "./templates/cezanne";
+import { SeuratTemplate } from "./templates/seurat";
+import { GuillauminTemplate } from "./templates/guillaumin";
+import { BazilleTemplate } from "./templates/bazille";
+import { FantinTemplate } from "./templates/fantin";
+import { SignacTemplate } from "./templates/signac";
 
 export type ExtendedIconProps = IconProps & {
   hidden?: boolean;
@@ -41,19 +41,19 @@ const CSS_SELECTOR_PATTERN = /^([^{]+)(\{)/;
 
 function getTemplateComponent(template: Template) {
   return match(template)
-    .with("roseau", () => RoseauTemplate)
-    .with("bridgetown", () => BridgetownTemplate)
-    .with("castries", () => CastriesTemplate)
-    .with("port-of-spain", () => PortOfSpainTemplate)
-    .with("nassau", () => NassauTemplate)
-    .with("kingston", () => KingstonTemplate)
-    .with("basseterre", () => BasseterreTemplate)
-    .with("st-georges", () => StGeorgesTemplate)
-    .with("kingstown", () => KingstownTemplate)
-    .with("st-johns", () => StJohnsTemplate)
-    .with("havana", () => HavanaTemplate)
-    .with("plymouth", () => PlymouthTemplate)
-    .with("oranjestad", () => OranjestatTemplate)
+    .with("monet", () => MonetTemplate)
+    .with("renoir", () => RenoirTemplate)
+    .with("degas", () => DegasTemplate)
+    .with("pissarro", () => PissarroTemplate)
+    .with("sisley", () => SisleyTemplate)
+    .with("cassatt", () => CassattTemplate)
+    .with("morisot", () => MorisotTemplate)
+    .with("cezanne", () => CezanneTemplate)
+    .with("seurat", () => SeuratTemplate)
+    .with("guillaumin", () => GuillauminTemplate)
+    .with("bazille", () => BazilleTemplate)
+    .with("fantin", () => FantinTemplate)
+    .with("signac", () => SignacTemplate)
     .exhaustive();
 }
 

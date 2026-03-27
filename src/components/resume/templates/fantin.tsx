@@ -22,7 +22,7 @@ const sectionClassName = cn(
 /**
  * Template: Pikachu
  */
-export function PlymouthTemplate({ pageIndex, pageLayout }: TemplateProps) {
+export function FantinTemplate({ pageIndex, pageLayout }: TemplateProps) {
   const isFirstPage = pageIndex === 0;
   const { main, sidebar, fullWidth } = pageLayout;
 

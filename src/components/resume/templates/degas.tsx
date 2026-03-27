@@ -33,7 +33,7 @@ const sectionClassName = cn(
 /**
  * Template: Chikorita
  */
-export function CastriesTemplate({ pageIndex, pageLayout }: TemplateProps) {
+export function DegasTemplate({ pageIndex, pageLayout }: TemplateProps) {
   const isFirstPage = pageIndex === 0;
   const { main, sidebar, fullWidth } = pageLayout;
 

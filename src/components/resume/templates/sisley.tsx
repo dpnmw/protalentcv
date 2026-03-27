@@ -11,36 +11,42 @@ import { PagePicture } from "../shared/page-picture";
 import { useResumeStore } from "../store/resume";
 
 const sectionClassName = cn(
-  // Section Heading
-  "[&>h6]:border-b [&>h6]:border-(--page-primary-color)",
+  // Section Item Header in Sidebar Layout
+  "group-data-[layout=sidebar]:[&_.section-item-header>div]:flex-col",
+  "group-data-[layout=sidebar]:[&_.section-item-header>div]:items-start",
 );
 
 /**
- * Template: Rhyhorn
+ * Template: Ditto
  */
-export function OranjestatTemplate({ pageIndex, pageLayout }: TemplateProps) {
+export function SisleyTemplate({ pageIndex, pageLayout }: TemplateProps) {
   const isFirstPage = pageIndex === 0;
   const { main, sidebar, fullWidth } = pageLayout;
 
   return (
-    <div className="template-rhyhorn page-content space-y-(--page-gap-y) px-(--page-margin-x) pt-(--page-margin-y) print:p-0">
+    <div className="template-ditto page-content">
       {isFirstPage && <Header />}
 
-      <main data-layout="main" className="group page-main space-y-(--page-gap-y)">
-        {main.map((section) => {
-          const Component = getSectionComponent(section, { sectionClassName });
-          return <Component key={section} id={section} />;
-        })}
-      </main>
+      <div className="flex pt-(--page-margin-y)">
+        {!fullWidth && (
+          <aside
+            data-layout="sidebar"
+            className="group page-sidebar w-(--page-sidebar-width) shrink-0 space-y-4 overflow-x-hidden ps-(--page-margin-x)"
+          >
+            {sidebar.map((section) => {
+              const Component = getSectionComponent(section, { sectionClassName });
+              return <Component key={section} id={section} />;
+            })}
+          </aside>
+        )}
 
-      {!fullWidth && (
-        <aside data-layout="sidebar" className="group page-sidebar space-y-(--page-gap-y)">
-          {sidebar.map((section) => {
+        <main data-layout="main" className="group page-main space-y-4 px-(--page-margin-x)">
+          {main.map((section) => {
             const Component = getSectionComponent(section, { sectionClassName });
             return <Component key={section} id={section} />;
           })}
-        </aside>
-      )}
+        </main>
+      </div>
     </div>
   );
 }
@@ -49,14 +55,24 @@ function Header() {
   const basics = useResumeStore((state) => state.resume.data.basics);
 
   return (
-    <div className="page-header flex items-center gap-x-(--page-gap-x)">
-      <div className="page-basics grow space-y-(--page-gap-y)">
-        <div>
-          <h2 className="basics-name">{basics.name}</h2>
-          <p className="basics-headline">{basics.headline}</p>
-        </div>
+    <div className="page-header relative">
+      <div className="page-basics bg-(--page-primary-color) text-(--page-background-color)">
+        <div className="basics-header flex items-center">
+          <div className="flex w-(--page-sidebar-width) shrink-0 justify-center ps-(--page-margin-x)">
+            <PagePicture className="absolute top-8" />
+          </div>
 
-        <div className="basics-items flex flex-wrap gap-x-2 gap-y-0.5 *:flex *:items-center *:gap-x-1.5 *:border-e *:border-(--page-primary-color) *:py-0.5 *:pe-2 *:last:border-e-0">
+          <div className="px-(--page-margin-x) py-(--page-margin-y)">
+            <h2 className="basics-name">{basics.name}</h2>
+            <p className="basics-headline">{basics.headline}</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex items-center">
+        <div className="w-(--page-sidebar-width) shrink-0" />
+
+        <div className="basics-items flex flex-wrap gap-x-3 gap-y-1 px-(--page-margin-x) pt-3 *:flex *:items-center *:gap-x-1.5">
           {basics.email && (
             <div className="basics-item-email">
               <EnvelopeIcon />
@@ -93,8 +109,6 @@ function Header() {
           ))}
         </div>
       </div>
-
-      <PagePicture />
     </div>
   );
 }

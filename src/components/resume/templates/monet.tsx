@@ -59,7 +59,7 @@ const sectionClassName = cn(
 /**
  * Template: Azurill
  */
-export function RoseauTemplate({ pageIndex, pageLayout }: TemplateProps) {
+export function MonetTemplate({ pageIndex, pageLayout }: TemplateProps) {
   const isFirstPage = pageIndex === 0;
   const { main, sidebar, fullWidth } = pageLayout;
 

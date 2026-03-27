@@ -10,17 +10,20 @@ import { PageLink } from "../shared/page-link";
 import { PagePicture } from "../shared/page-picture";
 import { useResumeStore } from "../store/resume";
 
-const sectionClassName = cn();
+const sectionClassName = cn(
+  // Section Heading
+  "[&>h6]:border-b [&>h6]:border-(--page-primary-color)",
+);
 
 /**
- * Template: Onyx
+ * Template: Rhyhorn
  */
-export function HavanaTemplate({ pageIndex, pageLayout }: TemplateProps) {
+export function SignacTemplate({ pageIndex, pageLayout }: TemplateProps) {
   const isFirstPage = pageIndex === 0;
   const { main, sidebar, fullWidth } = pageLayout;
 
   return (
-    <div className="template-onyx page-content space-y-(--page-gap-y) px-(--page-margin-x) pt-(--page-margin-y) print:p-0">
+    <div className="template-rhyhorn page-content space-y-(--page-gap-y) px-(--page-margin-x) pt-(--page-margin-y) print:p-0">
       {isFirstPage && <Header />}
 
       <main data-layout="main" className="group page-main space-y-(--page-gap-y)">
@@ -46,16 +49,14 @@ function Header() {
   const basics = useResumeStore((state) => state.resume.data.basics);
 
   return (
-    <div className="page-header flex items-center gap-x-(--page-margin-x) border-b border-(--page-primary-color) pb-(--page-margin-y)">
-      <PagePicture />
-
-      <div className="page-basics space-y-(--page-gap-y)">
+    <div className="page-header flex items-center gap-x-(--page-gap-x)">
+      <div className="page-basics grow space-y-(--page-gap-y)">
         <div>
           <h2 className="basics-name">{basics.name}</h2>
           <p className="basics-headline">{basics.headline}</p>
         </div>
 
-        <div className="basics-items flex flex-wrap gap-x-3 gap-y-0.5 *:flex *:items-center *:gap-x-1.5">
+        <div className="basics-items flex flex-wrap gap-x-2 gap-y-0.5 *:flex *:items-center *:gap-x-1.5 *:border-e *:border-(--page-primary-color) *:py-0.5 *:pe-2 *:last:border-e-0">
           {basics.email && (
             <div className="basics-item-email">
               <EnvelopeIcon />
@@ -92,6 +93,8 @@ function Header() {
           ))}
         </div>
       </div>
+
+      <PagePicture />
     </div>
   );
 }
