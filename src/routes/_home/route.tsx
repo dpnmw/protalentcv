@@ -1,5 +1,6 @@
 import { createFileRoute, Outlet } from "@tanstack/react-router";
 
+import { CookieBanner } from "./-sections/cookie-banner";
 import { NavBar } from "./-sections/nav-bar";
 import { Preloader } from "./-sections/preloader";
 
@@ -21,6 +22,7 @@ function RouteComponent() {
 
       <NavBar />
       <Outlet />
+      <CookieBanner />
     </>
   );
 }

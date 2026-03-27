@@ -101,9 +101,9 @@ export function WhyCVPro() {
               and completely focused on getting you hired.
             </p>
 
-            {/* 2026 Micro-UI: Magnetic Card Row (Updated Layout) */}
-            <div className="mt-12 space-y-12">
-              <div className="flex flex-wrap gap-4">
+            {/* 2026 Micro-UI: Magnetic Card Row (2x2 Grid) */}
+            <div className="mt-12 max-w-[400px]">
+              <div className="grid grid-cols-2 gap-4">
                 {[
                   { label: "Basics", color: "#8B5CF6" },
                   { label: "Summary", color: "#F97316" },
@@ -120,8 +120,8 @@ export function WhyCVPro() {
                       stiffness: 120,
                       delay: i * 0.15,
                     }}
-                    className="flex h-[54px] min-w-[160px] items-center gap-3 rounded-xl border border-ink/5 bg-ink/[0.03] px-4 shadow-sm backdrop-blur-sm transition-all duration-300"
-                    style={{ borderColor: `${layer.color}40`, background: `${layer.color}08` }}
+                    className="flex h-[56px] min-w-[170px] items-center gap-3 rounded-xl border border-white/20 bg-white/5 px-4 shadow-xl backdrop-blur-md transition-all duration-300 hover:bg-white/10"
+                    style={{ borderColor: `${layer.color}40`, backgroundColor: `${layer.color}08` }}
                   >
                     <div className="size-2 rounded-full" style={{ backgroundColor: layer.color }} />
                     <span className="text-[10px] font-bold uppercase tracking-wider text-ink">
@@ -172,9 +172,11 @@ export function WhyCVPro() {
                 background: "var(--cvp-bg-card)",
               }}
             >
-              <span className="mb-3.5 block text-[28px] leading-none">{feature.icon}</span>
-              <div className="mb-2 text-base font-semibold" style={{ color: "var(--cvp-ink)" }}>
-                {feature.title}
+              <div className="mb-3 flex items-center gap-3">
+                <span className="shrink-0 text-[28px] leading-none">{feature.icon}</span>
+                <div className="text-base font-semibold" style={{ color: "var(--cvp-ink)" }}>
+                  {feature.title}
+                </div>
               </div>
               <div
                 className="text-sm font-light leading-[1.7]"

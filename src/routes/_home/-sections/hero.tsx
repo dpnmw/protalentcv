@@ -113,7 +113,7 @@ export function Hero() {
 
       <div className="relative z-[1] mx-auto grid w-full max-w-[1100px] items-center gap-10 md:grid-cols-[1fr_320px] md:gap-8 lg:grid-cols-[1fr_420px] lg:gap-20">
         {/* Left column — text */}
-        <div className="text-center md:text-left">
+        <div>
           <div
             className="mb-7 inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 text-xs font-medium tracking-[0.06em]"
             style={{
@@ -132,7 +132,7 @@ export function Hero() {
             100% Free · No payment required to start
           </div>
 
-          <div className="mb-5 flex items-center justify-center gap-5 md:justify-start">
+          <div className="mb-5 flex items-center gap-5">
             <h1
               className="leading-[1.08] tracking-[-0.02em]"
               style={{
@@ -163,14 +163,14 @@ export function Hero() {
           </div>
 
           <p
-            className="mb-8 max-w-[420px] text-lg font-light leading-[1.75] mx-auto md:mx-0"
+            className="mb-8 max-w-[420px] text-lg font-light leading-[1.75]"
             style={{ color: "var(--cvp-ink-mid)" }}
           >
             Build a polished, professional CV completely free. No design skills or technical
             knowledge needed — just you and your story.
           </p>
 
-          <div className="flex flex-wrap items-center justify-center gap-4 md:justify-start">
+          <div className="flex flex-wrap items-center gap-4">
             <Link
               to="/dashboard"
               className="inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-[15px] font-medium transition-[background,transform] duration-200 hover:-translate-y-0.5 hover:!bg-[#dc2626] active:!bg-[#b91c1c]"
@@ -191,6 +191,27 @@ export function Hero() {
                 />
               </svg>
             </Link>
+
+            <button
+              onClick={() => {
+                document.getElementById("templates")?.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-[15px] font-medium transition-[background,border-color,transform] duration-200 hover:-translate-y-0.5"
+              style={{
+                fontFamily: "var(--font-body)",
+                background: "transparent",
+                border: "1.5px solid var(--cvp-border-mid)",
+                color: "var(--cvp-ink-mid)",
+              }}
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="3" width="7" height="9" rx="1.5" stroke="currentColor" strokeWidth="1.6"/>
+                <rect x="14" y="3" width="7" height="5" rx="1.5" stroke="currentColor" strokeWidth="1.6"/>
+                <rect x="14" y="12" width="7" height="9" rx="1.5" stroke="currentColor" strokeWidth="1.6"/>
+                <rect x="3" y="16" width="7" height="5" rx="1.5" stroke="currentColor" strokeWidth="1.6"/>
+              </svg>
+              View templates
+            </button>
 
           </div>
 
