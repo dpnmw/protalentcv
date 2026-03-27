@@ -93,7 +93,7 @@ export const sampleResumeData: ResumeData = {
           },
           roles: [],
           description:
-            "<ul><li><p>Led the development and execution of CTO's regional marketing strategy across 24 member states, overseeing a cross-functional team of 8 and an annual campaign budget of USD $1.4M</p></li><li><p>Directed the 'Live It. Love It. Caribbean.' multi-platform campaign — achieving 22M+ impressions and contributing to an 18% year-on-year increase in regional visitor arrivals</p></li><li><p>Established and managed media partnerships with BBC Travel, Condé Nast Traveller, and Caribbean Journal, generating 40+ earned editorial features across UK, US, and Canadian markets</p></li><li><p>Produced quarterly impact reports and stakeholder briefs distributed to tourism ministers, national tourism boards, and private hospitality partners across the region</p></li><li><p>Spearheaded CTO's digital transformation: migrated to HubSpot CRM, overhauled SEO architecture, and grew combined social media audience from 68K to 142K in 18 months</p></li><li><p>Represented CTO at the Caribbean Hotel & Tourism Association (CHTA) Annual Conference and the World Travel Market (WTM) London — leading regional destination presentations to 500+ industry stakeholders</p></li></ul>",
+            "<ul><li><p>Led the development and execution of CTO's regional marketing strategy across 24 member states, overseeing a cross-functional team of 8 and an annual campaign budget of USD $1.4M</p></li><li><p>Directed the 'Live It. Love It. Caribbean.' multi-platform campaign — achieving 22M+ impressions and contributing to an 18% year-on-year increase in regional visitor arrivals</p></li><li><p>Established and managed media partnerships with BBC Travel, Condé Nast Traveller, and Caribbean Journal, generating 40+ earned editorial features across UK, US, and Canadian markets</p></li></ul>",
         },
       ],
     },
@@ -219,15 +219,6 @@ export const sampleResumeData: ResumeData = {
           proficiency: "Advanced",
           level: 4,
           keywords: ["Google Analytics", "Meta Insights", "Campaign KPIs"],
-        },
-        {
-          id: "019bef5a-93e4-7746-ad39-6a8e22bec684",
-          hidden: false,
-          icon: "pencil-line",
-          name: "Content & Copywriting",
-          proficiency: "Advanced",
-          level: 4,
-          keywords: ["Institutional Messaging", "Press Releases", "Policy Communications"],
         },
         {
           id: "019bef5a-93e4-7746-ad39-6d8bf7be7514",
@@ -536,11 +527,11 @@ export const sampleResumeData: ResumeData = {
         {
           fullWidth: false,
           main: ["019becaf-0b87-769d-98a6-46ccf558c0e8", "awards"],
-          sidebar: ["languages", "certifications", "interests", "references"],
+          sidebar: ["languages", "certifications", "interests"],
         },
         {
           fullWidth: true,
-          main: ["projects", "publications", "volunteer"],
+          main: ["projects", "publications", "volunteer", "references"],
           sidebar: [],
         },
         {
