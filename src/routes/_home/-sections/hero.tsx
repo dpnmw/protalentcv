@@ -102,7 +102,7 @@ export function Hero() {
 
   return (
     <div
-      className="relative flex min-h-screen items-center overflow-hidden px-5 pb-24 md:px-12" style={{ paddingTop: "86px" }}
+      className="relative flex min-h-screen items-center overflow-hidden px-5 pb-24 pt-28 md:px-12"
       style={{ fontFamily: "var(--font-body)" }}
     >
       {/* Background glow */}
