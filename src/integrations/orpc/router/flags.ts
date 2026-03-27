@@ -42,6 +42,7 @@ export const flagsRouter = {
         upgradeUrl: z.string().nullable().describe("URL to the upgrade page, or null if not configured."),
         termsUrl: z.string().nullable().describe("URL to the Terms of Service page, or null if not configured."),
         privacyUrl: z.string().nullable().describe("URL to the Privacy Policy page, or null if not configured."),
+        demoVideoUrl: z.string().nullable().describe("URL to the demo video, or null if not configured."),
       }),
     )
     .handler((): PlanConfig => flagsService.getPlanConfig()),
