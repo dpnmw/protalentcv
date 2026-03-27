@@ -132,38 +132,20 @@ export function Hero() {
             100% Free · No payment required to start
           </div>
 
-          <div className="mb-5 flex items-start gap-4">
-            <h1
-              className="leading-[1.08] tracking-[-0.02em]"
-              style={{
-                fontFamily: "var(--font-serif)",
-                fontSize: "clamp(40px, 5.5vw, 68px)",
-                color: "var(--cvp-ink)",
-              }}
-            >
-              Your CV,
-              <br />
-              <em style={{ fontStyle: "italic", color: "var(--cvp-accent)" }}>ready in</em>
-              <br />
-              minutes.
-            </h1>
-
-            {demoVideoUrl && (
-              <button
-                onClick={() => setVideoOpen(true)}
-                className="cvp-play-btn mt-3 flex shrink-0 size-12 items-center justify-center rounded-full"
-                style={{
-                  background: "var(--cvp-accent)",
-                  color: "var(--cvp-btn-fg)",
-                }}
-                aria-label="Watch demo video"
-              >
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor">
-                  <path d="M6 4.5l8 4.5-8 4.5V4.5z" />
-                </svg>
-              </button>
-            )}
-          </div>
+          <h1
+            className="mb-5 leading-[1.08] tracking-[-0.02em]"
+            style={{
+              fontFamily: "var(--font-serif)",
+              fontSize: "clamp(40px, 5.5vw, 68px)",
+              color: "var(--cvp-ink)",
+            }}
+          >
+            Your CV,
+            <br />
+            <em style={{ fontStyle: "italic", color: "var(--cvp-accent)" }}>ready in</em>
+            <br />
+            minutes.
+          </h1>
 
           <p
             className="mb-8 max-w-[420px] text-lg font-light leading-[1.75]"
@@ -173,7 +155,7 @@ export function Hero() {
             knowledge needed — just you and your story.
           </p>
 
-          <div className="flex flex-wrap items-center gap-3">
+          <div className="flex flex-wrap items-center gap-4">
             <Link
               to="/dashboard"
               className="inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-[15px] font-medium transition-[background,transform] duration-200 hover:-translate-y-0.5"
@@ -195,6 +177,28 @@ export function Hero() {
                 />
               </svg>
             </Link>
+
+            {demoVideoUrl && (
+              <button
+                onClick={() => setVideoOpen(true)}
+                className="cvp-play-btn inline-flex items-center gap-2.5 text-[14px] font-medium transition-opacity hover:opacity-80"
+                style={{ color: "var(--cvp-ink-mid)" }}
+                aria-label="Watch demo video"
+              >
+                <span
+                  className="flex size-[52px] shrink-0 items-center justify-center rounded-full"
+                  style={{
+                    background: "#dc2626",
+                    color: "#ffffff",
+                  }}
+                >
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="currentColor">
+                    <path d="M8 5.5l10 5.5-10 5.5V5.5z" />
+                  </svg>
+                </span>
+                Watch demo
+              </button>
+            )}
           </div>
 
           <div
@@ -298,25 +302,29 @@ export function Hero() {
             <div
               className="relative overflow-hidden px-[26px] pb-[22px] pt-7"
               style={{
-                background: "linear-gradient(135deg, var(--cvp-b950) 0%, var(--cvp-b700) 100%)",
+                background: "linear-gradient(135deg, #064e3b 0%, #059669 100%)",
               }}
             >
               <div className="pointer-events-none absolute right-[-50px] top-[-50px] size-[180px] rounded-full bg-white/5" />
-              <div
-                className="mb-3 flex size-11 items-center justify-center rounded-full text-[17px] text-white"
-                style={{
-                  fontFamily: "var(--font-serif)",
-                  border: "2px solid rgba(255,255,255,.35)",
-                  background: "rgba(255,255,255,.15)",
-                }}
-              >
-                P
-              </div>
-              <div className="mb-1 text-lg text-white" style={{ fontFamily: "var(--font-serif)" }}>
-                Phillip Dennis
-              </div>
-              <div className="text-xs font-light text-white/65">
-                Director of Communications · Roseau, Dominica
+              <div className="flex items-center gap-3">
+                <div
+                  className="flex size-14 shrink-0 items-center justify-center rounded-full text-[22px] text-white"
+                  style={{
+                    fontFamily: "var(--font-serif)",
+                    border: "2px solid rgba(255,255,255,.4)",
+                    background: "rgba(255,255,255,.18)",
+                  }}
+                >
+                  P
+                </div>
+                <div>
+                  <div className="text-lg text-white" style={{ fontFamily: "var(--font-serif)" }}>
+                    Phillip Dennis
+                  </div>
+                  <div className="text-xs font-light text-white/65">
+                    Director of Communications · Roseau, Dominica
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -331,9 +339,9 @@ export function Hero() {
                   Skills
                 </div>
                 {[
-                  { name: "Public Relations", width: "90%" },
-                  { name: "Media Strategy", width: "76%" },
-                  { name: "Crisis Comms", width: "63%" },
+                  { name: "Public Relations", width: "90%", color: "#f59e0b" },
+                  { name: "Media Strategy", width: "76%", color: "#8b5cf6" },
+                  { name: "Crisis Comms", width: "63%", color: "#f97316" },
                 ].map((skill) => (
                   <div key={skill.name} className="mb-1.5 flex items-center gap-2.5">
                     <span
@@ -348,10 +356,7 @@ export function Hero() {
                     >
                       <div
                         className="h-full rounded-full"
-                        style={{
-                          width: skill.width,
-                          background: "linear-gradient(90deg, var(--cvp-b500), var(--cvp-b400))",
-                        }}
+                        style={{ width: skill.width, background: skill.color }}
                       />
                     </div>
                   </div>

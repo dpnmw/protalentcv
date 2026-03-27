@@ -1,3 +1,5 @@
+import { motion } from "motion/react";
+
 const steps = [
   {
     number: "1",
@@ -57,6 +59,55 @@ export function HowItWorks() {
               No complicated software. No design experience needed. Just fill in your details and
               go.
             </p>
+
+            {/* Dynamic Micro-UI */}
+            <div className="mt-10 space-y-8">
+              <div className="flex flex-wrap gap-8">
+                {[
+                  { label: "English", level: 5 },
+                  { label: "French", level: 3 },
+                ].map((l, i) => (
+                  <div key={l.label} className="flex flex-col gap-2">
+                    <div className="text-[11px] font-bold uppercase tracking-widest text-[#F59E0B]">
+                      {l.label}
+                    </div>
+                    <div className="flex gap-1.5">
+                      {[1, 2, 3, 4, 5].map((dot) => (
+                        <motion.div
+                          key={dot}
+                          initial={{ scale: 0 }}
+                          whileInView={{ scale: 1 }}
+                          transition={{ delay: i * 0.2 + dot * 0.1, type: "spring" }}
+                          className={`size-2.5 rounded-full ${
+                            dot <= l.level ? "bg-[#F59E0B]" : "bg-ink/10"
+                          }`}
+                        />
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div>
+                <div className="mb-4 text-[11px] font-bold uppercase tracking-widest text-ink/30">
+                  Ready to drag-and-drop:
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {["Experience", "Summary", "Certifications", "Volunteer Work"].map((item, i) => (
+                    <motion.span
+                      key={item}
+                      initial={{ opacity: 0, x: -10 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      transition={{ delay: i * 0.1 }}
+                      className="rounded-lg border border-ink/10 bg-warning-sub px-3.5 py-2 text-xs font-medium transition-colors hover:border-[#F59E0B] hover:bg-white"
+                      style={{ color: "var(--cvp-ink)" }}
+                    >
+                      {item}
+                    </motion.span>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="relative aspect-[4/5] h-[480px] w-full overflow-hidden rounded-[24px]">

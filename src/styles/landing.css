@@ -159,32 +159,28 @@ html {
   color: var(--cvp-accent) !important;
 }
 
-/* Play button pulse */
+/* Play button pulse — red */
 @keyframes cvp-play-pulse {
   0% {
-    box-shadow: 0 8px 32px rgba(37, 99, 235, 0.35), 0 0 0 0 rgba(37, 99, 235, 0.4);
+    box-shadow: 0 8px 32px rgba(220, 38, 38, 0.4), 0 0 0 0 rgba(220, 38, 38, 0.45);
   }
   70% {
-    box-shadow: 0 8px 32px rgba(37, 99, 235, 0.2), 0 0 0 14px rgba(37, 99, 235, 0);
+    box-shadow: 0 8px 32px rgba(220, 38, 38, 0.2), 0 0 0 14px rgba(220, 38, 38, 0);
   }
   100% {
-    box-shadow: 0 8px 32px rgba(37, 99, 235, 0.35), 0 0 0 0 rgba(37, 99, 235, 0);
+    box-shadow: 0 8px 32px rgba(220, 38, 38, 0.4), 0 0 0 0 rgba(220, 38, 38, 0);
   }
-}
-
-.dark .cvp-play-btn {
-  --_play-glow: rgba(96, 165, 250, 0.45);
 }
 
 @keyframes cvp-play-pulse-dark {
   0% {
-    box-shadow: 0 8px 32px rgba(96, 165, 250, 0.35), 0 0 0 0 rgba(96, 165, 250, 0.4);
+    box-shadow: 0 8px 32px rgba(239, 68, 68, 0.45), 0 0 0 0 rgba(239, 68, 68, 0.5);
   }
   70% {
-    box-shadow: 0 8px 32px rgba(96, 165, 250, 0.2), 0 0 0 14px rgba(96, 165, 250, 0);
+    box-shadow: 0 8px 32px rgba(239, 68, 68, 0.25), 0 0 0 14px rgba(239, 68, 68, 0);
   }
   100% {
-    box-shadow: 0 8px 32px rgba(96, 165, 250, 0.35), 0 0 0 0 rgba(96, 165, 250, 0);
+    box-shadow: 0 8px 32px rgba(239, 68, 68, 0.45), 0 0 0 0 rgba(239, 68, 68, 0);
   }
 }
 

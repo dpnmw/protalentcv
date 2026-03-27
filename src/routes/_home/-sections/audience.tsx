@@ -25,6 +25,9 @@ const audiences = [
   },
 ];
 
+import { motion } from "motion/react";
+import { CheckCircle } from "@phosphor-icons/react";
+
 export function Audience() {
   return (
     <section
@@ -60,8 +63,53 @@ export function Audience() {
               className="max-w-[500px] text-[17px] font-light leading-[1.75]"
               style={{ color: "var(--cvp-ink-mid)" }}
             >
-              Wherever you are in your journey, ProTalent CV helps you put your best foot forward.
+              Whether you are graduating, transferring, or revamping your established career,
+              ProTalent CV is the partner you need.
             </p>
+
+            {/* Dynamic Micro-UI */}
+            <div className="mt-10 space-y-8">
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                {[
+                  { label: "Verified Expertise", color: "#8B5CF6" },
+                  { label: "Professional Authority", color: "#EC4899" },
+                ].map((a, i) => (
+                  <div key={a.label} className="flex items-center gap-3">
+                    <motion.div
+                      initial={{ scale: 0, rotate: -45 }}
+                      whileInView={{ scale: 1, rotate: 0 }}
+                      transition={{ delay: i * 0.2, type: "spring" }}
+                      style={{ color: a.color }}
+                    >
+                      <CheckCircle size={28} weight="fill" />
+                    </motion.div>
+                    <span className="text-[13px] font-bold uppercase tracking-wider text-ink/60">
+                      {a.label}
+                    </span>
+                  </div>
+                ))}
+              </div>
+
+              <div>
+                <div className="mb-4 text-[11px] font-bold uppercase tracking-widest text-ink/30">
+                  Advanced Career Blocks:
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {["Publications", "References", "Projects", "Custom Fields"].map((item, i) => (
+                    <motion.span
+                      key={item}
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      transition={{ delay: i * 0.1 }}
+                      className="rounded-lg border border-ink/10 bg-primary-sub px-3.5 py-2 text-xs font-medium transition-colors hover:border-[#8B5CF6] hover:bg-white"
+                      style={{ color: "var(--cvp-ink)" }}
+                    >
+                      {item}
+                    </motion.span>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="relative aspect-[4/5] h-[480px] w-full overflow-hidden rounded-[24px]">
