@@ -27,33 +27,47 @@ export function HowItWorks() {
       style={{ fontFamily: "var(--font-body)", background: "var(--cvp-bg)" }}
     >
       <div className="mx-auto max-w-[1100px]">
-        <div
-          className="mb-4 inline-flex items-center gap-2 text-xs font-medium uppercase tracking-[0.1em]"
-          style={{ color: "var(--cvp-accent)" }}
-        >
-          <span className="block h-[1.5px] w-5" style={{ background: "var(--cvp-accent)" }} />
-          How it works
+        <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-[1fr_400px]">
+          <div>
+            <div
+              className="mb-4 inline-flex items-center gap-2 text-xs font-medium uppercase tracking-[0.1em]"
+              style={{ color: "var(--cvp-accent)" }}
+            >
+              <span className="block h-[1.5px] w-5" style={{ background: "var(--cvp-accent)" }} />
+              How it works
+            </div>
+
+            <h2
+              className="mb-3 leading-[1.15] tracking-[-0.01em]"
+              style={{
+                fontFamily: "var(--font-serif)",
+                fontSize: "clamp(28px, 3.8vw, 44px)",
+                color: "var(--cvp-ink)",
+              }}
+            >
+              Three steps to a CV
+              <br />
+              you're proud to send.
+            </h2>
+
+            <p
+              className="max-w-[500px] text-[17px] font-light leading-[1.75]"
+              style={{ color: "var(--cvp-ink-mid)" }}
+            >
+              No complicated software. No design experience needed. Just fill in your details and
+              go.
+            </p>
+          </div>
+
+          <div className="relative aspect-[4/5] h-[480px] w-full overflow-hidden rounded-[24px]">
+            <img
+              src="/photos/mom.png"
+              alt="Successful remote work search"
+              className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+              style={{ boxShadow: "0 10px 40px -15px rgba(0,0,0,0.2)" }}
+            />
+          </div>
         </div>
-
-        <h2
-          className="mb-3 leading-[1.15] tracking-[-0.01em]"
-          style={{
-            fontFamily: "var(--font-serif)",
-            fontSize: "clamp(28px, 3.8vw, 44px)",
-            color: "var(--cvp-ink)",
-          }}
-        >
-          Three steps to a CV
-          <br />
-          you're proud to send.
-        </h2>
-
-        <p
-          className="max-w-[500px] text-[17px] font-light leading-[1.75]"
-          style={{ color: "var(--cvp-ink-mid)" }}
-        >
-          No complicated software. No design experience needed. Just fill in your details and go.
-        </p>
 
         <div className="relative mt-[60px] grid grid-cols-1 gap-7 md:grid-cols-3 md:gap-10">
           {/* Connecting line (desktop only) */}

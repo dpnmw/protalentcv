@@ -6,6 +6,7 @@ import { Footer } from "./-sections/footer";
 import { Hero } from "./-sections/hero";
 import { HowItWorks } from "./-sections/how-it-works";
 import { Pricing } from "./-sections/pricing";
+import { Struggle } from "./-sections/struggle";
 import { Templates } from "./-sections/templates";
 import { WhyCVPro } from "./-sections/why-cvpro";
 
@@ -17,6 +18,7 @@ function RouteComponent() {
   return (
     <main id="main-content" className="relative">
       <Hero />
+      <Struggle />
       <HowItWorks />
       <WhyCVPro />
       <Templates />

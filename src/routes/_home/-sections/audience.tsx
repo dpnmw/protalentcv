@@ -33,33 +33,46 @@ export function Audience() {
       style={{ fontFamily: "var(--font-body)", background: "var(--cvp-bg-sub)" }}
     >
       <div className="mx-auto max-w-[1100px]">
-        <div
-          className="mb-4 inline-flex items-center gap-2 text-xs font-medium uppercase tracking-[0.1em]"
-          style={{ color: "var(--cvp-accent)" }}
-        >
-          <span className="block h-[1.5px] w-5" style={{ background: "var(--cvp-accent)" }} />
-          Who's it for?
+        <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-[1fr_400px]">
+          <div>
+            <div
+              className="mb-4 inline-flex items-center gap-2 text-xs font-medium uppercase tracking-[0.1em]"
+              style={{ color: "var(--cvp-accent)" }}
+            >
+              <span className="block h-[1.5px] w-5" style={{ background: "var(--cvp-accent)" }} />
+              Who's it for?
+            </div>
+
+            <h2
+              className="mb-3 leading-[1.15] tracking-[-0.01em]"
+              style={{
+                fontFamily: "var(--font-serif)",
+                fontSize: "clamp(28px, 3.8vw, 44px)",
+                color: "var(--cvp-ink)",
+              }}
+            >
+              Built for every
+              <br />
+              career stage.
+            </h2>
+
+            <p
+              className="max-w-[500px] text-[17px] font-light leading-[1.75]"
+              style={{ color: "var(--cvp-ink-mid)" }}
+            >
+              Wherever you are in your journey, ProTalent CV helps you put your best foot forward.
+            </p>
+          </div>
+
+          <div className="relative aspect-[4/5] h-[480px] w-full overflow-hidden rounded-[24px]">
+            <img
+              src="/photos/home-office-woman.png"
+              alt="Successful career revamp"
+              className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+              style={{ boxShadow: "0 10px 40px -15px rgba(0,0,0,0.2)" }}
+            />
+          </div>
         </div>
-
-        <h2
-          className="mb-3 leading-[1.15] tracking-[-0.01em]"
-          style={{
-            fontFamily: "var(--font-serif)",
-            fontSize: "clamp(28px, 3.8vw, 44px)",
-            color: "var(--cvp-ink)",
-          }}
-        >
-          Built for every
-          <br />
-          career stage.
-        </h2>
-
-        <p
-          className="max-w-[500px] text-[17px] font-light leading-[1.75]"
-          style={{ color: "var(--cvp-ink-mid)" }}
-        >
-          Wherever you are in your journey, ProTalent CV helps you put your best foot forward.
-        </p>
 
         <div className="mt-[52px] grid grid-cols-1 gap-[18px] md:grid-cols-2">
           {audiences.map((a) => (
