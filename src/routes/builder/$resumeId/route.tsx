@@ -72,6 +72,8 @@ function BuilderLayout({ initialLayout, ...props }: BuilderLayoutProps) {
 
   const setLeftSidebar = useBuilderSidebarStore((state) => state.setLeftSidebar);
   const setRightSidebar = useBuilderSidebarStore((state) => state.setRightSidebar);
+  const setLeftCollapsed = useBuilderSidebarStore((state) => state.setLeftCollapsed);
+  const setRightCollapsed = useBuilderSidebarStore((state) => state.setRightCollapsed);
 
   const { maxSidebarSize, collapsedSidebarSize } = useBuilderSidebar((state) => ({
     maxSidebarSize: state.maxSidebarSize,
@@ -87,7 +89,9 @@ function BuilderLayout({ initialLayout, ...props }: BuilderLayoutProps) {
 
     setLeftSidebar(leftSidebarRef);
     setRightSidebar(rightSidebarRef);
-  }, [leftSidebarRef, rightSidebarRef, setLeftSidebar, setRightSidebar]);
+    setLeftCollapsed(leftSidebarSize === 0);
+    setRightCollapsed(rightSidebarSize === 0);
+  }, [leftSidebarRef, rightSidebarRef, setLeftSidebar, setRightSidebar, setLeftCollapsed, setRightCollapsed, leftSidebarSize, rightSidebarSize]);
 
   const leftSidebarSize = isMobile ? 0 : initialLayout.left;
   const rightSidebarSize = isMobile ? 0 : initialLayout.right;
@@ -107,6 +111,8 @@ function BuilderLayout({ initialLayout, ...props }: BuilderLayoutProps) {
           collapsedSize={collapsedSidebarSize}
           defaultSize={leftSidebarSize}
           className="z-20 h-[calc(100svh-3.5rem)]"
+          onCollapse={() => setLeftCollapsed(true)}
+          onExpand={() => setLeftCollapsed(false)}
         >
           <BuilderSidebarLeft />
         </ResizablePanel>
@@ -124,6 +130,8 @@ function BuilderLayout({ initialLayout, ...props }: BuilderLayoutProps) {
           collapsedSize={collapsedSidebarSize}
           defaultSize={rightSidebarSize}
           className="z-20 h-[calc(100svh-3.5rem)]"
+          onCollapse={() => setRightCollapsed(true)}
+          onExpand={() => setRightCollapsed(false)}
         >
           <BuilderSidebarRight />
         </ResizablePanel>

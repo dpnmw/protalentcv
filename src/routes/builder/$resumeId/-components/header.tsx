@@ -7,7 +7,6 @@ import {
   LockSimpleIcon,
   LockSimpleOpenIcon,
   PencilSimpleLineIcon,
-  SidebarSimpleIcon,
   TrashSimpleIcon,
 } from "@phosphor-icons/react";
 import { useMutation } from "@tanstack/react-query";
@@ -32,12 +31,28 @@ import { useBuilderSidebar } from "../-store/sidebar";
 export function BuilderHeader() {
   const name = useResumeStore((state) => state.resume.name);
   const isLocked = useResumeStore((state) => state.resume.isLocked);
-  const toggleSidebar = useBuilderSidebar((state) => state.toggleSidebar);
+  const { toggleSidebar, leftCollapsed, rightCollapsed } = useBuilderSidebar((state) => ({
+    toggleSidebar: state.toggleSidebar,
+    leftCollapsed: state.leftCollapsed,
+    rightCollapsed: state.rightCollapsed,
+  }));
+
+  const leftOpen = !leftCollapsed;
+  const rightOpen = !rightCollapsed;
 
   return (
     <div className="absolute inset-x-0 top-0 z-10 flex h-14 items-center justify-between border-b bg-popover px-1.5">
-      <Button size="icon" variant="ghost" onClick={() => toggleSidebar("left")}>
-        <SidebarSimpleIcon />
+      <Button
+        size="icon"
+        variant="ghost"
+        title={leftOpen ? t`Close left panel` : t`Open left panel`}
+        onClick={() => toggleSidebar("left")}
+      >
+        <img
+          src={leftOpen ? "/icon/toggle_on.svg" : "/icon/toggle_off.svg"}
+          alt={leftOpen ? "Close left panel" : "Open left panel"}
+          className="size-5 dark:brightness-200 dark:saturate-0 brightness-0"
+        />
       </Button>
 
       <div className="flex items-center gap-x-1">
@@ -57,8 +72,17 @@ export function BuilderHeader() {
         <BuilderHeaderDropdown />
       </div>
 
-      <Button size="icon" variant="ghost" onClick={() => toggleSidebar("right")}>
-        <SidebarSimpleIcon className="-scale-x-100" />
+      <Button
+        size="icon"
+        variant="ghost"
+        title={rightOpen ? t`Close right panel` : t`Open right panel`}
+        onClick={() => toggleSidebar("right")}
+      >
+        <img
+          src={rightOpen ? "/icon/close.svg" : "/icon/settings.svg"}
+          alt={rightOpen ? "Close right panel" : "Open right panel"}
+          className="size-5 dark:brightness-200 dark:saturate-0 brightness-0"
+        />
       </Button>
     </div>
   );
