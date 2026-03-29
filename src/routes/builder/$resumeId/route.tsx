@@ -84,6 +84,10 @@ function BuilderLayout({ initialLayout, ...props }: BuilderLayoutProps) {
     void setBuilderLayoutServerFn({ data: layout });
   }, 200);
 
+  const leftSidebarSize = isMobile ? 0 : initialLayout.left;
+  const rightSidebarSize = isMobile ? 0 : initialLayout.right;
+  const artboardSize = isMobile ? 100 : initialLayout.artboard;
+
   useEffect(() => {
     if (!leftSidebarRef || !rightSidebarRef) return;
 
@@ -92,10 +96,6 @@ function BuilderLayout({ initialLayout, ...props }: BuilderLayoutProps) {
     setLeftCollapsed(leftSidebarSize === 0);
     setRightCollapsed(rightSidebarSize === 0);
   }, [leftSidebarRef, rightSidebarRef, setLeftSidebar, setRightSidebar, setLeftCollapsed, setRightCollapsed, leftSidebarSize, rightSidebarSize]);
-
-  const leftSidebarSize = isMobile ? 0 : initialLayout.left;
-  const rightSidebarSize = isMobile ? 0 : initialLayout.right;
-  const artboardSize = isMobile ? 100 : initialLayout.artboard;
 
   return (
     <div className="flex h-svh flex-col" {...props}>
