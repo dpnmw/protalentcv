@@ -45,12 +45,11 @@ export function BuilderHeader() {
       <Button
         size="icon"
         variant="ghost"
-        title={leftOpen ? t`Close left panel` : t`Open left panel`}
         onClick={() => toggleSidebar("left")}
       >
         <img
           src={leftOpen ? "/icon/toggle_on.svg" : "/icon/toggle_off.svg"}
-          alt={leftOpen ? "Close left panel" : "Open left panel"}
+          alt=""
           className="size-5 dark:brightness-200 dark:saturate-0 brightness-0"
         />
       </Button>
@@ -75,12 +74,11 @@ export function BuilderHeader() {
       <Button
         size="icon"
         variant="ghost"
-        title={rightOpen ? t`Close right panel` : t`Open right panel`}
         onClick={() => toggleSidebar("right")}
       >
         <img
           src={rightOpen ? "/icon/close.svg" : "/icon/settings.svg"}
-          alt={rightOpen ? "Close right panel" : "Open right panel"}
+          alt=""
           className="size-5 dark:brightness-200 dark:saturate-0 brightness-0"
         />
       </Button>

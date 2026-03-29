@@ -110,7 +110,7 @@ function BuilderLayout({ initialLayout, ...props }: BuilderLayoutProps) {
           minSize={collapsedSidebarSize * 2}
           collapsedSize={collapsedSidebarSize}
           defaultSize={leftSidebarSize}
-          className="z-20 h-[calc(100svh-3.5rem)]"
+          className="z-20 h-[calc(100svh-3.5rem)] transition-[flex] duration-300 ease-in-out"
           onCollapse={() => setLeftCollapsed(true)}
           onExpand={() => setLeftCollapsed(false)}
         >
@@ -129,7 +129,7 @@ function BuilderLayout({ initialLayout, ...props }: BuilderLayoutProps) {
           minSize={collapsedSidebarSize * 2}
           collapsedSize={collapsedSidebarSize}
           defaultSize={rightSidebarSize}
-          className="z-20 h-[calc(100svh-3.5rem)]"
+          className="z-20 h-[calc(100svh-3.5rem)] transition-[flex] duration-300 ease-in-out"
           onCollapse={() => setRightCollapsed(true)}
           onExpand={() => setRightCollapsed(false)}
         >
@@ -141,7 +141,7 @@ function BuilderLayout({ initialLayout, ...props }: BuilderLayoutProps) {
 }
 
 const defaultLayout = { left: 30, artboard: 70, right: 0 };
-const BUILDER_LAYOUT_COOKIE_NAME = "builder_layout";
+const BUILDER_LAYOUT_COOKIE_NAME = "builder_layout_v2";
 
 const layoutSchema = z.record(z.string(), z.number()).catch(defaultLayout);
 
