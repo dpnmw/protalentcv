@@ -20,10 +20,14 @@ type SectionStoreActions = {
 
 type SectionStore = SectionStoreState & SectionStoreActions;
 
+const defaultSections: SectionCollapseState = Object.fromEntries(
+  rightSidebarSections.map((id) => [id, { collapsed: id !== "template" }]),
+);
+
 export const useSectionStore = create<SectionStore>()(
   persist(
     immer((set) => ({
-      sections: {},
+      sections: defaultSections,
       setCollapsed: (id, collapsed) => {
         set((state) => {
           state.sections[id] = { collapsed };
@@ -46,10 +50,12 @@ export const useSectionStore = create<SectionStore>()(
     })),
     {
       name: "section-store",
+      version: 1,
       storage: createJSONStorage(() => localStorage),
       partialize: (state) => ({
         sections: state.sections,
       }),
+      migrate: () => ({ sections: defaultSections }),
     },
   ),
 );
